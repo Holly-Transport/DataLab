@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "World Bank Data Lab"
+assetDir = "static/assets"
+
+
+[module]
+	[hugoVersion]
+	extended = true

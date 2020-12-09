@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		{{ partial "head.html" . }}
+	</head>
+
+	<body id="page-top">
+		<!-- Renders navigation partial into base  -->
+	{{ partial "navigation.html" . }}
+	<!-- Renders main block into base  -->
+	{{ block "main" . }}
+
+	{{ end }}
+	<!-- Renders footer partial into base  -->
+	{{ partial "footer.html" . }}
+
+	{{ block "modals" .}}
+
+	{{ end }}
+	</body>
+
+	</html>
