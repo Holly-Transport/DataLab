@@ -1,25 +1,18 @@
 {{ define "header" }}
 <!-- Masthead -->
-<header class="masthead bg-primary text-white text-center">
-	<div class="container d-flex align-items-center flex-column">
+<header class="hero with-fixed-navbar" role="banner">
+	<div class="container">
 
 		<!-- Masthead Avatar Image -->
-		<img class="img-fluid" style="width:50%; height:50%" src="img/DataLab_Dark_Bg.png" alt="Data Lab Logo">
-
-		<!-- Masthead Heading -->
-		<!--<h1 class="masthead-heading text-uppercase mb-0">Data Lab</h1> -->
-
-		<!-- Icon Divider -->
-		<div class="divider-custom divider-light">
-			<div class="divider-custom-line"></div>
-			<div class="divider-custom-icon">
-				<i class="fas fa-star"></i>
-			</div>
-			<div class="divider-custom-line"></div>
+		<img 
+			class="img-fluid" style="width:50%; height:50%" 
+			src="img/DataLab_Vertical Stacked.png" alt="Data Lab, The World Bank">
+		<!-- Masthead Subheading -->					
+		<div class="hero-nav-links font-weight-light mb-0" role="navigation">
+			<span><a href="#">{{ .Site.Params.internalCollabLink }}</a></span>  - 
+			<span><a href="#">{{ .Site.Params.dataPartnershipsLink }}</a> </span> - 
+			<span><a href="#">{{ .Site.Params.staffCapacityBuilding }}</a></span>
 		</div>
-
-		<!-- Masthead Subheading -->
-		<p class="masthead-subheading font-weight-light mb-0">Community - Project Support - Data Goods</p>
 
 	</div>
 </header>

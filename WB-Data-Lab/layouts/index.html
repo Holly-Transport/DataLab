@@ -1,12 +1,12 @@
 {{ define "main" }}
-
-	{{ block "header" . }}
-	{{ end }}
-
-	{{ block "portfolio" . }}
-	{{ end }}
-	
-	{{ block "about" . }}
-	{{ end }}
-
+		{{ block "header" . }}
+		{{ end }}
+	<main class="with-fixed-navbar">
+		{{/*
+		{{ block "portfolio" . }}
+		{{ end }}
+		*/}}
+		{{ block "about" . }}
+		{{ end }}
+	</main>
 {{ end }}

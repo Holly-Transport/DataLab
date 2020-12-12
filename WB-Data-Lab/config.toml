@@ -3,7 +3,13 @@ languageCode = "en-us"
 title = "World Bank Data Lab"
 assetDir = "static/assets"
 
-
+[params]
+	internalCollabLink = "Internal Collaboration"
+	partnershipsLink = "External Partnerships"
+	dataPartnershipsLink = "Data Partnerships"
+	staffCapacityBuilding = "Staff Capacity Building"
+	aboutLink = "About" 
+	
 [module]
 	[hugoVersion]
 	extended = true

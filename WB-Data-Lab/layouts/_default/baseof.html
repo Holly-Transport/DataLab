@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		{{ partial "head.html" . }}
+		{{- partial "head.html" . -}}
 	</head>
 
 	<body id="page-top">
 		<!-- Renders navigation partial into base  -->
-	{{ partial "navigation.html" . }}
+	{{- partial "navigation.html" . -}}
 	<!-- Renders main block into base  -->
-	{{ block "main" . }}
+	{{- block "main" . -}}
 
-	{{ end }}
+	{{- end -}}
 	<!-- Renders footer partial into base  -->
-	{{ partial "footer.html" . }}
+	{{- partial "footer.html" . -}}
 
-	{{ block "modals" .}}
+	{{- block "modals" . -}}
 
-	{{ end }}
+	{{- end -}}
 	</body>
 
 	</html>
