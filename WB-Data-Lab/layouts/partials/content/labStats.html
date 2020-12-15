@@ -1,0 +1,23 @@
+{{ define "labStats" }}
+<section class="wb-stats">
+	<ul class="stats-container">
+		<li class="stats">
+			<h2 class="stat-titles">Lab Leads</h2>
+			<span>{{ .Site.Params.labLeadsCount }}</span>
+		</li>
+		<li class="stats">
+			<h2 class="stat-titles">Events</h2>
+			<span>{{ .Site.Params.peopleTrainedCount }}</span>
+		</li>
+		<li class="stats">
+			<h2 class="stat-titles">Partners</h2>
+			<span>{{ .Site.Params.connectionsCount }}</span>
+		</li>
+		<li class="stats">
+			<h2 class="stat-titles">Projects</h2>
+			<span>{{ .Site.Params.projectsCount }}</span>
+		</li>
+	</ul>
+</section>
+
+{{ end }}

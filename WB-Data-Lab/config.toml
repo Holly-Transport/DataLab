@@ -4,11 +4,16 @@ title = "World Bank Data Lab"
 assetDir = "static/assets"
 
 [params]
-	internalCollabLink = "Internal Collaboration"
-	partnershipsLink = "External Partnerships"
-	dataPartnershipsLink = "Data Partnerships"
-	staffCapacityBuilding = "Staff Capacity Building"
-	aboutLink = "About" 
+	internalCollabLinkTitle = "Internal Collaboration"
+	partnershipsLinkTitle = "External Partnerships"
+	dataPartnershipsLinkTitle = "Data Partnerships"
+	staffCapacityLinkTitle = "Staff Capacity Building"
+	aboutLinkTitle = "About" 
+
+	labLeadsCount = 205
+	peopleTrainedCount = 205
+	connectionsCount = 394
+	projectsCount = 105
 	
 [module]
 	[hugoVersion]

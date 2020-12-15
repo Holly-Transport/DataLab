@@ -1,7 +1,11 @@
 {{ define "main" }}
-		{{ block "header" . }}
-		{{ end }}
+	{{ block "header" . }}
+	{{ end }}
 	<main class="with-fixed-navbar">
+		{{ block "labStats" . }}
+		{{ end }}
+		{{ block "activities" . }}
+		{{ end }}
 		{{/*
 		{{ block "portfolio" . }}
 		{{ end }}
