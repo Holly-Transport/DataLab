@@ -16,4 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
 			})
 		})
 	}
+
+
+// Move later into its own file. 
+const dateFilter = document.querySelector('#filter-date')
+const workshopTypeFilter = document.querySelector('#filter-workshop-type')
+
+const upcoming = document.querySelector('#filter-workshop-type')
+
+console.log(dateFilter)
+console.log(workshopTypeFilter)
+
+
+
 })
+
+

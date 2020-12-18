@@ -18,3 +18,7 @@ assetDir = "static/assets"
 [module]
 	[hugoVersion]
 	extended = true
+
+[taxonomies]
+	workshop_types = "workshop_types"
+	teams = "teams"

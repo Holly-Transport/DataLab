@@ -1,0 +1,61 @@
+{{ define "workshops" }}
+<section class="workshops">
+  <div class="container">
+		<div class="filters">
+			<div class="ui-group col-lg-4">
+        <select id="filter-date" class="filter-select" value-group="">
+					<option value="Upcoming">Upcoming</option>
+					<option value="Past">Past</option>
+        </select>
+			</div>
+			{{/*  {{ range $name, $taxonomy := .Site.Taxonomies.Workshop_types }}
+							{{ range where $taxonomy "workshop_types" "==" "clinics" }}
+            	<option value =".{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
+							{{ end }}
+						{{ end }}  */}}
+			<div class="ui-group col-lg-4">
+        <select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
+            {{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
+            	<option value =".{{ $name| urlize }}"> {{ replace $name "-" " " | title }}</option>
+            {{ end }}
+        </select>
+			</div>
+		</div>
+
+		<div class="workshops-container">
+			<div class="upcoming-workshops">
+				{{/*  {{ if ge .Site.Taxonomies.workshop_types.Date.Unix now.Unix }}  */}}
+					<h2>Upcoming Workshops</h2>
+				{{/*  {{ end }}   */}}
+				{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
+					<ul>
+							{{- range $taxonomy -}}
+									{{ printf "#%v" now }}
+										<h2>{{- .Title -}}</h2>
+										<h3><small>{{- .Params.scheduled_date | dateFormat "January 2  at 3:04 P. M." -}}</small></h3>
+										<p>{{- .Content -}}</p>
+									{{/*  {{ end }}  */}}
+							{{- end -}}
+					</ul>
+				{{- end -}}
+			</div>
+
+			<div class="past-workshops">
+					<h2>Past Workshops</h2>
+				{{/*  Loops through all workshop_types  */}}
+				{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
+					<ul>
+						{{- range where $taxonomy "Params.scheduled_date" "le" "now.Unix" -}}
+							{{- range $taxonomy -}}
+							<h2>{{- .Title -}}</h2>
+							<h3><small>{{ .Params.scheduled_date | dateFormat " January 2  at 3:04 P. M." }}</small></h3>
+							<p>{{- .Content -}}</p>
+							{{- end -}}
+						{{ end }}
+					</ul>
+				{{- end -}}
+			</div>
+		</div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,25 @@
+.workshops {
+
+
+	li {
+		list-style: none;
+	}
+
+	.filters, .workshops-container{
+		margin-bottom: 1.5rem;
+	}
+	.filters {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.workshops-container {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 1.5rem;
+
+		.upcoming-workshops, .past-workshops {
+			min-width: 50%;
+		}
+	}
+}

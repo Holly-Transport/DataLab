@@ -2,15 +2,16 @@
 	{{ block "header" . }}
 	{{ end }}
 	<main class="with-fixed-navbar">
-		{{ block "labStats" . }}
+		{{- block "labStats" . -}}
 		{{ end }}
-		{{ block "activities" . }}
+
+		{{- block "workshops" . -}}
 		{{ end }}
 		{{/*
 		{{ block "portfolio" . }}
 		{{ end }}
-		*/}}
-		{{ block "about" . }}
+		{{- block "about" . -}}
 		{{ end }}
+		*/}}
 	</main>
 {{ end }}
