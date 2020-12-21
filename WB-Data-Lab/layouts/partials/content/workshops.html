@@ -1,23 +1,6 @@
 {{ define "workshops" }}
 <section class="workshops">
   <div class="container">
-		<div class="filters">
-        <select id="filter-date" class="filter-select" value-group="">
-					<option value="Upcoming">Upcoming</option>
-					<option value="Past">Past</option>
-        </select>
-			{{/*  {{ range $name, $taxonomy := .Site.Taxonomies.Workshop_types }}
-							{{ range where $taxonomy "workshop_types" "==" "clinics" }}
-            	<option value =".{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
-							{{ end }}
-						{{ end }}  */}}
-        <select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
-            {{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
-            	<option value =".{{ $name| urlize }}"> {{ replace $name "-" " " | title }}</option>
-            {{ end }}
-        </select>
-		</div>
-
 		<div class="workshops-container">
 			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
 				{{- range $taxonomy -}}
@@ -28,23 +11,18 @@
 				</li>
 				{{- end -}}
 			{{- end -}}
-
 			<div class="upcoming-workshops">
-				{{/*  {{ if ge .Site.Taxonomies.workshop_types.Date.Unix now.Unix }}  */}}
-					<h2>Upcoming Workshops</h2>
-				{{/*  {{ end }}   */}}
+				<h2>Upcoming Workshops</h2>
 				<ul class="upcoming-workshops-list">
-			</ul>
+				</ul>
 			</div>
 			<div class="past-workshops">
-					<h2>Past Workshops</h2>
-				{{/*  Loops through all workshop_types  */}}
+				<h2>Past Workshops</h2>
 				<ul class="past-workshops-list">
-		
-
-			</ul>
+				</ul>
 			</div>
 		</div>
+		<a href="{{ .Site.Params.WorkshopsLink }}">{{ .Site.Params.WorkshopsSectionLabel }}</a>
   </div>
 </section>
 {{ end }}

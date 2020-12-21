@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		// Turn each element into an object with Title, Date and Paragraph values. 
 		let workshopElements = {
 			title: workshopChildren[0],
-			date: workshopChildren[1].querySelector('.date'),
+			date: workshopChildren[1],
 			paragraph: workshopChildren[3]
 		}
 		// Push each element into the Workshops Array.
@@ -58,9 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		let pastWorkshopsArray = []
 
 		workshopsArray.map(workshop => {
-			let workshopDate = workshop.date
+			let workshopDate = workshop.date.querySelector('.date')
 			// Convert string date into Date type.
 			const formattedDate = new Date(workshopDate.textContent)
+
 			// Checks if workshop is upcoming or a past workshop and pushes into the respective array.
 			formattedDate > Date.now() ? upcomingWorkshopsArray.push(workshop) : pastWorkshopsArray.push(workshop)
 		})
@@ -72,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			let upcomingListItem = document.createElement('li')
 			upcomingWorkshopsArray.forEach(upcomingWorkshop => {
 				upcomingListItem.appendChild(upcomingWorkshop.title)
-				const formattedDate = new Date(upcomingWorkshop.date.textContent).toLocaleDateString()
-				upcomingWorkshop.date.textContent = formattedDate
+				const formattedDate = new Date(upcomingWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
+				upcomingWorkshop.date.querySelector('.date').textContent = formattedDate
 				upcomingListItem.appendChild(upcomingWorkshop.date)
 				upcomingListItem.appendChild(upcomingWorkshop.paragraph)
 				upcomingWorkshopsList.appendChild(upcomingListItem)
@@ -84,13 +85,15 @@ document.addEventListener('DOMContentLoaded', function() {
 			console.log(pastWorkshopsArray) 
 			pastWorkshopsArray.forEach(pastWorkshop => {
 				pastListItem.appendChild(pastWorkshop.title)
-				const formattedDate = new Date(pastWorkshop.date.textContent).toLocaleDateString()
-				pastWorkshop.date.textContent = formattedDate
+				console.log(pastWorkshop)
+				const formattedDate = new Date(pastWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
+				console.log(formattedDate)
+				pastWorkshop.date.querySelector('.date').textContent = formattedDate
 				pastListItem.appendChild(pastWorkshop.date)
 				pastListItem.appendChild(pastWorkshop.paragraph)
 				pastWorkshopsList.appendChild(pastListItem)
 			})
-
-			// upcomingWorkshopsContainer.style.display = "flex";
-			// pastWorkshopsContainer.style.display = "flex";
+			
+			upcomingWorkshopsContainer.style.display = "flex";
+			pastWorkshopsContainer.style.display = "flex";
 })

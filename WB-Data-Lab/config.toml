@@ -15,6 +15,9 @@ assetDir = "static/assets"
 	connectionsCount = 394
 	projectsCount = 105
 	
+	workshopsSectionLabel = "Workshops & Training"
+	workshopsLink = "/workshops"
+
 [module]
 	[hugoVersion]
 	extended = true
