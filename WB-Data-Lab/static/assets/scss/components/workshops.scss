@@ -12,13 +12,14 @@
 		display: flex;
 		justify-content: space-around;
 	}
-	
+
 	.workshops-container {
 		display: flex;
 		justify-content: space-around;
 		margin-bottom: 1.5rem;
 
 		.upcoming-workshops, .past-workshops {
+			flex-direction: column;
 			min-width: 50%;
 		}
 	}
