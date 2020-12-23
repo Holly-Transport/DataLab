@@ -1,17 +1,18 @@
-{{ define "main" }}
-	{{ block "header" . }}
-	{{ end }}
+{{- define "main" -}}
+	{{- block "header" . -}}
+	{{- end -}}
 	<main class="with-fixed-navbar">
 		{{- block "labStats" . -}}
-		{{ end }}
+		{{- end -}}
+		
+		{{- block "accordions" . -}}
+		{{- end -}}
+
+		{{- block "activities" . -}}
+		{{- end -}}
 
 		{{- block "workshops" . -}}
-		{{ end }}
-		{{/*
-		{{ block "portfolio" . }}
-		{{ end }}
-		{{- block "about" . -}}
-		{{ end }}
-		*/}}
+		{{- end -}}
+
 	</main>
-{{ end }}
+{{- end -}}

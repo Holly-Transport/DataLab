@@ -13,11 +13,6 @@
 						<option value="Upcoming">Upcoming</option>
 						<option value="Past">Past</option>
 					</select>
-				{{/*  {{ range $name, $taxonomy := .Site.Taxonomies.Workshop_types }}
-								{{ range where $taxonomy "workshop_types" "==" "clinics" }}
-								<option value =".{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
-								{{ end }}
-							{{ end }}  */}}
 					<select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
 							{{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
 								<option value =".{{ $name| urlize }}"> {{ replace $name "-" " " | title }}</option>

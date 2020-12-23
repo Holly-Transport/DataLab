@@ -3,13 +3,14 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+	'use strict'
+
 	const menus = document.querySelectorAll('.burger-menu')
 	const dropdowns = document.querySelectorAll('.navbar-menu')
 
 	if (menus.length && dropdowns.length) {
 		menus.forEach(menu => {
 			menu.addEventListener('click', () => {
-				console.log('CLick')
 				dropdowns.forEach(dropdown => {
 					dropdown.classList.toggle('is-active')
 				})
@@ -82,18 +83,107 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			// Create and insert past li's into corresponding container.
 			let pastListItem = document.createElement('li')
-			console.log(pastWorkshopsArray) 
 			pastWorkshopsArray.forEach(pastWorkshop => {
 				pastListItem.appendChild(pastWorkshop.title)
-				console.log(pastWorkshop)
 				const formattedDate = new Date(pastWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
-				console.log(formattedDate)
 				pastWorkshop.date.querySelector('.date').textContent = formattedDate
 				pastListItem.appendChild(pastWorkshop.date)
 				pastListItem.appendChild(pastWorkshop.paragraph)
 				pastWorkshopsList.appendChild(pastListItem)
 			})
-			
+
 			upcomingWorkshopsContainer.style.display = "flex";
 			pastWorkshopsContainer.style.display = "flex";
+
+			// const accordionItem = document.querySelectorAll('details')
+
+			// accordionItem.forEach(item => {
+			// 	item.addEventListener('click', function(e) {
+			// 		console.log(e.target.toString())
+			// 		if (e.target.toString() == '[object HTMLHeadingElement]') {
+			// 			console.log('HI!')
+			// 			item.removeAttribute("open")
+			// 		}
+			// 	})
+			// })
+
+			let Accordions = (function() {
+				'use strict';
+
+
+				const closeOthers = (current, parent) => {
+					let opened = Array.from(parent.querySelectorAll('details[open]'))
+					console.log(opened)
+
+					//Close open ones that aren't current accordion
+					opened.forEach(accordion => {
+						if(accordion == current) return 
+						accordion.removeAttribute('open')
+					}) 
+				}
+
+				const toggle = (event, selector) => {
+					// Only run on accordions inside our selector
+					let parent = event.target.closest(selector)
+					console.log(parent)
+					if (!parent) return
+
+					// Only run if accordion is open
+					if (!event.target.hasAttribute('open')) return 
+
+					// Close any existing open accordions. 
+					closeOthers(event.target, parent)
+				}
+
+				/**
+				* Create the Constructor object
+				*/
+				var Constructor = function(selector)   {
+					// Variables
+			
+					var publicAPIs = {};
+					
+
+					// Methods
+
+					const toggleHandler = function(event) {
+						toggle(event, selector)
+					}
+
+					publicAPIs.destroy = function() {
+
+					}
+					publicAPIs.init = function() {
+						// Check for errors. 
+						if (!selector || typeof selector !== 'string') {
+							throw new Error ('Please provide a valid selector')
+						}
+						
+						// Listen for when accordions open
+						document.addEventListener('toggle', toggleHandler, true)
+					}
+
+					// const openedAccordion = Array.from(document.querySelectorAll(`${selector} details[open]`))
+					// // console.log(openedAccordion)
+					
+					// openedAccordion.forEach(accordion => {
+					// 	console.log(accordion)
+					// 	closeOthers(event.target, parent)
+					// })
+
+					// Initialize and return Public APIs
+					publicAPIs.init()
+					console.log('Public:', publicAPIs)
+					return publicAPIs;
+				};
+			
+				// Return the Constructor
+				return Constructor;
+			
+			})();
+			// Instantiate accordion plugin.
+			let leftAccordion = new Accordions('[data-accordion="left"]')
+			let rightAccordion = new Accordions('[data-accordion="right"]')
+
+			console.log(accordion)
 })
