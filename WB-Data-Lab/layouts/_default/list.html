@@ -1,9 +1,12 @@
 {{- define "main" -}}
 <main class="with-fixed-navbar">
+{{/*  Workshops Page Layout  */}}
+
+	{{- if eq .Page.Section "workshops" -}}
 	<section class="workshops">
 		<div class="container">
 			<div class="workshops-heading">
-				<h1 >{{ .Site.Params.WorkshopsSectionLabel }}</h1>
+				<h1>{{- .Site.Params.WorkshopsSectionLabel -}}</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptas aut delectus numquam iure 
 						itaque, dignissimos consequuntur perspiciatis at ipsa accusamus sapiente minima tempora commodi 
 						laudantium! Et aliquam vitae beatae?
@@ -14,35 +17,83 @@
 						<option value="Past">Past</option>
 					</select>
 					<select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
-							{{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
-								<option value =".{{ $name| urlize }}"> {{ replace $name "-" " " | title }}</option>
-							{{ end }}
+						{{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
+							<option value =".{{ $name| urlize }}"> {{ replace $name "-" " " | title }}</option>
+						{{ end }}
 					</select>
+				</div>
 			</div>
-			</div>
-	
-
-		<div class="workshops-container">
-			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
-				{{- range $taxonomy -}}
-				<li aria-hidden="true">
-					<h2>{{- .Title -}}</h2>
-					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
-					<p>{{- .Content -}}</p>
-				</li>
+			<div class="workshops-container">
+				{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
+					{{- range $taxonomy -}}
+					<li aria-hidden="true">
+						<h2>{{- .Title -}}</h2>
+						<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
+						<p>{{- .Content -}}</p>
+					</li>
+					{{- end -}}
 				{{- end -}}
-			{{- end -}}
-			<div class="upcoming-workshops">
-					<h2>Upcoming Workshops</h2>
-				<ul class="upcoming-workshops-list">
-				</ul>
-			</div>
-			<div class="past-workshops">
-					<h2>Past Workshops</h2>
-				<ul class="past-workshops-list">
-				</ul>
 			</div>
 		</div>
 	</section>
+{{- end -}}
+
+{{/*  Data Resources Page Layout  */}}
+{{- if eq .Page.Section "data-resources-directory" -}}
+<section class="directory">
+	<img src="{{- .Site.BaseURL -}}img/map.jpg" frameborder="0" width="780" height="500"></img>
+	{{/*  <div class="container">
+		<h1>Data Resources Directory</h1>
+		<div class="row">			
+			<div class="column">
+				<h2>I'm looking for existing data</h2>
+				<h3>Data that can be quickly obtained</h3>
+				<div class="catalogues">
+					<div class="heading">
+						<h4>Catalogues</h4>
+						<p>WB-managed data search portals</p>
+					</div>
+					<div class="hexagon">
+						<span>
+							<h5>Wbg Library</h5>
+							<p>Purchased data & subscriptions</p>
+						</span>
+					</div>
+					<div class="hexagon">
+						<span>
+							<h5>Development Data Hub</h5>
+							<p>Open, survey, & geospatial</p>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<h2>I need to collect new data</h2>
+				<h3>Field data collection: web scraping</h3>
+			</div>
+			<div class="column">
+				<h2>I need to manage data</h2>
+				<h3>Licensing, privacy, storage, cataloguing, building client government capacity</h3>
+			</div>
+			<div class="column">
+				<h2>I need insights from data</h2>
+				<h3>Data science, app development, sector advisory.</h3>
+			</div>
+		</div>
+	</div>  */}}
+</section>
+{{- end -}}
+
+{{- if eq .Page.Section "teams" -}}
+<section class="data-leads-teams">
+	<div class="container">
+	{{- range sort .Site.Pages ".Site.Pages" "asc" -}}
+		{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
+			<img class="team-logo" src="{{- .Site.BaseURL -}}{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
+		{{- end -}}
+	{{- end -}}
+</div>
+</section>
+{{- end -}}
 </main>
 {{ end }} 

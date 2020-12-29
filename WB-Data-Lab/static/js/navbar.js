@@ -17,95 +17,95 @@ document.addEventListener('DOMContentLoaded', function() {
 			})
 		})
 	}
+	/////////////////////////////////////////////////////////////////////////////
 
+	let workshopFilters = (function() {
+		// // Workshop filters 
+		// const dateFilter = document.querySelector('#filter-date')
+		// const workshopTypeFilter = document.querySelector('#filter-workshop-type')
 
-	// Move later into its own file. 
-
-	// Workshop filters 
-
-	// const dateFilter = document.querySelector('#filter-date')
-	// const workshopTypeFilter = document.querySelector('#filter-workshop-type')
-
-
-	// Upcoming and past workshop h3 headings with Dates as textContent.
-	const upcomingWorkshopsContainer  = document.querySelector('.upcoming-workshops')
-	const pastWorkshopsContainer  = document.querySelector('.past-workshops')
-
-	// Instantiate a Workshops Array
-	let workshopsArray = [] 
-
-	// Loop through all list items inserted by Hugo
-	document.querySelectorAll('.workshops-container li').forEach(workshop => {
-		workshop.remove() // Remove all workshop li's from DOM.
-		let workshopChildren = Array.from(workshop.children)
-		
-		// Turn each element into an object with Title, Date and Paragraph values. 
-		let workshopElements = {
-			title: workshopChildren[0],
-			date: workshopChildren[1],
-			paragraph: workshopChildren[3]
+		// Methods
+		const filterDate = function(e) {
+			console.log(e.target.value)
 		}
-		// Push each element into the Workshops Array.
-		workshopsArray.push(workshopElements)
-		return workshopsArray
-	})
-	
-	/* 
-			Check date of post, if upcoming, insert into new array for upcoming workshops.
-			Else, insert into past workshops array. Sort by date. Insert into DOM.  
-		*/
+		// Move later into its own file. 
 
-		let upcomingWorkshopsArray = []
-		let pastWorkshopsArray = []
+		// dateFilter.addEventListener('change', filterDate)
 
-		workshopsArray.map(workshop => {
-			let workshopDate = workshop.date.querySelector('.date')
-			// Convert string date into Date type.
-			const formattedDate = new Date(workshopDate.textContent)
+		// Upcoming and past workshop h3 headings with Dates as textContent.
+		const upcomingWorkshopsContainer  = document.querySelector('.upcoming-workshops')
+		const pastWorkshopsContainer  = document.querySelector('.past-workshops')
 
-			// Checks if workshop is upcoming or a past workshop and pushes into the respective array.
-			formattedDate > Date.now() ? upcomingWorkshopsArray.push(workshop) : pastWorkshopsArray.push(workshop)
+		// Instantiate a Workshops Array
+		let workshopsArray = [] 
+
+		// Loop through all list items inserted by Hugo
+		document.querySelectorAll('.workshops-container li').forEach(workshop => {
+			workshop.remove() // Remove all workshop li's from DOM.
+			let workshopChildren = Array.from(workshop.children)
+			
+			// Turn each element into an object with Title, Date and Paragraph values. 
+			let workshopElements = {
+				title: workshopChildren[0],
+				date: workshopChildren[1],
+				paragraph: workshopChildren[3]
+			}
+			// Push each element into the Workshops Array.
+			workshopsArray.push(workshopElements)
+			return workshopsArray
 		})
-			// Select Upcoming and Past workshops respective container elements in DOM.
-			const upcomingWorkshopsList  = document.querySelector('.upcoming-workshops-list')
-			const pastWorkshopsList  = document.querySelector('.past-workshops-list')
+		
+		/* 
+				Check date of post, if upcoming, insert into new array for upcoming workshops.
+				Else, insert into past workshops array. Sort by date. Insert into DOM.  
+			*/
 
-			// Create and insert upcoming li's into corresponding container. 
-			let upcomingListItem = document.createElement('li')
-			upcomingWorkshopsArray.forEach(upcomingWorkshop => {
-				upcomingListItem.appendChild(upcomingWorkshop.title)
-				const formattedDate = new Date(upcomingWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
-				upcomingWorkshop.date.querySelector('.date').textContent = formattedDate
-				upcomingListItem.appendChild(upcomingWorkshop.date)
-				upcomingListItem.appendChild(upcomingWorkshop.paragraph)
-				upcomingWorkshopsList.appendChild(upcomingListItem)
+			let upcomingWorkshopsArray = []
+			let pastWorkshopsArray = []
+
+			workshopsArray.map(workshop => {
+				let workshopDate = workshop.date.querySelector('.date')
+				// Convert string date into Date type.
+				const formattedDate = new Date(workshopDate.textContent)
+
+				// Checks if workshop is upcoming or a past workshop and pushes into the respective array.
+				formattedDate > Date.now() ? upcomingWorkshopsArray.push(workshop) : pastWorkshopsArray.push(workshop)
 			})
+				// Select Upcoming and Past workshops respective container elements in DOM.
+				const upcomingWorkshopsList  = document.querySelector('.upcoming-workshops-list')
+				const pastWorkshopsList  = document.querySelector('.past-workshops-list')
 
-			// Create and insert past li's into corresponding container.
-			let pastListItem = document.createElement('li')
-			pastWorkshopsArray.forEach(pastWorkshop => {
-				pastListItem.appendChild(pastWorkshop.title)
-				const formattedDate = new Date(pastWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
-				pastWorkshop.date.querySelector('.date').textContent = formattedDate
-				pastListItem.appendChild(pastWorkshop.date)
-				pastListItem.appendChild(pastWorkshop.paragraph)
-				pastWorkshopsList.appendChild(pastListItem)
-			})
+				// Create and insert upcoming li's into corresponding container. 
+				upcomingWorkshopsArray.forEach(upcomingWorkshop => {
+				let upcomingListItem = document.createElement('li')
 
-			upcomingWorkshopsContainer.style.display = "flex";
-			pastWorkshopsContainer.style.display = "flex";
+					upcomingListItem.appendChild(upcomingWorkshop.title)
+					const formattedDate = new Date(upcomingWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
+					upcomingWorkshop.date.querySelector('.date').textContent = formattedDate
+					upcomingListItem.appendChild(upcomingWorkshop.date)
+					upcomingListItem.appendChild(upcomingWorkshop.paragraph)
+					upcomingListItem.classList.add('upcoming')
+					upcomingWorkshopsList.appendChild(upcomingListItem)
+				})
 
-			// const accordionItem = document.querySelectorAll('details')
+				// Create and insert past li's into corresponding container.
+				pastWorkshopsArray.forEach(pastWorkshop => {
+				let pastListItem = document.createElement('li')
 
-			// accordionItem.forEach(item => {
-			// 	item.addEventListener('click', function(e) {
-			// 		console.log(e.target.toString())
-			// 		if (e.target.toString() == '[object HTMLHeadingElement]') {
-			// 			console.log('HI!')
-			// 			item.removeAttribute("open")
-			// 		}
-			// 	})
-			// })
+					pastListItem.appendChild(pastWorkshop.title)
+					const formattedDate = new Date(pastWorkshop.date.querySelector('.date').textContent).toLocaleDateString()
+					pastWorkshop.date.querySelector('.date').textContent = formattedDate
+					pastListItem.appendChild(pastWorkshop.date)
+					pastListItem.appendChild(pastWorkshop.paragraph)
+					pastWorkshopsList.appendChild(pastListItem)
+				})
+
+				upcomingWorkshopsContainer.style.display = "flex";
+				pastWorkshopsContainer.style.display = "flex";
+			})()
+
+
+	/////////////////////////////////////////////////////////////////////////////
 
 			let Accordions = (function() {
 				'use strict';
@@ -185,5 +185,41 @@ document.addEventListener('DOMContentLoaded', function() {
 			let leftAccordion = new Accordions('[data-accordion="left"]')
 			let rightAccordion = new Accordions('[data-accordion="right"]')
 
-			console.log(accordion)
+			/////////////////////////////////////////////////////////////////////
+			// Teams Logo Slider
+
+			let slider = (function() {
+				// Variables
+				const slider = document.querySelector('.teams .container .slide')
+				let teamLogos = Array.from(slider.querySelectorAll('*'))
+
+
+				const sliceByNumber = function(array, chunkSize){
+					let index = 0;
+					let arrayLength = array.length;
+					let tempArray = [];
+					
+					for (index = 0; index < arrayLength; index += chunkSize) {
+							let newChunk = array.slice(index, index + chunkSize)
+							// console.log('New Chunk:', newChunk)
+							tempArray.push(newChunk);
+					}
+			
+					return tempArray;
+			}
+
+			let slicedLogoArrays = sliceByNumber(teamLogos, 18)
+			slicedLogoArrays.map(slicedArray => {
+				console.log('Sliced Array:', slicedArray)
+				
+				let imageContainer = document.createElement('div')
+				slicedArray[0].parent
+				slicedArray.map(element=> {
+
+					console.log('Array Element:', element)
+				})
+			})
+
+
+			})()
 })

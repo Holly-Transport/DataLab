@@ -1,0 +1,14 @@
+{{- define "teams" -}}
+<section class="teams">
+	<div class="container">
+		<div class="slide">
+		{{- range sort .Site.Pages ".Site.Pages" -}}
+			{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
+				<img class="team-logo" src="{{- .Params.Image_path -}}" alt="{{- .Params.Title }} Logo">
+				<span class="side-divider" aria-hidden="true">|</span>
+				{{- end -}}
+		{{- end -}}
+		</div>	
+	</div>
+</section>
+{{- end -}}

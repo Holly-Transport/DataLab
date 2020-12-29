@@ -18,6 +18,12 @@ assetDir = "static/assets"
 	workshopsSectionLabel = "Workshops & Training"
 	workshopsLink = "/workshops"
 
+	dataDirectoryLabel = "Data Resources Directory"	
+	dataDirectoryLink = "/data-resources-directory"
+
+	dataLeadsLabel = "Data Leads"	
+	dataLeadsLink = "/teams"
+
 [module]
 	[hugoVersion]
 	extended = true

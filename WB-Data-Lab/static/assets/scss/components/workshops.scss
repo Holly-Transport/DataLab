@@ -9,8 +9,6 @@
   li {
     list-style: none;
 	}
-	
-
 
   .filters {
     display: flex;
@@ -21,7 +19,29 @@
   .filters,
   .workshops-container {
     margin-bottom: 1.5rem;
-  }
+	}
+	
+	.upcoming {
+		background-color: $teal;
+	}
+
+	.past {
+		background-color: red;
+	}
+
+	.clinics {
+		background-color: greenyellow;
+	}
+
+	.data-science-partnerships {
+		background-color: orange;
+	}
+
+	.data-science-workshop {
+		background-color: lightcoral;
+	}
+
+
 
   .date {
     font-size: 0.9rem;
@@ -37,11 +57,16 @@
     display: flex;
 		flex-direction: column;
 		width: 80%;
-  }
+	}
+	
   .workshops-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 1.5rem;
+
+		li {
+			display: none;
+		}
 
     .upcoming-workshops,
     .past-workshops {
