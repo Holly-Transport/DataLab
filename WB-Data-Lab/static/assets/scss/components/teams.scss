@@ -1,15 +1,30 @@
-
-
 .teams {
 	.container {
 		margin: 2.5rem auto;
 
-		.slide {
-			align-items: center;
+		.slider {
+			// align-items: center;
 			border: 2px solid black;
 			display: flex;
+			max-height: 210px;
 			overflow: hidden;
 			width: 100%;
+
+			.slider-wrapper {
+				display: flex;
+				margin: .25rem;
+				padding: .25rem;
+				min-width: 100%;
+				// animation: 4s 5s slide-left infinite;
+
+				.team-logo {
+					flex: 1 0 auto;
+					border: 1px solid transparent;
+					border-radius: 99px;
+					min-height: 70px;
+					max-width: 20%;
+				}
+			}
 
 			.side-divider {
 				color: $teal;
@@ -23,12 +38,41 @@
 	}
 }
 
-.teams, .data-leads-teams {
+
+
+.data-leads-teams {
 	.team-logo {
-		border: 1px solid black;
+		border: 1px solid transparent;
 		border-radius: 99px;
-		max-width: 70px;
-		min-width: 9%;
-		width: 100%;
+		margin: .25rem;
+		min-height: 70px;
+		padding: .25rem;
+		width: 18%;
 	}
+
+	.container {
+		.team-logo {
+			max-width: 150px;
+		}
+	}
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-540%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-540%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }

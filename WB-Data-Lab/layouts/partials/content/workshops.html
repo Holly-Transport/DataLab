@@ -7,7 +7,10 @@
 				<li aria-hidden="true">
 					<h2>{{- .Title -}}</h2>
 					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
-					<p>{{- .Content -}}</p>
+					<div class="content">
+						<p>{{- .Summary -}}</p>
+						<a href="{{- .Site.BaseURL -}}">Read More</a>
+					</div>
 				</li>
 				{{- end -}}
 			{{- end -}}

@@ -3,40 +3,8 @@
 {{/*  Workshops Page Layout  */}}
 
 	{{- if eq .Page.Section "workshops" -}}
-	<section class="workshops">
-		<div class="container">
-			<div class="workshops-heading">
-				<h1>{{- .Site.Params.WorkshopsSectionLabel -}}</h1>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptas aut delectus numquam iure 
-						itaque, dignissimos consequuntur perspiciatis at ipsa accusamus sapiente minima tempora commodi 
-						laudantium! Et aliquam vitae beatae?
-				</p>
-				<div class="filters">
-					<select id="filter-date" class="filter-select" value-group="">
-						<option value="Upcoming">Upcoming</option>
-						<option value="Past">Past</option>
-					</select>
-					<select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
-						{{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
-							<option value =".{{ $name| urlize }}"> {{ replace $name "-" " " | title }}</option>
-						{{ end }}
-					</select>
-				</div>
-			</div>
-			<div class="workshops-container">
-				{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
-					{{- range $taxonomy -}}
-					<li aria-hidden="true">
-						<h2>{{- .Title -}}</h2>
-						<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
-						<p>{{- .Content -}}</p>
-					</li>
-					{{- end -}}
-				{{- end -}}
-			</div>
-		</div>
-	</section>
-{{- end -}}
+		{{- partial "list-partials/workshops-page.html" . -}}
+	{{- end -}}
 
 {{/*  Data Resources Page Layout  */}}
 {{- if eq .Page.Section "data-resources-directory" -}}
@@ -85,15 +53,17 @@
 {{- end -}}
 
 {{- if eq .Page.Section "teams" -}}
-<section class="data-leads-teams">
+
+{{- partial "list-partials/teams.html" . -}}
+{{/*  <section class="data-leads-teams">
 	<div class="container">
-	{{- range sort .Site.Pages ".Site.Pages" "asc" -}}
+	{{- range sort .Site.Pages ".Site.Pages" "desc" -}}
 		{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
 			<img class="team-logo" src="{{- .Site.BaseURL -}}{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
 		{{- end -}}
 	{{- end -}}
 </div>
-</section>
+</section>  */}}
 {{- end -}}
 </main>
 {{ end }} 

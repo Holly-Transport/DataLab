@@ -1,4 +1,4 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132319281-2"></script>
+{{/*  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132319281-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -8,7 +8,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-132319281-2');
-</script>
+</script>  */}}
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,15 +43,15 @@
 {{/*
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132319281-1"></script>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js" defer></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js" defer></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/freelancer.min.js" defer></script>
 */}}
 
-<script src="/js/navbar.js" defer></script>
+<script type="module" src="/js/functions/navbar.js" defer></script>
+
+{{- if eq .Page.Kind "home" -}}
+  <script type="module" src="/js/main/main.js" defer></script>
+{{- end -}}
+
+{{- if eq .Page.Section "workshops" -}}
+  {{ partial "list-partials/workshop-filters-script" . }}
+  <script type="module" src="/js/functions/workshop-page-filters.js" defer></script>
+{{- end -}}
