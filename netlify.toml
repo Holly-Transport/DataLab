@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "hugo -D"
 
 [context.development.environment]
 HUGO_VERSION = "0.80.0"
@@ -8,20 +8,20 @@ HUGO_ENV = "development"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo --gc --minify --enableGitInfo"
+command = "hugo -D"
 
 [context.split1.environment]
 HUGO_VERSION = "0.80.0"
-HUGO_ENV = "production"
+HUGO_ENV = "development"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo -D"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.80.0"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo -D"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.80.0"
