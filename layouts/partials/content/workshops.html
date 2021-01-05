@@ -1,0 +1,32 @@
+{{ define "workshops" }}
+<section class="workshops">
+  <div class="container">
+		<div class="workshops-container">
+			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
+				{{- range $taxonomy -}}
+				<li class="card" aria-hidden="true">
+					<h2>{{- delimit .Params.Workshop_types " " }}: {{ .Title -}}</h2>
+					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
+					<hr class="hr-divider">
+					<div class="content">
+						<p>{{- .Summary -}}</p>
+						<a href="{{- .Site.BaseURL -}}">Read More</a>
+					</div>
+				</li>
+				{{- end -}}
+			{{- end -}}
+			<div class="upcoming-workshops">
+				<h2>Upcoming Workshops</h2>
+				<ul class="upcoming-workshops-list">
+				</ul>
+			</div>
+			<div class="past-workshops">
+				<h2>Past Workshops</h2>
+				<ul class="past-workshops-list">
+				</ul>
+			</div>
+		</div>
+		<a href="{{- .Site.Params.WorkshopsLink -}}">{{- .Site.Params.WorkshopsSectionLabel -}}</a>
+  </div>
+</section>
+{{ end }}

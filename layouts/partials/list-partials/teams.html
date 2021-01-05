@@ -1,0 +1,14 @@
+<section class="data-leads-teams">
+
+	<div class="container">
+		<div class="logo-grid">
+		{{- range sort .Site.Pages ".Site.Pages" "desc" -}}
+			{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
+			<div class="team-info">
+				<img class="team-logo" src="{{- .Site.BaseURL -}}{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
+			</div>
+				{{- end -}}
+		{{- end -}}
+	</div>
+</div>
+</section>

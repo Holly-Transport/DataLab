@@ -1,7 +1,7 @@
-# WB Data Lab Intranet Page
+# WB-Data Lab Hugo Setup
 
-## About
-This single-page website provides information about the SD Data Lab Community of Practice activities. 
 
-## Source Code Copyright and License
-I used Start Bootstrap, an open source library of free Bootstrap templates and themes, created and maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/). Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+Run `hugo server -D` to server your site.
+Once the server is running, you can access the site through `localhost:1313`
+
+Updated on: January 5th, 2021
