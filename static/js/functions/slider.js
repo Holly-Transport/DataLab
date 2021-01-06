@@ -1,37 +1,42 @@
-const Slider = (function () {
+const Slider = function () {
   "use strict"
 
   const Constructor = function (selector) {
-    // Variables
+    console.log(selector)
     const publicAPIs = {}
-		console.log(selector)
     // Methods
 
-    publicAPIs.activateSlider = function (gliderObj) {
-			console.log(gliderObj)
-			const pageNumber = gliderObj.dots.childNodes.length
-			let currentPage = 0
-
-      while (currentPage <= pageNumber - 1) {
-          currentPage++
-					gliderObj.scrollItem(currentPage, gliderObj.dots.length + 1)
-					break
-      }
-    }
-
-    publicAPIs.init = function () {
+    publicAPIs.init = function (selector) {
       if (!selector || typeof selector !== "string") {
         throw new Error("Please provide a valid selector")
       }
-    }
 
-    publicAPIs.init()
+      const glider = new Glider(document.querySelector(".glider"), {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        draggable: true,
+        dots: ".dots",
+      })
+
+      let currentPage = 0
+      const pageNumber = glider.dots.childNodes.length
+
+      setInterval(function () {
+        if (currentPage === pageNumber) {
+          currentPage = 0
+        }
+        glider.scrollItem(currentPage * 5)
+        currentPage++
+      }, 2000)
+    }
+    console.log(selector)
+    publicAPIs.init(selector)
     // Return the Public APIs
     return publicAPIs
   }
 
   // Return the Constructor
   return Constructor
-})()
+}
 
 export default Slider

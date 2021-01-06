@@ -8,23 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	const rightAccordion = new Accordions('[data-accordion="right"]')
 
 	
-	const glider = new Glider(document.querySelector('.glider'), {
-		slidesToShow: 5,
-		slidesToScroll: 5,
-		draggable: true,
-		dots: ".dots",
-		arrows: {
-			prev: ".glider-prev",
-			next: ".glider-next",
-		},
-	})
-
-	const slider = new Slider('.glider')
-	// setInterval(activateSlider(glider), 2000)
-
-
-	// console.log(slider.activateSlider(glider))
-
+	const slider = new Slider()
+	slider('.glider')
 	const workshopPartial = new Workshops('.workshops-container li', { isHomePage: true })
 	
 })

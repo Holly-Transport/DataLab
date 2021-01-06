@@ -1,4 +1,4 @@
-<section class="workshops">
+<section class="workshops-list-page">
 	<div class="container">
 		<div class="workshops-heading">
 			<h1>{{- .Site.Params.WorkshopsSectionLabel -}}</h1>
@@ -23,13 +23,13 @@
 			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
 				{{- range $taxonomy -}}
 				<li class="card 
-						{{ if .Params.Workshop_types }}{{ delimit .Params.workshop_types "," | replaceRE " " "-" | replaceRE "\\+" " " | lower }}{{ end }}">
+						{{ if .Params.Workshop_types }}{{ delimit .Params.workshop_types ", " | replaceRE " " "-" | replaceRE "\\+" " " | lower }}{{ end }}">
 					<h2>{{- delimit .Params.Workshop_types ", " }}: {{ .Title -}}</h2>
 					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
 					<hr class="hr-divider">
 					<div class="content">
 						<p>{{- .Content -}}</p>
-						<a href="{{- .Site.BaseURL -}}">Read More</a>
+						<a class="workshop-links" href="{{ .Permalink }}">Read More</a>
 					</div>
 				</li>
 				{{- end -}}

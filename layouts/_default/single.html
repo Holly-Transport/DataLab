@@ -1,7 +1,9 @@
 {{- define "main" -}}
-<section class="single-workshop-page">
-	<div class="container">
-		<h1>{{- . -}}{{ .Site.Title }}</h1>
-	</div>
-</section>
+<main class="with-fixed-navbar">
+
+	{{- if eq .Page.Section "workshops" -}}
+		{{ partial "single-pages/workshops-single-page.html" . }}
+	{{- end -}}
+
+</main>
 {{- end -}}

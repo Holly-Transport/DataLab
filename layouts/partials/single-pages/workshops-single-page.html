@@ -1,0 +1,13 @@
+<section class="single-workshop-page">
+	<div class="container">
+		<div class="workshop-heading">
+			<h1>{{ delimit .Params.Workshop_types ", " }}: {{ .Params.Title }}</h1>
+		</div>
+		<div class="workshop-content">
+			{{- if .Params.Image_path -}}
+				<img src="{{- .Params.Image_path -}}" alt="{{- if .Params.AltText -}}{{- .Page.AltText -}}{{- end -}}">
+			{{- end -}}
+			<p >{{ .Content | safeHTML }}</p>
+		</div>
+	</div>
+</section>

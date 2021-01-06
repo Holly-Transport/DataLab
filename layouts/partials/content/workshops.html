@@ -5,12 +5,12 @@
 			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
 				{{- range $taxonomy -}}
 				<li class="card" aria-hidden="true">
-					<h2>{{- delimit .Params.Workshop_types " " }}: {{ .Title -}}</h2>
+					<h2>{{- delimit .Params.Workshop_types ",  " }}: {{ .Title -}}</h2>
 					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
 					<hr class="hr-divider">
 					<div class="content">
 						<p>{{- .Summary -}}</p>
-						<a href="{{- .Site.BaseURL -}}">Read More</a>
+						<a class="workshop-links" href="{{ .Permalink }}">Learn More</a>
 					</div>
 				</li>
 				{{- end -}}

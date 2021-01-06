@@ -1,4 +1,11 @@
-.workshops {
+.workshop-links {
+	background-color: $orange;
+	border-radius: 99px;
+	color: #fff;
+	padding: 0.65rem .75rem;
+}
+
+.workshops, .workshops-list-page {
 	.container {
 		align-items: center;
 		display: flex;
@@ -19,6 +26,15 @@
   .filters,
   .workshops-container {
     margin-bottom: 1.5rem;
+	}
+
+	.card {
+		display: none;
+	}
+
+	.transition {
+		display: flex;
+		transition: display 2s ease-out 1s;
 	}
 
   .date {
@@ -81,10 +97,16 @@
   }
 }
 
+
+
 .single-workshop-page {
 	.container {
 		align-items: center;
 		display: flex;
 		flex-direction: column;
+
+	.workshop-content {
+		widtH: 70%;
+	}
 	}
 }

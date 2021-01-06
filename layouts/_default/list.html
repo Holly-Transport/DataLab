@@ -3,7 +3,7 @@
 {{/*  Workshops Page Layout  */}}
 
 	{{- if eq .Page.Section "workshops" -}}
-		{{- partial "list-partials/workshops-page.html" . -}}
+		{{- partial "list-partials/workshops-list-page.html" . -}}
 	{{- end -}}
 
 {{/*  Data Resources Page Layout  */}}
@@ -54,7 +54,7 @@
 
 {{- if eq .Page.Section "teams" -}}
 
-{{- partial "list-partials/teams.html" . -}}
+{{- partial "list-partials/teams-list-page.html" . -}}
 {{/*  <section class="data-leads-teams">
 	<div class="container">
 	{{- range sort .Site.Pages ".Site.Pages" "desc" -}}
