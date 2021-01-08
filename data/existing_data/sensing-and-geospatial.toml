@@ -1,0 +1,14 @@
+title = "Sensing + Geospatial"
+short_description = "Pre-Collected Satellite, LIDAR, Radar, Street View + Curated Geospatial Layers"
+
+
+[[teams]]
+	name = "GOST"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "ITS Geolab"
+	description = "Manages WB tablet survey application"
+
+

@@ -1,0 +1,11 @@
+title = "Surveys"
+short_description = "WB-supported field survey solutions"
+
+[[teams]]
+	name = "DEC Analytics & Tools"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "DIME"
+	description = "Manages subscription to commercial survey app" 

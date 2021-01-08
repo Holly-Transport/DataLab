@@ -1,0 +1,16 @@
+title = "Unlicensed Data"
+short_description = "Can't find what you're looking for? Request new data partnership, subscription, and/or purchase"
+
+
+[[teams]]
+	name = "GOST"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "WBG Library"
+	description = "Manages WB tablet survey application"
+
+[[teams]]
+	name = "Development Data Partnership"
+	description = "Manages WB tablet survey application"

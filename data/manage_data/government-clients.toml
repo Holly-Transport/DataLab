@@ -1,0 +1,21 @@
+title = "Government Clients"
+short_description = "Client capacity building resources"
+
+
+[[teams]]
+	name = "DEC Analytics & Tools"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "ITS Rapid App Dev Team"
+	description = "Manages subscription to commercial survey app" 
+
+
+[[teams]]
+	name = "Social Development Indonesia"
+	description = "Manages subscription to commercial survey app"
+
+[[teams]]
+	name = "GEMS"
+	description = "Manages subscription to commercial survey app"

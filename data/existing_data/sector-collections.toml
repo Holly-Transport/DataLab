@@ -1,0 +1,57 @@
+title = "Sector Collections"
+short_description = "Apps and client training services"
+
+
+[[teams]]
+	name = "Disaster Risk Management"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Climate Change"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Energy"
+	description = "Manages subscription to commercial survey app" 
+
+
+[[teams]]
+	name = "Transport"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Poverty"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Agriculture"
+	description = "Manages subscription to commercial survey app" 
+
+
+[[teams]]
+	name = "Environment"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Social Development Indonesia"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Gender Labs"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "ESF"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Health"
+	description = "Manages WB tablet survey application"

@@ -1,0 +1,8 @@
+title = "Licensing"
+short_description = "Open source and WB standard license procedures"
+
+[[teams]]
+	name = "LEGIA"
+	description = "Manages WB tablet survey application"
+
+

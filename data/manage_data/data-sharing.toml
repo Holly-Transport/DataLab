@@ -1,0 +1,17 @@
+title = "Data Sharing"
+short_description = "Systems to support in-house collaboration on data analytics"
+
+
+[[teams]]
+	name = "LEGIA"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "ITS Enterprise"
+	description = "Manages subscription to commercial survey app" 
+
+
+[[teams]]
+	name = "Development Data Hub"
+	description = "Manages subscription to commercial survey app"

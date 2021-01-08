@@ -1,0 +1,17 @@
+title = "Sector Services"
+short_description = "Apps and client training services"
+
+
+[[teams]]
+	name = "GEMS"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "AG Observatory"
+	description = "Manages subscription to commercial survey app" 
+
+	[[teams]]
+	name = "Poverty"
+	description = "Manages WB tablet survey application"
+

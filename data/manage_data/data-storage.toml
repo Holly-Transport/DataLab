@@ -1,0 +1,12 @@
+title = "Data Storage"
+short_description = "Large data storage for in-house use"
+
+
+[[teams]]
+	name = "ITS Infrastructure"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "ITS Enterprise"
+	description = "Manages subscription to commercial survey app" 

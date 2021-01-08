@@ -1,0 +1,16 @@
+title = "Privacy & Security"
+short_description = "WB Data Privacy Policy; data security classifications"
+
+[[teams]]
+	name = "Data Privacy Office"
+	description = "Manages WB tablet survey application"
+
+
+[[teams]]
+	name = "Office of Info Security"
+	description = "Manages subscription to commercial survey app" 
+
+
+[[teams]]
+	name = "Digital Development"
+	description = "Manages subscription to commercial survey app" 

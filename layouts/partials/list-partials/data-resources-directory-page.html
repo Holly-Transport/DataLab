@@ -1,21 +1,67 @@
 <section class="directory">
-	<div class="container">
-		<img src="{{- .Site.BaseURL -}}img/map.jpg" width="780" height="500">
+  <div class="container">
+    <img src="{{- .Site.BaseURL -}}img/map.jpg" width="780" height="500" />
+    <div class="section-column">
+      <h2>I'm Looking For Existing Data</h2>
+      <div class="row">
+        {{- range $.Site.Data.existing_data }}
+        <div class="column">
+          <div class="team-headers">
+            <h3>{{- .title -}}</h3>
+            <p>{{- .short_description -}}</p>
+          </div>
+          <div class="teams">
+            {{- range .teams -}}
+            <div class="team-description">
+              <h4>{{- .name -}}</h4>
+              <hr />
+              <p>{{- .description -}}</p>
+            </div>
+            {{- end -}}
+          </div>
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+
+    <div class="section-column">
+      <h2>I Need To Collect New Data</h2>
+      <div class="row">
+        {{- range $.Site.Data.collect_new_data }}
+        <div class="column">
+          <div class="team-headers">
+            <h3>{{- .title -}}</h3>
+            <p>{{- .short_description -}}</p>
+          </div>
+          <div class="teams">
+            {{- range .teams -}}
+            <div class="team-description">
+              <h4>{{- .name -}}</h4>
+              <hr />
+              <p>{{- .description -}}</p>
+            </div>
+            {{- end -}}
+          </div>
+        </div>
+        {{- end -}}
+      </div>
+		</div>
+		
 		<div class="section-column">
-			<h2>I Need Insights From My Data</h2>
+			<h2>I Need To Manage Data</h2>
 			<div class="row">
 			{{- range $.Site.Data.insights }}
 					<div class="column">
 					<div class="team-headers">
-						<h3>{{ .title }}</h3>
+						<h3>{{- .title -}}</h3>
 						<p>{{- .short_description -}}</p>
 					</div>
 					<div class="teams">
-						{{ range  .teams }}
-							<div class="hexagon team-hexagon">
-								<h4>{{ .name  }}</h4>
+						{{- range  .teams -}}
+							<div class="team-description">
+								<h4>{{- .name -}}</h4>
 								<hr>
-								<p>{{ .description }}</p>
+								<p>{{- .description -}}</p>
 							</div>
 						{{- end -}}
 					</div>
@@ -23,5 +69,27 @@
 			{{- end -}}
 			</div>
 		</div>
-	</div>
+    <div class="section-column">
+      <h2>I Need Insights From My Data</h2>
+      <div class="row">
+        {{- range $.Site.Data.insights }}
+        <div class="column">
+          <div class="team-headers">
+            <h3>{{- .title -}}</h3>
+            <p>{{- .short_description -}}</p>
+          </div>
+          <div class="teams">
+            {{- range .teams -}}
+            <div class="team-description">
+              <h4>{{- .name -}}</h4>
+              <hr />
+              <p>{{- .description -}}</p>
+            </div>
+            {{- end -}}
+          </div>
+        </div>
+        {{- end -}}
+      </div>
+		</div>
+  </div>
 </section>

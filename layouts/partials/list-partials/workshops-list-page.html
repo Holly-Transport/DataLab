@@ -8,12 +8,12 @@
 			</p>
 			<div class="filters">
 				<select id="filter-date" class="filter-select" value-group="date">
-					<option value="upcoming">Upcoming</option>
-					<option value="past">Past</option>
+					<option value=".upcoming">Upcoming</option>
+					<option value=".past">Past</option>
 				</select>
 				<select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
 					{{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
-						<option value ="{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
+						<option value =".{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
 					{{ end }}
 				</select>
 			</div>
@@ -24,7 +24,9 @@
 				{{- range $taxonomy -}}
 				<li class="card 
 						{{ if .Params.Workshop_types }}{{ delimit .Params.workshop_types ", " | replaceRE " " "-" | replaceRE "\\+" " " | lower }}{{ end }}">
-					<h2>{{- delimit .Params.Workshop_types ", " }}: {{ .Title -}}</h2>
+					<h2>
+						<a href="{{ .Permalink }}">{{- delimit .Params.Workshop_types ", " }}: {{ .Title -}}</a>
+					</h2>
 					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
 					<hr class="hr-divider">
 					<div class="content">

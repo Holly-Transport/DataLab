@@ -1,0 +1,17 @@
+title = "Remote Sensing"
+short_description = "Manipulating large non-geospacial datasets on servers"
+
+
+[[teams]]
+name = "GFDRR"
+description = "Simple chart generation" 
+
+
+[[teams]]
+name = "GOST"
+description = "Simple chart generation" 
+
+
+[[teams]]
+	name = "Transport"
+	description = "Machine Learning, Mobile Analytics lead Data"
