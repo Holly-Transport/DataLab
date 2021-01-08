@@ -9,6 +9,7 @@ assetDir = "static/assets"
 	dataPartnershipsLinkTitle = "Data Partnerships"
 	staffCapacityLinkTitle = "Staff Capacity Building"
 	aboutLinkTitle = "About" 
+	aboutPageLink = "/about"
 
 	labLeadsCount = 205
 	peopleTrainedCount = 205

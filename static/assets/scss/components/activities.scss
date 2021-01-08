@@ -1,3 +1,74 @@
+.hexagon {
+  height: 55px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+  z-index: -1000;
+}
+
+.hexagon,
+.hexagon:before,
+.hexagon:after {
+  background: $teal;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  width: 57px;
+  height: 57px;
+  transform: rotate(145deg) skew(22.5deg);
+  z-index: -2000;
+}
+
+.hexagon:before {
+  top: -29px;
+}
+
+.hexagon:after {
+  top: 27px;
+}
+
+.hexagon span {
+  align-items: center;
+  background: $teal;
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  left: 0;
+  line-height: 1.2rem;
+  position: absolute;
+  top: 0;
+  width: 100px;
+  z-index: 1;
+}
+
+.light-orange-hexagon,
+.light-orange-hexagon span,
+.light-orange-hexagon::before,
+.light-orange-hexagon::after {
+  background-color: $orange;
+  color: white;
+}
+
+.dark-orange-hexagon,
+.dark-orange-hexagon span,
+.dark-orange-hexagon::before,
+.dark-orange-hexagon::after {
+  background-color: $dark-orange;
+  color: white;
+}
+
+.blue-hexagon,
+.blue-hexagon span,
+.blue-hexagon::before,
+.blue-hexagon::after {
+  background-color: $light-blue;
+  color: white;
+}
+
 .activities {
   margin-bottom: 5rem;
 
@@ -25,160 +96,7 @@
         &:nth-child(even) {
           margin-left: 12vh;
         }
-
-        .light-orange-hexagon,
-        .light-orange-hexagon span,
-        .light-orange-hexagon::before,
-        .light-orange-hexagon::after {
-          background-color: $orange;
-          color: white;
-        }
-
-				.dark-orange-hexagon,
-				.dark-orange-hexagon span,
-        .dark-orange-hexagon::before,
-        .dark-orange-hexagon::after {
-          background-color: $dark-orange;
-          color: white;
-        }
-
-				.blue-hexagon,
-				.blue-hexagon span,
-        .blue-hexagon::before,
-        .blue-hexagon::after {
-          background-color: $light-blue;
-          color: white;
-        }
       }
     }
-    .hexagon {
-      height: 55px;
-      position: relative;
-      text-align: center;
-      width: 100px;
-      z-index: -1000;
-    }
-
-    .hexagon,
-    .hexagon:before,
-    .hexagon:after {
-      background: $teal;
-    }
-
-    .hexagon:before,
-    .hexagon:after {
-      content: "";
-      position: absolute;
-      left: 22px;
-      width: 57px;
-      height: 57px;
-      transform: rotate(145deg) skew(22.5deg);
-    }
-
-    .hexagon:before {
-      top: -29px;
-    }
-
-    .hexagon:after {
-      top: 27px;
-    }
-
-    .hexagon span {
-      align-items: center;
-      background: $teal;
-      display: flex;
-      justify-content: center;
-      height: 55px;
-      left: 0;
-      line-height: 1.2rem;
-      position: absolute;
-      top: 0;
-      width: 100px;
-      z-index: 1;
-    }
-    // .honeycomb {
-    //   margin: 0 auto;
-    //   text-align: center;
-    // }
-
-    // .ibw-fix {
-    //   /* inline-block whitespace fix */
-    //   font-size: 0;
-    // }
-
-    // .hexagon {
-    //   background-color: hsl(220, 75%, 75%);
-    //   position: relative;
-    //   display: inline-block;
-    //   /* left/right margin approx. 25% of .hexagon width + spacing */
-    //   margin: 1px 18px;
-    // 	text-align: center;
-    // 	transform: rotate(90deg);
-    // }
-
-    // .hexagon,
-    // .hexagon::before,
-    // .hexagon::after {
-    //   /* easy way: height is width * 1.732
-    // 	actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
-    // 	*/
-    //   width: 67px;
-    //   height: 116px;
-    // }
-
-    // .hexagon::before {
-    //   background-color: inherit;
-    //   content: "";
-    //   position: absolute;
-    //   left: 0;
-    //   transform: rotate(-60deg);
-    // }
-
-    // .hexagon::after {
-    //   background-color: inherit;
-    //   content: "";
-    //   position: absolute;
-    //   left: 0;
-    //   transform: rotate(60deg);
-    // }
-
-    // // .hexagon:nth-child(even) {
-    // //   /* top approx. 50% of .hexagon height + spacing */
-    // //   top: 59px;
-    // // }
-
-    // .hexagon:hover {
-    //   background-color: hsla(60, 75%, 75%, 1);
-    //   cursor: pointer;
-    //   z-index: 105;
-    // }
-
-    // .hexagon:active {
-    //   background-color: hsla(60, 75%, 50%, 1);
-    //   z-index: 110;
-    // }
-
-    // .hexanone {
-    //   position: relative;
-    //   display: inline-block;
-    //   width: 67px;
-    //   height: 116px;
-    //   margin: 1px 18px;
-    // }
-
-    // // .hexanone:nth-child(even) {
-    // //   top: 59px;
-    // // }
-
-    // .hexagontent {
-    // 	font-size: 1rem;
-    // 	line-height: 1.2;
-    //   left: 50%;
-    //   position: absolute;
-    //   top: 50%;
-    //   transform: translate(-50%, -50%) rotate(-90deg);
-    //   width: 140%;
-    //   z-index: 100;
-    // }
   }
 }

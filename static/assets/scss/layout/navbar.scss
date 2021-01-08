@@ -1,5 +1,4 @@
 .navbar {
-  background-color: $gray;
   color: $white;
   padding: 1.5rem 0.5rem;
   text-transform: uppercase;
@@ -23,10 +22,12 @@
       max-height: 40px;
       max-width: 40px;
     }
+
     .wb-text {
       font-size: 1.75rem;
       transition: font-size 0.3s;
     }
+
     .wb-text,
     .nav-links a,
     .button {
@@ -60,11 +61,6 @@
         color: $teal;
       }
     }
-
-    .navbar-menu,
-    .navbar-menu {
-      background-color: $gray;
-    }
   }
 }
 
@@ -95,7 +91,7 @@
 
       &::before,
       &::after {
-        background-color: $gray;
+        background-color: $white;
         content: "";
         display: inline-block;
         height: 2px;
@@ -142,8 +138,8 @@
             flex-direction: row;
 
             a {
-              border-right: #000 solid 2px;
-              font-size: 0.75rem;
+              border-right: $teal solid 2px;
+              font-size: .75rem;
               margin: 0.25rem;
               padding: 0.25rem 1rem;
 
@@ -166,10 +162,20 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1217px) {
   .navbar {
     .nav-container {
       max-width: 90vw;
+
+      .mobile-layout {
+        .navbar-end {
+          .nav-links {
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
     }
   }
 }

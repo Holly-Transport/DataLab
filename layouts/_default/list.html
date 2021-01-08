@@ -1,69 +1,18 @@
 {{- define "main" -}}
 <main class="with-fixed-navbar">
-{{/*  Workshops Page Layout  */}}
 
-	{{- if eq .Page.Section "workshops" -}}
-		{{- partial "list-partials/workshops-list-page.html" . -}}
-	{{- end -}}
+{{/*  Workshops Page Layout  */}}
+{{- if eq .Page.Section "workshops" -}}
+	{{- partial "list-partials/workshops-list-page.html" . -}}
+{{- end -}}
 
 {{/*  Data Resources Page Layout  */}}
 {{- if eq .Page.Section "data-resources-directory" -}}
-<section class="directory">
-	<img src="{{- .Site.BaseURL -}}img/map.jpg" frameborder="0" width="780" height="500"></img>
-	{{/*  <div class="container">
-		<h1>Data Resources Directory</h1>
-		<div class="row">			
-			<div class="column">
-				<h2>I'm looking for existing data</h2>
-				<h3>Data that can be quickly obtained</h3>
-				<div class="catalogues">
-					<div class="heading">
-						<h4>Catalogues</h4>
-						<p>WB-managed data search portals</p>
-					</div>
-					<div class="hexagon">
-						<span>
-							<h5>Wbg Library</h5>
-							<p>Purchased data & subscriptions</p>
-						</span>
-					</div>
-					<div class="hexagon">
-						<span>
-							<h5>Development Data Hub</h5>
-							<p>Open, survey, & geospatial</p>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<h2>I need to collect new data</h2>
-				<h3>Field data collection: web scraping</h3>
-			</div>
-			<div class="column">
-				<h2>I need to manage data</h2>
-				<h3>Licensing, privacy, storage, cataloguing, building client government capacity</h3>
-			</div>
-			<div class="column">
-				<h2>I need insights from data</h2>
-				<h3>Data science, app development, sector advisory.</h3>
-			</div>
-		</div>
-	</div>  */}}
-</section>
+	{{- partial "list-partials/data-resources-directory-page.html" . -}}
 {{- end -}}
 
 {{- if eq .Page.Section "teams" -}}
-
-{{- partial "list-partials/teams-list-page.html" . -}}
-{{/*  <section class="data-leads-teams">
-	<div class="container">
-	{{- range sort .Site.Pages ".Site.Pages" "desc" -}}
-		{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
-			<img class="team-logo" src="{{- .Site.BaseURL -}}{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
-		{{- end -}}
-	{{- end -}}
-</div>
-</section>  */}}
+	{{- partial "list-partials/teams-list-page.html" . -}}
 {{- end -}}
 </main>
 {{ end }} 

@@ -1,0 +1,31 @@
+title = "Geospatial"
+short_description = "Wb-managed data search portals"
+
+[[teams]]
+	name = "GOST"
+	description = "Simple chart / infographic generation"
+
+
+[[teams]]
+	name = "ITS Geolab" 
+	description = "In-house web and mobile app dev team"
+
+
+[[teams]]
+	name = "KIDS"
+	description = "Simple chart generation" 
+
+
+[[teams]]
+	name = "DEC Analytics & Tools" 
+	description = "In-house web and mobile app dev team"
+
+
+[[teams]]
+name = "GEMS"
+description = "Simple chart generation" 
+
+
+[[teams]]
+name = "GFDRR"
+description = "Simple chart generation" 

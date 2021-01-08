@@ -1,6 +1,7 @@
 {{ define "workshops" }}
 <section class="workshops">
   <div class="container">
+		<a class="workshops-list-page-link" href="{{- .Site.Params.WorkshopsLink -}}">{{- .Site.Params.WorkshopsSectionLabel -}}</a>
 		<div class="workshops-container">
 			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
 				{{- range $taxonomy -}}
@@ -26,7 +27,6 @@
 				</ul>
 			</div>
 		</div>
-		<a href="{{- .Site.Params.WorkshopsLink -}}">{{- .Site.Params.WorkshopsSectionLabel -}}</a>
   </div>
 </section>
 {{ end }}

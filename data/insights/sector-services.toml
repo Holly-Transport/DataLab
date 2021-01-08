@@ -1,0 +1,27 @@
+title = "Big Data Analytics"
+short_description = "Manipulating large non-geospacial datasets on servers"
+
+[[teams]]
+	name = "Transport"
+	description = "Machine Learning, Mobile Analytics lead Data"
+
+
+[[teams]]
+	name = "Urban"
+	description = "Support for staff using DDP data" 
+
+
+[[teams]]
+	name = "Sustainable Data Lab" 
+	description = "Data initiative: big data"
+
+
+[[teams]]
+	name = "Health" 
+	description = "Data scientists: AI"
+
+
+[[teams]]
+	name = "Water" 
+	description = "ML Algorithms and Social Media Insights"
+

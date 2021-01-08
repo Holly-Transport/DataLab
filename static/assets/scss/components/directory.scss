@@ -1,57 +1,99 @@
 // Homepage block template styles
 .directory-header {
-	.container {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
-		.mockup-block {
-			align-items: flex-end;
-			background-color: lightblue;
-			display: flex;
-			justify-content: flex-end;
-			height: 300px;			
-			width: 100%;
+    .mockup-block {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
 
-			a {
-				margin: 0 1.5rem 1.5rem 0;
+      a {
+        margin: 0 1.5rem 1.5rem 0;
+      }
 
-			}
-		}
-	}
+      img {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Directory main page styles
 
 .directory {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-		
-	.container {
-		align-items: center;
-		display: flex;		
-		flex-direction: column;
-		justify-content: center;
-		margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5rem 0;
 
-		h2, h4, h5 {
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    h2,
+    h3 {
 			text-transform: uppercase;
-		}
+			text-align: center;
+    }
 
-		.row {
-			display: flex;
-		}
-
-		.column {
-			display: flex;
+    .section-column {
+      display: flex;
 			flex-direction: column;
-
-			.catalogues {
+			width: 100%;
+			
+			.row {
 				display: flex;
-				justify-content: space-around;
-			}
-		}
-	}
+				min-height: 10vh;
+				margin: 1rem 0;
+				
+
+				.column {
+					flex: 1 1 auto;
+
+					.team-headers {
+						display: flex;
+						flex-direction: column;
+					}
+
+					.teams {
+						.hexagon {
+							display: flex;
+							flex-direction: column;
+							justify-content: space-around;
+							margin-bottom: 5rem;
+							
+							h4,
+							p {
+								margin: 0;
+							}
+
+							h4 {
+								text-transform: uppercase;
+								font-size: 0.75rem;
+							}
+
+							hr {
+								color: white;
+								width: 90%;
+							}
+		
+							p {
+								font-size: 0.5rem;
+							}
+						}
+					}
+				}
+      }
+    }
+  }
 }

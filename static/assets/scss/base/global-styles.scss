@@ -66,6 +66,11 @@ summary::-webkit-details-marker {
 	position: relative;	
 }
 
+.footer, .navbar {
+	background-color: $blue;
+	color: $white;
+}
+
 
 .img-fluid {
 	max-width: 100%;
