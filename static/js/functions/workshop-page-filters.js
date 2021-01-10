@@ -2,8 +2,7 @@ import Workshops from '../functions/workshops.js'
 
 document.addEventListener('DOMContentLoaded', function() {
 	// Run Workshops constructor for Workshop Page.
-	const processWorkshops = new Workshops('.card-grid .card')
-	
+	const processWorkshops = new Workshops('.card-grid > .grid-card')
 	   // Flatten object by concatenating values
 		 function concatValues(obj) {
 			let value = ''
@@ -14,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	const iso = new Isotope( '.card-grid', {
-			itemSelector: '.card',
+			itemSelector: '.grid-card',
 			layoutMode: 'fitRows',
 			percentPosition: true
 	})
 
-	window.iso = iso
+	// window.iso = iso
 
 	const filters = {}
 
@@ -32,6 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		var filterValue = concatValues(filters)
 		console.log(filterValue)
 		console.log(iso)
-		iso.arrange({ filter: filterValue })
+		return iso.arrange({ filter: filterValue })
 	})
 })

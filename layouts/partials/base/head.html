@@ -54,6 +54,15 @@
 {{- end -}}
 
 {{- if eq .Page.Section "workshops" -}}
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
   <script type="module" src="/js/functions/workshop-page-filters.js" defer></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+  <script src="/vendor/isotope/fit-columns.js" defer></script>
+  <script src="/vendor/isotope/cells-by-row.js" defer></script>
+{{- end -}}
+
+{{- if eq .Page.Section "data-resources-directory" -}}
+<script type="module" src="/js/functions/activate-isotope.js" defer></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+  <script src="/vendor/isotope/fit-columns.js" defer></script>
+  <script src="/vendor/isotope/cells-by-row.js" defer></script>
 {{- end -}}

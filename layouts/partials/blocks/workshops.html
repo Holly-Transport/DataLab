@@ -6,8 +6,8 @@
 			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
 				{{- range $taxonomy -}}
 				<li class="card" aria-hidden="true">
-					<h2>{{- delimit .Params.Workshop_types ",  " }}: {{ .Title -}}</h2>
-					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
+					<h3>{{- delimit .Params.Workshop_types ",  " }}: {{ .Title -}}</h3>
+					<h4>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h4>
 					<hr class="hr-divider">
 					<div class="content">
 						<p>{{- .Summary -}}</p>

@@ -13,30 +13,34 @@
 				</select>
 				<select id="filter-workshop-type" class="filter-select" value-group="workshop-type">
 					{{ range $name, $taxonomy := .Site.Taxonomies.workshop_types }}
-						<option value =".{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
+						<option value=".{{ $name | urlize }}"> {{ replace $name "-" " " | title }}</option>
 					{{ end }}
 				</select>
 			</div>
 		</div>
-		<div class="workshops-container">
-			<ul class="card-grid">
-			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
-				{{- range $taxonomy -}}
-				<li class="card 
-						{{ if .Params.Workshop_types }}{{ delimit .Params.workshop_types ", " | replaceRE " " "-" | replaceRE "\\+" " " | lower }}{{ end }}">
-					<h2>
-						<a href="{{ .Permalink }}">{{- delimit .Params.Workshop_types ", " }}: {{ .Title -}}</a>
-					</h2>
-					<h3>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h3>
-					<hr class="hr-divider">
-					<div class="content">
-						<p>{{- .Content -}}</p>
-						<a class="workshop-links" href="{{ .Permalink }}">Read More</a>
-					</div>
-				</li>
+		<div class="workshops-list-page-container">
+			<div class="container">
+				<ul class="card-grid">
+				{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
+					{{- range $taxonomy -}}
+					<li class="grid-card
+							{{ if .Params.Workshop_types }}{{ delimit .Params.workshop_types ", " | replaceRE " " "-" | replaceRE "\\+" " " | lower }}{{ end }}">
+						<div class="card">
+							<h3>
+								<a href="{{ .Permalink }}">{{- delimit .Params.Workshop_types ", " }}: {{ .Title -}}</a>
+							</h3>
+							<h4>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h4>
+							<hr class="hr-divider">
+							<div class="content">
+								<p>{{- .Content -}}</p>
+								<a class="workshop-links" href="{{ .Permalink }}">Read More</a>
+							</div>
+						</div>
+					</li>
+					{{- end -}}
 				{{- end -}}
-			{{- end -}}
-			</ul>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>

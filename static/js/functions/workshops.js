@@ -17,9 +17,10 @@ const Workshops = (function () {
 			upcomingWorkshops: [],
 			pastWorkshops: []
 		}
+
 		workshopArray.forEach(workshop => {
 				// Formats String date into Date Type
-				const stringDate = workshop.children.item(1).querySelector('.date')
+				const stringDate = workshop.querySelector('.date')
 				if (stringDate !== null) {
 					const formattedDateType = formatIntoDateType(stringDate)
 
@@ -34,7 +35,11 @@ const Workshops = (function () {
 		})
 		return separatedWorkshops
 	}
-	
+
+	// const removeEmptyParagraphs = function(workshop) {
+	// 	console.log(workshop.children[3])
+	// }
+
 	const formatToLocalDateString = function(date) {
 		if(typeof date === 'object') {
 			return date.toLocaleDateString()
@@ -44,7 +49,7 @@ const Workshops = (function () {
 	}
 	
 	const addNewDateToWorkshop = function (workshop, formattedDate) {
-		workshop.children.item(1).querySelector('.date').textContent = formattedDate
+		workshop.querySelector('.date').textContent = formattedDate
 		return workshop
 	}
 	
@@ -55,6 +60,8 @@ const Workshops = (function () {
 	const processWorkshopAndPush = function(workshop, newSeparatedWorkshops, formattedDate) {
 		let localDateString = formatToLocalDateString(formattedDate)
 		let workshopWithLocaleDate = addNewDateToWorkshop(workshop, localDateString)
+		// const cleanWorkshop = removeEmptyParagraphs(workshop)
+		// console.log(workshopWithLocaleDate)
 		return pushToUpcomingOrPast(workshopWithLocaleDate, newSeparatedWorkshops)
 	}
 
@@ -90,15 +97,13 @@ const Workshops = (function () {
 	const Constructor = function(selector, options) {
 		// Variables
 		const publicAPIs = {}
-		 
-
 		
 		// Initializes Workshop constructor
 		publicAPIs.init = function (options = false) {
 			// 1. Gets an Array of all Workshops.
 			const workshops = separateWorkshops(selector)
 			// 2. Separates workshops by Date.
-			
+			console.log(workshops)
 			// Save workshop Arrays into variables. 
 			const upcomingWorkshops = workshops.upcomingWorkshops
 			const pastWorkshops = workshops.pastWorkshops
@@ -114,9 +119,9 @@ const Workshops = (function () {
 				injectWorkshops(pastWorkshops, pastWorkshopsContainer, 'past')
 			} else {
 				// Inserts into element with .workshops-container class.
-				const workshopsContainer = document.querySelector('.workshops-container')
-				injectWorkshops(upcomingWorkshops, workshopsContainer, 'upcoming')
-				injectWorkshops(pastWorkshops, workshopsContainer, 'past')
+				const cardGridContainer = document.querySelector('.card-grid')
+				injectWorkshops(upcomingWorkshops, cardGridContainer, 'upcoming')
+				injectWorkshops(pastWorkshops, cardGridContainer, 'past')
 			}
 		}
 
