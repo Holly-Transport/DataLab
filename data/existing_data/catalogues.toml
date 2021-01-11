@@ -5,6 +5,7 @@ short_description = "WB-managed data search portals"
 [[teams]]
 	name = "WBG Library"
 	description = "Manages WB tablet survey application"
+	sub_section = "catalogues"
 
 
 [[teams]]

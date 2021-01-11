@@ -4,11 +4,11 @@
 @import "layout/navbar.scss";
 @import "layout/footer.scss";
 @import "layout/header.scss";
+@import "layout/breadcrumbs.scss";
 
-
-@import "components/accordions.scss";
-@import "components/activities.scss";
-@import "components/directory.scss";
-@import "components/teams.scss";
-@import "components/workshops.scss";
-@import "components/lab-stats.scss";
+@import "sections/accordions.scss";
+@import "sections/activities.scss";
+@import "sections/directory.scss";
+@import "sections/teams.scss";
+@import "sections/workshops.scss";
+@import "sections/lab-stats.scss";

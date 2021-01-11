@@ -1,0 +1,34 @@
+.workshops-page-breadcrumbs {
+	background-color: $teal;
+	display: flex;
+	width: 100%;
+
+	ol {
+		display: flex;
+	}
+
+	.breadcrumb-item {
+		padding-right: .5rem;
+		
+		a {
+			color: white;
+
+			&:visited {
+				color: white;
+			}
+		}
+
+		.current-page {
+			pointer-events: none;
+			cursor: default;
+			text-decoration: none;
+			color: white;
+		}
+
+		&:last-child:before {
+			padding-right: .5rem;
+			color: $gray;
+			content: "/";
+		}
+	}
+}

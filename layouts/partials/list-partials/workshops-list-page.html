@@ -1,3 +1,18 @@
+<section class="workshops-page-breadcrumbs">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="" href="{{- .Site.Home.Permalink -}}"
+						aria-current="page">Home</a></li>
+				{{- if not .Parent.IsHome -}}
+				<li class="breadcrumb-item"><a class="" href="{{- .Parent.Permalink -}}"
+						aria-current="page">{{- .Parent.Title -}}</a></li>
+				{{- end -}}
+				<li class="breadcrumb-item"><a class="current-page" href="{{- .Permalink -}}"
+						aria-current="page">{{- .Page.Section | humanize -}}</a></li>
+		</nav>
+	</div>
+</section>
 <section class="workshops-list-page">
 	<div class="container">
 		<div class="workshops-heading">

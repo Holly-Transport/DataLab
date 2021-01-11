@@ -1,7 +1,12 @@
+
+
+
 .hexagon {
   height: 55px;
+  margin: 2.25rem;
   position: relative;
   text-align: center;
+  transform: scale(1.2);
   width: 100px;
   z-index: -1000;
 }
@@ -81,12 +86,14 @@
       align-items: center;
       display: flex;
       flex-direction: column;
+      height: 320px;
       justify-content: center;
+      width: 100%;
 
       .row {
         display: flex;
-        height: 10vh;
-        justify-content: space-around;
+        height: 130px;
+        justify-content: center;
         width: 95%;
 
         &:first-child {
@@ -94,7 +101,79 @@
         }
 
         &:nth-child(even) {
-          margin-left: 12vh;
+          margin-left: 17%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .activities {
+    .container {
+      .honeycomb {
+        .row {
+          .hexagon {
+            transform: unset;
+
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 847px) and (min-width: 768px) {
+  .activities {
+    .container {
+      .honeycomb {
+        .row {
+          .hexagon {
+            transform: unset;
+
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+
+          &:last-child {
+            margin-left: 2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .activities {
+    .container {
+      .honeycomb {
+        flex-direction: row;
+        height: unset;
+        
+        .row {
+          align-items: center;
+          flex-direction: column;
+          height: unset;
+          margin-top: 2rem;
+          
+          .hexagon {
+            transform: unset;
+            margin-bottom: 3rem;
+
+            &:first-child {
+              margin-left: 1.5rem ;
+            }
+          }
+
+          &:last-child {
+            margin-left: 0%;
+          }
         }
       }
     }

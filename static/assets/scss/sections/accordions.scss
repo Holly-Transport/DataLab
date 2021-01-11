@@ -26,7 +26,7 @@
 
       &:hover,
       &:focus {
-        background: $orange;
+        background: $gray;
         color: white;
 			}
 			
@@ -55,8 +55,9 @@
 
     details[open] {
       summary {
-        background-color: $light-blue;
-			}
+        background-color: $teal;
+        color: white;
+      }
 			
 			p {
 				animation: animateDown 0.2s linear forwards;
@@ -72,6 +73,15 @@
 					transform: translatey(0);
 				}
 			}
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .accordions {
+    .container {
+      flex-direction: column;
+      width: 95vw;
     }
   }
 }

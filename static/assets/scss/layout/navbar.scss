@@ -83,7 +83,7 @@
     width: 3.25rem;
 
     .bars {
-      background-color: $gray;
+      background-color: white;
       display: inline-block;
       height: 2px;
       position: relative;
@@ -91,7 +91,7 @@
 
       &::before,
       &::after {
-        background-color: $white;
+        background-color: white;
         content: "";
         display: inline-block;
         height: 2px;
