@@ -25,6 +25,9 @@ assetDir = "static/assets"
 	dataLeadsLabel = "Data Leads"	
 	dataLeadsLink = "/teams"
 
+	universityPartnershipsLabel = "University Partnerships"	
+	universityPartnershipsLink = "/university-partnerships"
+
 [module]
 	[hugoVersion]
 	extended = true

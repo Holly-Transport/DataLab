@@ -48,21 +48,21 @@
 <script type="module" src="/js/functions/mobileMenu.js" defer></script>
 
 {{- if eq .Page.Kind "home" -}}
-  <link rel="stylesheet" href="/vendor/gliderJS/glider.min.css">
+  <link rel="stylesheet" href="/vendor/gliderJS/glider.min.css"defer>
   <script src="/vendor/gliderJS/glider.min.js" defer></script>
   <script type="module" src="/js/main/main.js" defer></script>
 {{- end -}}
 
 {{- if eq .Page.Section "workshops" -}}
-  <script type="module" src="/js/functions/workshop-page-filters.js" defer></script>
+  <script type="module" src="/js/functions/workshop-page-filters.js"defer></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
   <script src="/vendor/isotope/fit-columns.js" defer></script>
   <script src="/vendor/isotope/cells-by-row.js" defer></script>
 {{- end -}}
 
 {{- if eq .Page.Section "data-resources-directory" -}}
-<script type="module" src="/js/functions/activate-isotope.js" defer></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+  <script type="module" src="/js/functions/data-resources-directory.js" defer></script>
   <script src="/vendor/isotope/fit-columns.js" defer></script>
   <script src="/vendor/isotope/cells-by-row.js" defer></script>
 {{- end -}}

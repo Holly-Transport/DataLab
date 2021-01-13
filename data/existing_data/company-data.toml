@@ -1,17 +1,21 @@
 title = "Company Data"
-short_description = "3rd Party Data Partnerships (e.g. Facebook, Waze"
+short_description = "3rd Party Data Partnerships (e.g. Facebook, Waze)"
+section = "existing-data"
 
 
 [[teams]]
 	name = "Development Data Partnership"
 	description = "Manages WB tablet survey application"
+	sub_section = "company-data"
 
 
 [[teams]]
 	name = "AG Observatory"
 	description = "Manages WB tablet survey application"
+	sub_section = "company-data"
 
 
 [[teams]]
 	name = "ITS Enterprise"
-	description = "Manages subscription to commercial survey app" 
+	description = "Manages subscription to commercial survey app"
+	sub_section = "company-data" 

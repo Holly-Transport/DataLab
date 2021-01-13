@@ -5,8 +5,10 @@ short_description = "Large data storage for in-house use"
 [[teams]]
 	name = "ITS Infrastructure"
 	description = "Manages WB tablet survey application"
+	sub_section = "data-storage"
 
 
 [[teams]]
 	name = "ITS Enterprise"
-	description = "Manages subscription to commercial survey app" 
+	description = "Manages subscription to commercial survey app"
+	sub_section = "data-storage" 

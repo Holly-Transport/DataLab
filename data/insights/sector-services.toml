@@ -1,27 +1,32 @@
-title = "Big Data Analytics"
+title = "Sector Services"
 short_description = "Manipulating large non-geospacial datasets on servers"
 
 [[teams]]
 	name = "Transport"
 	description = "Machine Learning, Mobile Analytics lead Data"
+	sub_section = "sector-services"
 
 
 [[teams]]
 	name = "Urban"
-	description = "Support for staff using DDP data" 
+	description = "Support for staff using DDP data"
+	sub_section = "sector-services" 
 
 
 [[teams]]
 	name = "Sustainable Data Lab" 
 	description = "Data initiative: big data"
+	sub_section = "sector-services"
 
 
 [[teams]]
 	name = "Health" 
 	description = "Data scientists: AI"
+	sub_section = "sector-services"
 
 
 [[teams]]
 	name = "Water" 
 	description = "ML Algorithms and Social Media Insights"
+	sub_section = "sector-services"
 

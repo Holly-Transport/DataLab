@@ -1,97 +1,110 @@
 <section class="directory">
   <div class="container">
     <img src="{{- .Site.BaseURL -}}img/map.jpg" width="780" height="500" />
-    <div class="section-column">
-      <h2>I'm Looking For Existing Data</h2>
-      <!-- <div class="row"> -->
-        {{- range $.Site.Data.existing_data }}
-        <div class="teams">
-          <div class="team-headers">
-            <h3>{{- .title -}}</h3>
-            <p>{{- .short_description -}}</p>
-          </div>
-          <div class="row">
-            {{- range .teams -}}
-            <div class="card">
-              <div class="team-description">
-                <h4>{{- .name -}}</h4>
-                <hr />
-                <p>{{- .description -}}</p>
-              </div>
-            </div>
-            {{- end -}}
-          </div>
-        </div>
-        {{- end -}}
-      <!-- </div> -->
+    <h2>Click below to find out how we can help</h2>
+    <div class="primary-button-filters">
+      <button class="main-buttons button" value-group=".existing-data">I'm Looking For Existing Data</button>
+      <button class="main-buttons button" value-group=".collect-new-data">I Need To Collect New Data</button>
+      <button class="main-buttons button" value-group=".manage-data">I Need To Manage Data</button>
+      <button class="main-buttons button" value-group=".insights">I Need Insights From Data</button>
     </div>
-
-    <div class="section-column">
-      <h2>I Need To Collect New Data</h2>
-      <div class="row">
+    <div class="secondary-button-filters">
+      <div class="secondary-filters">
+      {{- range $.Site.Data.existing_data }}
+        <div class="button-container existing-data hidden">
+          <button
+            class="button"
+            title="{{- .short_description -}}"
+            >
+            {{- .title -}}
+          </button>
+        </div>
+        {{- end -}}
         {{- range $.Site.Data.collect_new_data }}
-        <div class="row">
-          <div class="team-headers">
-            <h3>{{- .title -}}</h3>
-            <p>{{- .short_description -}}</p>
-          </div>
-          <div class="teams">
-            {{- range .teams -}}
-            <div class="team-description">
-              <h4>{{- .name -}}</h4>
-              <hr />
-              <p>{{- .description -}}</p>
-            </div>
-            {{- end -}}
-          </div>
+        <div class="button-container collect-new-data hidden">
+          <button
+            class="button"
+            title="{{- .short_description -}}"
+            value-group="{{ .section | urlize }}">
+            {{- .title -}}
+          </button>
         </div>
         {{- end -}}
-      </div>
-		</div>
-		
-		<div class="section-column">
-			<h2>I Need To Manage Data</h2>
-			<div class="row">
-			{{- range $.Site.Data.insights }}
-					<div class="row">
-					<div class="team-headers">
-						<h3>{{- .title -}}</h3>
-						<p>{{- .short_description -}}</p>
-					</div>
-					<div class="teams">
-						{{- range  .teams -}}
-							<div class="team-description">
-								<h4>{{- .name -}}</h4>
-								<hr>
-								<p>{{- .description -}}</p>
-							</div>
-						{{- end -}}
-					</div>
-					</div>
-			{{- end -}}
-			</div>
-		</div>
-    <div class="section-column">
-      <h2>I Need Insights From My Data</h2>
-      <div class="row">
         {{- range $.Site.Data.manage_data }}
-        <div class="row">
-          <div class="team-headers">
-            <h3>{{- .title -}}</h3>
-            <p>{{- .short_description -}}</p>
+        <div class="button-container manage-data hidden">
+          <button
+            class="button"
+            title="{{- .short_description -}}"
+            value-group="{{ .section | urlize }}">
+            {{- .title -}}
+          </button>
           </div>
-          <div class="teams">
-            {{- range .teams -}}
-            <div class="team-description">
-              <h4>{{- .name -}}</h4>
-              <hr />
-              <p>{{- .description -}}</p>
-            </div>
-            {{- end -}}
-          </div>
-        </div>
         {{- end -}}
+        {{- range $.Site.Data.insights }}
+        <div class="button-container insights hidden">
+          <button
+            class="button"
+            title="{{- .short_description -}}"
+            value-group="{{ .section | urlize }}">
+            {{- .title -}}
+          </button>
+        </div>
+      {{- end -}}
       </div>
-		</div>
+    </div>
+    <div class="card-grid hidden">
+      {{- range $.Site.Data.existing_data -}}
+      <ul class="grid-card-item {{ .title | urlize }} hidden">
+        {{ range .teams }}
+        <li class="card-item {{ .sub_section | urlize }} hidden">
+          <div class="card hidden">
+            <h4>{{- .name -}}</h4>
+            <hr />
+            <p>{{- .description -}}</p>
+          </div>
+        </li>
+        {{- end -}}
+      </ul>
+      {{- end -}} 
+      {{- range $.Site.Data.collect_new_data -}}
+      <ul class="grid-card-item {{ .title | urlize }} hidden">
+        {{ range .teams }}
+        <li class="card-item {{ .sub_section | urlize }} hidden">
+          <div class="card hidden">
+            <h4>{{- .name -}}</h4>
+            <hr />
+            <p>{{- .description -}}</p>
+          </div>
+        </li>
+        {{- end -}} 
+      </ul>
+      {{- end -}} 
+      {{- range $.Site.Data.manage_data -}}
+      <ul class="grid-card-item {{ .title | urlize }} hidden">
+        {{ range .teams }}
+        <li class="card-item {{ .sub_section | urlize }} hidden">
+          <div class="card hidden">
+            <h4>{{- .name -}}</h4>
+            <hr />
+            <p>{{- .description -}}</p>
+          </div>
+        </li>
+        {{- end -}} 
+      </ul>
+      {{- end -}} 
+      {{- range $.Site.Data.insights -}}
+      <ul class="grid-card-item {{ .title | urlize }} hidden">
+        {{ range .teams }}
+        <li class="card-item {{ .sub_section | urlize }} hidden">
+          <div class="card hidden">
+            <h4>{{- .name -}}</h4>
+            <hr />
+            <p>{{- .description -}}</p>
+          </div>
+        </li>
+        {{- end -}}
+      </ul>
+      {{- end -}}
+    </div>
   </div>
 </section>

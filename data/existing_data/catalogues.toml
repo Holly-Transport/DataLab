@@ -1,5 +1,6 @@
 title = "Catalogues"
 short_description = "WB-managed data search portals"
+section = "existing-data"
 
 
 [[teams]]
@@ -11,3 +12,4 @@ short_description = "WB-managed data search portals"
 [[teams]]
 	name = "Development Data Hub"
 	description = "Manages WB tablet survey application"
+	sub_section = "catalogues"

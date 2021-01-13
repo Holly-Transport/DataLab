@@ -5,11 +5,13 @@ short_description = "Identifying and using web APIs to pull data"
 [[teams]]
 	name = "DEC Analytics & Tools"
 	description = "Manages WB tablet survey application"
+	sub_section = "apis"
 
 
 [[teams]]
 	name = "DIME"
-	description = "Manages subscription to commercial survey app" 
+	description = "Manages subscription to commercial survey app"
+	sub_section = "apis" 
 
 
 

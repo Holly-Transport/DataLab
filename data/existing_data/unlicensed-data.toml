@@ -1,16 +1,19 @@
 title = "Unlicensed Data"
 short_description = "Can't find what you're looking for? Request new data partnership, subscription, and/or purchase"
-
+section = "existing-data"
 
 [[teams]]
 	name = "GOST"
 	description = "Manages WB tablet survey application"
+	sub_section = "unlicensed-data"
 
 
 [[teams]]
 	name = "WBG Library"
 	description = "Manages WB tablet survey application"
+	sub_section = "unlicensed-data"
 
 [[teams]]
 	name = "Development Data Partnership"
 	description = "Manages WB tablet survey application"
+	sub_section = "unlicensed-data"

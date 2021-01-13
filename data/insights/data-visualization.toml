@@ -4,16 +4,19 @@ short_description = "Non-geospatial data storytelling"
 [[teams]]
 	name = "Development Data Hub"
 	description = "Simple chart / infographic generation"
+	sub_section = "data-visualization"
 
 
 [[teams]]
 	name = "KIDS"
-	description = "Simple chart generation" 
+	description = "Simple chart generation"
+	sub_section = "data-visualization" 
 
 
 [[teams]]
 	name = "ITS Rapid App Dev Team" 
 	description = "In-house web and mobile app dev team"
+	sub_section = "data-visualization"
 
 
 

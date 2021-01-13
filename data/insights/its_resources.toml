@@ -4,8 +4,10 @@ short_description = "Wb-managed data search portals"
 [[teams]]
 	name = "ITS Infrastructure"
 	description = "Simple chart / infographic generation"
+	sub_section = "its-resources"
 
 
 [[teams]]
 	name = "ITS Enterprise" 
 	description = "In-house web and mobile app dev team"
+	sub_section = "its-resources"

@@ -103,7 +103,6 @@ const Workshops = (function () {
 			// 1. Gets an Array of all Workshops.
 			const workshops = separateWorkshops(selector)
 			// 2. Separates workshops by Date.
-			console.log(workshops)
 			// Save workshop Arrays into variables. 
 			const upcomingWorkshops = workshops.upcomingWorkshops
 			const pastWorkshops = workshops.pastWorkshops

@@ -6,6 +6,9 @@
 	{{- partial "list-partials/workshops-list-page.html" . -}}
 {{- end -}}
 
+{{- if eq .Page.Section "university-partnerships" -}}
+	{{- partial "list-partials/university-partnerships-list-page.html" . -}}
+{{- end -}}
 {{/*  Data Resources Page Layout  */}}
 {{- if eq .Page.Section "data-resources-directory" -}}
 	{{- partial "list-partials/data-resources-directory-page.html" . -}}

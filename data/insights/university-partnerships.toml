@@ -3,3 +3,4 @@ title = "University Partnerships"
 [[teams]]
 	name = "WB Data Lab-"
 	description = "Support for staff using DDP data"
+	sub_section = "university-partnerships"

@@ -5,17 +5,21 @@ short_description = "Client capacity building resources"
 [[teams]]
 	name = "DEC Analytics & Tools"
 	description = "Manages WB tablet survey application"
+	sub_section = "government-clients"
 
 
 [[teams]]
 	name = "ITS Rapid App Dev Team"
-	description = "Manages subscription to commercial survey app" 
+	description = "Manages subscription to commercial survey app"
+	sub_section = "government-clients" 
 
 
 [[teams]]
 	name = "Social Development Indonesia"
 	description = "Manages subscription to commercial survey app"
+	sub_section = "government-clients"
 
 [[teams]]
 	name = "GEMS"
 	description = "Manages subscription to commercial survey app"
+	sub_section = "government-clients"

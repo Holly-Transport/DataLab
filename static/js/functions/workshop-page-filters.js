@@ -27,9 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	filterSels.addEventListener('change', (event) => {
 		var changedSel = event.target
 		var changedSelGroup = changedSel.getAttribute('value-group')
+		console.log(changedSelGroup)
 		filters[changedSelGroup] = event.target.value
+		console.log(filters)
 		var filterValue = concatValues(filters)
-		console.log(filterValue)
+		console.log('Filter Value:',filterValue)
 		console.log(iso)
 		return iso.arrange({ filter: filterValue })
 	})

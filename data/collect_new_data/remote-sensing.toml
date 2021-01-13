@@ -4,14 +4,17 @@ short_description = "Manipulating large non-geospacial datasets on servers"
 
 [[teams]]
 name = "GFDRR"
-description = "Simple chart generation" 
+description = "Simple chart generation"
+sub_section = "remote-sensing" 
 
 
 [[teams]]
 name = "GOST"
-description = "Simple chart generation" 
+description = "Simple chart generation"
+sub_section = "remote-sensing" 
 
 
 [[teams]]
 	name = "Transport"
 	description = "Machine Learning, Mobile Analytics lead Data"
+	sub_section = "remote-sensing"

@@ -4,40 +4,48 @@ short_description = "Manipulating large non-geospacial datasets on servers"
 [[teams]]
 	name = "Big Data Program"
 	description = "Machine Learning, Mobile Analytics lead Data"
+	sub_section = "big-data-analytics"
 
 
 [[teams]]
 	name = "Development Data Partnership "
-	description = "Support for staff using DDP data" 
+	description = "Support for staff using DDP data"
+	sub_section = "big-data-analytics" 
 
 
 [[teams]]
 	name = "DIME" 
 	description = "Data initiative: big data"
+	sub_section = "big-data-analytics"
 
 
 [[teams]]
 	name = "DEC Analytics & Tools" 
 	description = "Data scientists: AI"
+	sub_section = "big-data-analytics"
 
 
 [[teams]]
-	name = "Social Development Indonesia " 
+	name = "Social Development Indonesia"
 	description = "ML Algorithms and Social Media Insights"
+	sub_section = "big-data-analytics"
 
 
 [[teams]]
 	name = "ITS Enterprise" 
-	description = "Big Data and ML.AI solutions"
+	description = "Big Data and ML, AI solutions"
+	sub_section = "big-data-analytics"
 
 
 [[teams]]
 	name = "ITS Data Science Team" 
 	description = "DIY data science resources and advisory"
+	sub_section = "big-data-analytics"
 
 
 [[teams]]
 	name = "ITS Innovation and Tech Lab"
 	description = "Data scientists and app development AI + block chain"
+	sub_section = "big-data-analytics"
 
 

@@ -5,13 +5,16 @@ short_description = "Systems to support in-house collaboration on data analytics
 [[teams]]
 	name = "LEGIA"
 	description = "Manages WB tablet survey application"
+	sub_section = "data-sharing"
 
 
 [[teams]]
 	name = "ITS Enterprise"
-	description = "Manages subscription to commercial survey app" 
+	description = "Manages subscription to commercial survey app"
+	sub_section = "data-sharing" 
 
 
 [[teams]]
 	name = "Development Data Hub"
 	description = "Manages subscription to commercial survey app"
+	sub_section = "data-sharing"
