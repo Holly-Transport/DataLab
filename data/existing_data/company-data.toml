@@ -10,6 +10,6 @@ description = "AWARE weather data applications"
 name = "AG Observatory"
 sub_section = "company-data"
 [[teams]]
-description = "Manages subscription to commercial survey app"
+description = "Enterprise Data Catalog/Data Lake"
 name = "ITS Enterprise"
 sub_section = "company-data"
