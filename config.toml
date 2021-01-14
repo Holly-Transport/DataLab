@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://wb-data-lab.netlify.app"
 languageCode = "en-us"
 title = "World Bank Data Lab"
 assetDir = "static/assets"
@@ -8,13 +8,9 @@ assetDir = "static/assets"
 	partnershipsLinkTitle = "External Partnerships"
 	dataPartnershipsLinkTitle = "Data Partnerships"
 	staffCapacityLinkTitle = "Staff Capacity Building"
+
 	aboutLinkTitle = "About" 
 	aboutPageLink = "/about"
-
-	labLeadsCount = 205
-	peopleTrainedCount = 205
-	connectionsCount = 394
-	projectsCount = 105
 	
 	workshopsSectionLabel = "Workshops & Training"
 	workshopsLink = "/workshops"
