@@ -3,13 +3,11 @@
 	<div class="container glider-contain multiple">
 		<div class="glider">
 			{{- range sort .Site.Pages ".Site.Pages" -}}
-				{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
-					<img class="team-logo" src="{{- .Params.Image_path -}}" alt="{{- .Params.Title }} Logo">
+				{{ if (and (eq .Type "teams") ( .Params.Image_path))  }}
+					<img class="team-logo" src="{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
 					{{- end -}}
 			{{- end -}}
 		</div>
-		{{/*  <button aria-label="Previous" class="glider-prev">«</button>
-		<button aria-label="Next" class="glider-next">»</button>  */}}
 		<div role="tablist" class="dots"></div>
 </div>
 	</div>

@@ -74,23 +74,6 @@ const Workshops = (function () {
 		})
 	}
 
-
-	// Filter for Workshops & Training Page.
-	// const workshopFilters = function () {
-	//   // // Workshop filters
-	//   const dateFilter = document.querySelector("#filter-date")
-	//   const workshopTypeFilter = document.querySelector("#filter-workshop-type")
-
-	//   // Methods
-	//   const filterDate = function (e) {
-	//     // console.log(e.target.value)
-	//   }
-
-	//   if (dateFilter) {
-	//     dateFilter.addEventListener("change", filterDate)
-	//   }
-	// }
-
 	/**
 	 * Create the Constructor object
 	 */
