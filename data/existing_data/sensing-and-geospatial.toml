@@ -1,16 +1,11 @@
-title = "Sensing And Geospatial"
-short_description = "Pre-Collected Satellite, LIDAR, Radar, Street View + Curated Geospatial Layers"
 section = "existing-data"
-
+short_description = "Pre-Collected Satellite, LIDAR, Radar, Street View + Curated Geospatial Layers"
+title = "Sensing And Geospatial"
 [[teams]]
-	name = "GOST"
-	description = "Manages WB tablet survey application"
-	sub_section = "Sensing And Geospatial"
-
-
+description = "Manages remote sensing partnerships + subscriptions"
+name = "GOST"
+sub_section = "Sensing And Geospatial"
 [[teams]]
-	name = "ITS Geolab"
-	description = "Manages WB tablet survey application"
-	sub_section = "Sensing And Geospatial"
-
-
+description = "Manages ES Living catalogues subscription"
+name = "ITS Geolab"
+sub_section = "Sensing And Geospatial"
