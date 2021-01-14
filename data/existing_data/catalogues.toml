@@ -6,6 +6,6 @@ description = "Purchased data & subscriptions"
 name = "WBG Library"
 sub_section = "catalogues"
 [[teams]]
-description = "Manages WB tablet survey application"
+description = "Clean, survey, & geospatial data"
 name = "Development Data Hub"
 sub_section = "catalogues"
