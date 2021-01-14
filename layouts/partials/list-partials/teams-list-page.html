@@ -5,7 +5,7 @@
 			{{ if (and (eq .Type "teams") (.Params.Image_path))  }}
 			<div class="team-info">
 				<div class="logo-container">
-					<img class="team-logo" src="{{- .Site.BaseURL -}}{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
+					<img class="team-logo" src="{{- .Site.BaseURL -}}/{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
 				</div>
 				<div class="secondary-info">
 					<h2>{{- .Params.Title -}}</h2>
