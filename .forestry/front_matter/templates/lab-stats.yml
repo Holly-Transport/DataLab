@@ -42,3 +42,5 @@ fields:
     min: 
     max: 
     step: 
+pages:
+- data/lab-stats.md
