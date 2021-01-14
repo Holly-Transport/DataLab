@@ -1,19 +1,15 @@
-title = "Unlicensed Data"
-short_description = "Can't find what you're looking for? Request new data partnership, subscription, and/or purchase"
 section = "existing-data"
-
+short_description = "Can't find what you're looking for? Request new data partnership, subscription, and/or purchase"
+title = "Unlicensed Data"
 [[teams]]
-	name = "GOST"
-	description = "Manages WB tablet survey application"
-	sub_section = "unlicensed-data"
-
-
+description = "Manages remote sensing partnerships + subscriptions"
+name = "GOST"
+sub_section = "unlicensed-data"
 [[teams]]
-	name = "WBG Library"
-	description = "Manages WB tablet survey application"
-	sub_section = "unlicensed-data"
-
+description = "Manages data service subscription and purchases."
+name = "WBG Library"
+sub_section = "unlicensed-data"
 [[teams]]
-	name = "Development Data Partnership"
-	description = "Manages WB tablet survey application"
-	sub_section = "unlicensed-data"
+description = "Request new partnership"
+name = "Development Data Partnership"
+sub_section = "unlicensed-data"
