@@ -5,5 +5,9 @@
 		{{ partial "single-pages/workshops-single-page.html" . }}
 	{{- end -}}
 
+	{{ if eq .Page.Section "teams" }}
+	{{ partial "single-pages/data-leads-single-page.html" . }}
+{{- end -}}
+
 </main>
 {{- end -}}

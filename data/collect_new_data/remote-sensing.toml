@@ -1,10 +1,10 @@
 title = "Remote Sensing"
-short_description = "Manipulating large non-geospacial datasets on servers"
+short_description = "Remote Sensing Data Procurement; Drone Pilots"
 
 
 [[teams]]
 name = "GFDRR"
-description = "Simple chart generation"
+description = "Remote sensing and drone application"
 sub_section = "remote-sensing" 
 
 

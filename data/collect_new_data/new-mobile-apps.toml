@@ -1,9 +1,10 @@
 title = "New Mobile Apps"
+short_description = "Design and test new applications"
 
 
 [[teams]]
 	name = "ITS Rapid App Dev Team" 
-	description = "In-house web and mobile app dev team"
+	description = "In-house app development team (production)"
 	sub_section = "new-mobile-apps"
 
 

@@ -1,0 +1,13 @@
+<section class="single-data-leads-page">
+	<div class="container">
+		<div class="data-leads-heading">
+			<h1>{{ .Title }}: {{ .Params.Title }}</h1>
+		</div>
+		<div class="data-leads-content">
+			{{- if .Params.Image_path -}}
+				<img src="{{- .Params.Image_path -}}" alt="{{- if .Params.AltText -}}{{- .Params.AltText -}}{{- end -}}">
+			{{- end -}}
+			<p >{{ .Content | safeHTML }}</p>
+		</div>
+	</div>
+</section>

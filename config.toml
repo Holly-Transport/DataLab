@@ -6,9 +6,9 @@ assetDir = "static/assets"
 [params]
 	internalCollabLinkTitle = "Internal Collaboration"
 	partnershipsLinkTitle = "External Partnerships"
-	
+
 	dataPartnershipsLinkTitle = "Data Partnerships"
-	dataPartnershipsLink = "https://datapartnerships.org"
+	dataPartnershipsLink = "https://datapartnership.org"
 
 	staffCapacityLinkTitle = "Staff Capacity Building"
 

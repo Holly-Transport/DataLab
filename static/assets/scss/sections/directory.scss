@@ -38,6 +38,7 @@
     }
   }
 }
+
 @media (min-width: 768px) {
 	.directory-header {
 		.container {
@@ -65,16 +66,6 @@
 		.data-resources-header-image {
 			max-width: 200px;
 		}
-
-		// .container {
-		// 	.data-resources-block {
-		// 		a {
-		// 			.header-content {
-		// 				max-width: unset;
-		// 			}
-		// 		}
-		// 	}
-		// }
 	}
 }
 
@@ -134,10 +125,6 @@
 				margin: 2rem;
 				width: 100%;
 			}
-
-			// .hidden {
-			// 	display: none;
-			// }
 		}
 
 		.card-grid {
@@ -182,7 +169,7 @@
 						}
 			
 						hr {
-							color: white;
+							color: $teal;
 							width: 90%;
 						}
 					}
