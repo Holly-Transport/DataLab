@@ -2,7 +2,7 @@
 	<div class="container">
 		<h1>{{ .Title }}</h1>
 		{{- range .Site.Pages -}}
-			{{- if (and (eq .Type "university-partnerships") ( ne .Title "University Partnerships"))  -}}
+			{{ if (and (eq .Type "university-partnerships") ( ne .Title "University Partnerships"))  }}
 			<div class="team-info">
 				<div class="secondary-info">
 					<h2>{{- .Params.Title -}}</h2>

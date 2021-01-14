@@ -2,19 +2,19 @@
 <main class="with-fixed-navbar">
 
 {{/*  Workshops Page Layout  */}}
-{{- if eq .Page.Section "workshops" -}}
-	{{- partial "list-partials/workshops-list-page.html" . -}}
+{{ if eq .Page.Section "workshops" }}
+	{{- partial "list-partials/workshops-list-page.html" . }}
 {{- end -}}
 
-{{- if eq .Page.Section "university-partnerships" -}}
+{{ if eq .Page.Section "university-partnerships" }}
 	{{- partial "list-partials/university-partnerships-list-page.html" . -}}
 {{- end -}}
 {{/*  Data Resources Page Layout  */}}
-{{- if eq .Page.Section "data-resources-directory" -}}
+{{ if eq .Page.Section "data-resources-directory" }}
 	{{- partial "list-partials/data-resources-directory-page.html" . -}}
 {{- end -}}
 
-{{- if eq .Page.Section "teams" -}}
+{{ if eq .Page.Section "teams" }}
 	{{- partial "list-partials/teams-list-page.html" . -}}
 {{- end -}}
 </main>

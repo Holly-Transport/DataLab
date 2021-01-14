@@ -1,7 +1,7 @@
 {{- define "main" -}}
 <main class="with-fixed-navbar">
 
-	{{- if eq .Page.Section "workshops" -}}
+	{{ if eq .Page.Section "workshops" }}
 		{{ partial "single-pages/workshops-single-page.html" . }}
 	{{- end -}}
 
