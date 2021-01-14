@@ -2,7 +2,6 @@ const Slider = function () {
   "use strict"
 
   const Constructor = function (selector) {
-    console.log(selector)
     const publicAPIs = {}
     // Methods
 
@@ -29,7 +28,6 @@ const Slider = function () {
         currentPage++
       }, 2000)
     }
-    console.log(selector)
     publicAPIs.init(selector)
     // Return the Public APIs
     return publicAPIs

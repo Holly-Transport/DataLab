@@ -47,16 +47,23 @@
 			}
 			
       a {
+        background-color: #f09b32;
+        border-radius: 99px;
+        color: #000;
 				display: flex;
 				justify-content: end;
-				padding: 0 1.5rem 1rem 0;
+        margin: .5rem;
+        margin-left: auto;
+        padding: .65rem .75rem;
+        text-align: center;
+        width: 12%;
       }
     }
 
     details[open] {
       summary {
         background-color: $teal;
-        color: white;
+        color: #000;
       }
 			
 			p {

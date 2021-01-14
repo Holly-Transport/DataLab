@@ -29,8 +29,7 @@
     }
 
     .wb-text,
-    .nav-links a,
-    .button {
+    .nav-links a {
       color: $white;
     }
 
@@ -58,7 +57,7 @@
         display: flex;
       }
       .button {
-        color: $teal;
+        color: #000;
       }
     }
   }
