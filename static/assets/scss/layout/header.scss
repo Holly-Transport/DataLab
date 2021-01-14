@@ -22,16 +22,25 @@
 	}
 }
 
+@media (max-width: 992px) {
+	.hero { 
+		.hero-nav-links {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
 
 
 @media (max-width: 880px) {
-	.hero-with-navbar {
+	.hero-with-fixed-navbar {
 		top: calc(6rem + 23px);
 	}
 }
 
 @media (max-width: 767px) {
-	.hero-with-navbar {
+	.hero-with-fiexed-navbar {
 		top: calc(6rem + 3px);
 	}
 }
