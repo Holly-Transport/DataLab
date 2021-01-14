@@ -6,7 +6,7 @@ description = "Staff apply online for access"
 name = "Development Data Partnership"
 sub_section = "company-data"
 [[teams]]
-description = "Manages WB tablet survey application"
+description = "AWARE weather data applications"
 name = "AG Observatory"
 sub_section = "company-data"
 [[teams]]
