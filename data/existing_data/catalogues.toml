@@ -1,15 +1,11 @@
-title = "Catalogues"
-short_description = "WB-managed data search portals"
 section = "existing-data"
-
-
+short_description = "WB-managed data search portals"
+title = "Catalogues"
 [[teams]]
-	name = "WBG Library"
-	description = "Manages WB tablet survey application"
-	sub_section = "catalogues"
-
-
+description = "Purchased data & subscriptions"
+name = "WBG Library"
+sub_section = "catalogues"
 [[teams]]
-	name = "Development Data Hub"
-	description = "Manages WB tablet survey application"
-	sub_section = "catalogues"
+description = "Manages WB tablet survey application"
+name = "Development Data Hub"
+sub_section = "catalogues"
