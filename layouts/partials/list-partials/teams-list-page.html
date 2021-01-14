@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="logo-grid">
 		{{- range sort .Site.Pages ".Site.Pages" "desc" -}}
-			{{- if (and (eq .Type "teams") (.Params.Image_path))  -}}
+			{{ if (and (eq .Type "teams") (.Params.Image_path))  }}
 			<div class="team-info">
 				<div class="logo-container">
 					<img class="team-logo" src="{{- .Site.BaseURL -}}{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
