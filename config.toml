@@ -6,7 +6,10 @@ assetDir = "static/assets"
 [params]
 	internalCollabLinkTitle = "Internal Collaboration"
 	partnershipsLinkTitle = "External Partnerships"
+	
 	dataPartnershipsLinkTitle = "Data Partnerships"
+	dataPartnershipsLink = "https://datapartnerships.org"
+
 	staffCapacityLinkTitle = "Staff Capacity Building"
 
 	aboutLinkTitle = "About" 
@@ -20,6 +23,7 @@ assetDir = "static/assets"
 
 	dataLeadsLabel = "Data Leads"	
 	dataLeadsLink = "/teams"
+
 
 	universityPartnershipsLabel = "University Partnerships"	
 	universityPartnershipsLink = "/university-partnerships"

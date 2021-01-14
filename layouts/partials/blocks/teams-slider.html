@@ -4,8 +4,10 @@
 		<div class="glider">
 			{{- range sort .Site.Pages ".Site.Pages" -}}
 				{{ if (and (eq .Type "teams") ( .Params.Image_path))  }}
+				<a href="{{- .Permalink -}}">
 					<img class="team-logo" src="{{- .Params.Image_path -}}" alt="{{- .Params.Title -}} Logo">
-					{{- end -}}
+				</a>	
+				{{- end -}}
 			{{- end -}}
 		</div>
 		<div role="tablist" class="dots"></div>
