@@ -1,5 +1,5 @@
 .hexagon {
-  color: #000;
+  color: #fff;
   height: 55px;
   margin: 2.25rem;
   position: relative;
@@ -52,6 +52,10 @@
 .light-orange-hexagon::before,
 .light-orange-hexagon::after {
   background-color: $orange;
+  
+  &:hover {
+    background-color: $dark-orange;
+  }
 }
 
 .dark-orange-hexagon,
@@ -59,6 +63,10 @@
 .dark-orange-hexagon::before,
 .dark-orange-hexagon::after {
   background-color: $dark-orange;
+
+  &:hover {
+    background-color: $orange;
+  }
 }
 
 .blue-hexagon,
@@ -66,6 +74,11 @@
 .blue-hexagon::before,
 .blue-hexagon::after {
   background-color: $light-blue;
+
+  &:hover {
+    background-color: $blue;
+    color: white;
+  }
 }
 
 .activities {

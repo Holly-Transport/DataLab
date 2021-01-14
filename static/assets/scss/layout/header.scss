@@ -34,13 +34,17 @@
 
 
 @media (max-width: 880px) {
-	.hero-with-fixed-navbar {
-		top: calc(6rem + 23px);
+	.hero {
+		.with-fixed-navbar {
+			top: calc(6rem + 23px);
+		}
 	}
 }
 
 @media (max-width: 767px) {
-	.hero-with-fiexed-navbar {
-		top: calc(6rem + 3px);
+	.hero {
+		.with-fixed-navbar {
+			top: calc(6rem + 3px);
+		}
 	}
 }

@@ -47,9 +47,9 @@
 			}
 			
       a {
-        background-color: #f09b32;
+        background-color: $orange;
         border-radius: 99px;
-        color: #000;
+        color: #fff;
 				display: flex;
 				justify-content: end;
         margin: .5rem;
@@ -57,13 +57,17 @@
         padding: .65rem .75rem;
         text-align: center;
         width: 12%;
+
+        &:hover {
+          background-color: $dark-orange;
+        }
       }
     }
 
     details[open] {
       summary {
         background-color: $teal;
-        color: #000;
+        color: #fff;
       }
 			
 			p {
