@@ -1,24 +1,21 @@
 {{- define "main" -}}
-<main class="with-fixed-navbar">
+	<main class="with-fixed-navbar">
 
-{{ if eq .Page.Section "about" }}
-	{{- partial "list-partials/about-page.html" . }}
-{{- end -}}
-{{/*  Workshops Page Layout  */}}
-{{ if eq .Page.Section "workshops" }}
-	{{- partial "list-partials/workshops-list-page.html" . }}
-{{- end -}}
+	{{/*  Workshops Page Layout  */}}
+	{{ if eq .Page.Section "workshops-and-clinics" }}
+		{{- partial "list-partials/workshops-list-page.html" . }}
+	{{- end -}}
 
-{{ if eq .Page.Section "university-partnerships" }}
-	{{- partial "list-partials/university-partnerships-list-page.html" . -}}
-{{- end -}}
-{{/*  Data Resources Page Layout  */}}
-{{ if eq .Page.Section "data-resources-directory" }}
-	{{- partial "list-partials/data-resources-directory-page.html" . -}}
-{{- end -}}
+	{{ if eq .Page.Section "university-data-fellows" }}
+		{{- partial "list-partials/university-data-fellows-list-page.html" . -}}
+	{{- end -}}
+	{{/*  Data Resources Page Layout  */}}
+	{{ if eq .Page.Section "data-resources-directory" }}
+		{{- partial "list-partials/data-resources-directory-page.html" . -}}
+	{{- end -}}
 
-{{ if eq .Page.Section "data-leads" }}
-	{{- partial "list-partials/data-leads-list-page.html" . -}}
-{{- end -}}
-</main>
-{{ end }} 
+	{{ if eq .Page.Section "data-leads" }}
+		{{- partial "list-partials/data-leads-list-page.html" . -}}
+	{{- end -}}
+	</main>
+{{- end -}} 

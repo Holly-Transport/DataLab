@@ -3,7 +3,7 @@ body {
 	color: $white;
 	display: flex;
 	flex-direction: column;
-	font-family: Open Sans, sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size:1rem;
 	font-weight:400;
 	justify-content: space-around;
@@ -27,13 +27,17 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	padding: 0;
+}
+
 // Bug fix for li's that get a list-style of none. 
 ul li::before {
 	content: "\200B";
 }
 
-ul {
-	padding: 0;
+li {
+	list-style: none;
 }
 
 .button {

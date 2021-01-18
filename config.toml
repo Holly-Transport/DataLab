@@ -17,8 +17,8 @@ assetDir = "static/assets"
 	aboutLinkTitle = "About" 
 	aboutPageLink = "/about"
 	
-	workshopsSectionLabel = "Workshops & Training"
-	workshopsLink = "/workshops"
+	workshopsSectionLabel = "Workshops & Clinics"
+	workshopsLink = "/workshops-and-clinics"
 
 	dataDirectoryLabel = "Find World Bank Data Resources"	
 
@@ -26,8 +26,8 @@ assetDir = "static/assets"
 	dataLeadsLink = "/data-leads"
 
 
-	universityPartnershipsLabel = "University Partnerships"	
-	universityPartnershipsLink = "/university-partnerships"
+	universityDataFellowsLabel = "University Data Fellows"	
+	universityDataFellowsLink = "/university-data-fellows"
 
 [module]
 	[hugoVersion]
