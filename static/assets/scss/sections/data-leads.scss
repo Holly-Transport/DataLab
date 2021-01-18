@@ -1,0 +1,15 @@
+.data-leads {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info-container {
+		display: flex;
+		justify-content: center;
+
+		.data-leads-badge {
+			width: 100%;
+		}
+	}
+}

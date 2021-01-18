@@ -3,13 +3,18 @@
   <head>
 		{{- partial "base/head.html" . -}}
 	</head>
-	<body id="page-top">
+	{{- if eq .Page.Section "data-resources-directory" -}}
+		<body id="page-top" class="data-resources">
+	{{- else -}}
+		<body id="page-top" class="home">
+	{{- end -}}
 		<!-- Renders navigation partial into base  -->
 	{{- partial "base/navigation.html" . -}}
 	<!-- Renders main block into base  -->
 	{{- block "main" . -}}
+
 	{{- end -}}
 	<!-- Renders footer partial into base  -->
 	{{- partial "base/footer.html" . -}}
-	</body>
+		</body>
 	</html>

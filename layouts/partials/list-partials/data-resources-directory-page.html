@@ -3,110 +3,13 @@
     <h1>{{- .Site.Params.DataDirectoryLabel -}}</h1>
     <p>Solutions for governments that combine the best of World Bank economics, data science, geospatial, data engineering, IT, domain expertise, and policy resources are difficult to realize, because the necessary combined resources are scattered throughout the organization, as illustrated in this operations-focused data services map.</p>
     <img src="{{- .Site.BaseURL -}}/img/map.jpg" width="780" height="500" />
-    <h2>Click below to find out how we can help</h2>
-    <div class="primary-button-filters">
-      <button class="main-buttons button" value-group=".existing-data">I'm Looking For Existing Data</button>
-      <button class="main-buttons button" value-group=".collect-new-data">I Need To Collect New Data</button>
-      <button class="main-buttons button" value-group=".manage-data">I Need To Manage Data</button>
-      <button class="main-buttons button" value-group=".insights">I Need Insights From Data</button>
-    </div>
-    <div class="secondary-button-filters">
-      <div class="secondary-filters">
-      {{- range $.Site.Data.existing_data }}
-        <div class="button-container existing-data hidden">
-          <button
-            class="button"
-            title="{{- .short_description -}}"
-            >
-            {{- .title -}}
-          </button>
-        </div>
-        {{- end -}}
-        {{- range $.Site.Data.collect_new_data }}
-        <div class="button-container collect-new-data hidden">
-          <button
-            class="button"
-            title="{{- .short_description -}}"
-            value-group="{{ .section | urlize }}">
-            {{- .title -}}
-          </button>
-        </div>
-        {{- end -}}
-        {{- range $.Site.Data.manage_data }}
-        <div class="button-container manage-data hidden">
-          <button
-            class="button"
-            title="{{- .short_description -}}"
-            value-group="{{ .section | urlize }}">
-            {{- .title -}}
-          </button>
-          </div>
-        {{- end -}}
-        {{- range $.Site.Data.insights }}
-        <div class="button-container insights hidden">
-          <button
-            class="button"
-            title="{{- .short_description -}}"
-            value-group="{{ .section | urlize }}">
-            {{- .title -}}
-          </button>
-        </div>
-      {{- end -}}
-      </div>
-    </div>
-    <div class="card-grid hidden">
-      {{- range $.Site.Data.existing_data -}}
-      <ul class="grid-card-item {{ .title | urlize }} hidden">
-        {{ range .teams }}
-        <li class="card-item {{ .sub_section | urlize }} hidden">
-          <div class="card hidden">
-            <h4>{{- .name -}}</h4>
-            <hr />
-            <p>{{- .description -}}</p>
-          </div>
-        </li>
-        {{- end -}}
-      </ul>
-      {{- end -}} 
-      {{- range $.Site.Data.collect_new_data -}}
-      <ul class="grid-card-item {{ .title | urlize }} hidden">
-        {{ range .teams }}
-        <li class="card-item {{ .sub_section | urlize }} hidden">
-          <div class="card hidden">
-            <h4>{{- .name -}}</h4>
-            <hr />
-            <p>{{- .description -}}</p>
-          </div>
-        </li>
-        {{- end -}} 
-      </ul>
-      {{- end -}} 
-      {{- range $.Site.Data.manage_data -}}
-      <ul class="grid-card-item {{ .title | urlize }} hidden">
-        {{ range .teams }}
-        <li class="card-item {{ .sub_section | urlize }} hidden">
-          <div class="card hidden">
-            <h4>{{- .name -}}</h4>
-            <hr />
-            <p>{{- .description -}}</p>
-          </div>
-        </li>
-        {{- end -}} 
-      </ul>
-      {{- end -}} 
-      {{- range $.Site.Data.insights -}}
-      <ul class="grid-card-item {{ .title | urlize }} hidden">
-        {{ range .teams }}
-        <li class="card-item {{ .sub_section | urlize }} hidden">
-          <div class="card hidden">
-            <h4>{{- .name -}}</h4>
-            <hr />
-            <p>{{- .description -}}</p>
-          </div>
-        </li>
-        {{- end -}}
-      </ul>
-      {{- end -}}
-    </div>
+    <h2>GET HELP FINDING THE DATA RESOURCES YOU NEED</h2>
+    <p>
+      Feel overwhelmed? Don’t navigate Bank resources alone! Managers and directors throughout the World Bank have nominated Data Lab Leads to help YOU find the colleagues and internal resources you need to get your project off the ground.  Find your Lab Lead HERE. 
+    </p>
+    <h2>PLACEHOLDER FOR FUTURE PROGRAMS, LIKE DATA CORPS</h2>
+    <p>
+      Feel overwhelmed? Don’t navigate Bank resources alone! Managers and directors throughout the World Bank have nominated Data Lab Leads to help YOU find the colleagues and internal resources you need to get your project off the ground.  Find your Lab Lead HERE. 
+    </p>
   </div>
 </section>

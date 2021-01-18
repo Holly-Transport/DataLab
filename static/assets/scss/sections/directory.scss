@@ -1,75 +1,7 @@
-// Homepage block template styles
-.directory-header {
-	.data-resources-header-image {
-		max-width: 150px;
-	}
-
-  .container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    .data-resources-block {
-			align-items: center;
-			background-color: white;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
-
-			a {
-				align-items: center;
-				color: $blue;
-				display: flex;
-				flex-direction: column;
-				width: 100%;
-
-				.header-content {
-					align-items: center;
-					display: flex;
-					flex-direction: column;
-					margin: 1.5rem 0;
-				}
-			}
-
-      img {
-        width: 100%;
-      }
-    }
-  }
+.data-resources {
+  background-color: $dark-orange;
 }
 
-@media (min-width: 768px) {
-	.directory-header {
-		.container {
-			.data-resources-block {
-				a {
-					flex-direction: row;
-					justify-content: space-around;
-
-					.header-content {
-						max-width: 260px;
-						text-align: center;
-					}
-
-					.column-reverse {
-						flex-direction: column-reverse;
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (min-width: 800px) {
-	.directory-header {
-		.data-resources-header-image {
-			max-width: 200px;
-		}
-	}
-}
-
-// Directory main page styles
 .directory {
   align-items: center;
   display: flex;
@@ -77,9 +9,6 @@
   justify-content: space-around;
   margin: 5rem 0;
 
-	.hidden {
-		display: none;
-	}
 
   .container {
     align-items: center;
@@ -88,93 +17,9 @@
     justify-content: center;
     margin: 0 auto;
 
-    h2,
-		h3,
-		.button {
-			text-transform: uppercase;
-			text-align: center;
-		}
-
-		.button {
-			background-color: $blue;
-			border-radius: 5px;
-			color: $white;
-			margin: .5rem;
-			padding: .45rem;
-		}
-
-		.primary-button-filters {
-			display: grid;
-			margin: 2rem auto;
-			grid-template-columns: repeat(2, 1fr);
-
-			.main-buttons {
-				height: 50px;
-				width: 200px;
-			}
-		}
-
-		.secondary-button-filters {
-			margin: auto;
-			width: 50%;
-
-
-			.secondary-filters {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				margin: 2rem;
-				width: 100%;
-			}
-		}
-
-		.card-grid {
-			width: 100%;
-			
-			.card-item-display-flex {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-around;
-				margin: auto;
-				margin-bottom: 5rem;
-			}
-
-			
-			.grid-card-item {
-				.card-display-flex {
-					display: flex;
-					justify-content: space-around;
-					margin: 1rem;
-					margin-bottom: 5rem;
-					max-width: 220px;
-				}
-				
-				.card-item {
-					background-color: white;
-
-					.card {
-						align-items: center;
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						padding: 1rem .5rem;
-
-		
-						h4,
-						p {
-							margin: 0;
-						}
-			
-						h4 {
-							text-transform: uppercase;
-						}
-			
-						hr {
-							color: $teal;
-							width: 90%;
-						}
-					}
-				}
-			}
-		}
+    h2 {
+      text-transform: uppercase;
+      text-align: center;
+    }
   }
 }

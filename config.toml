@@ -4,13 +4,15 @@ title = "World Bank Data Lab"
 assetDir = "static/assets"
 
 [params]
-	internalCollabLinkTitle = "Internal Collaboration"
-	partnershipsLinkTitle = "External Partnerships"
+	dataResourcesLinkTitle = "Find WB Data Resources"
+	dataResourcesLink = "/data-resources-directory"
+
+	externalPartnershipsLinkTitle = "Find External Collaborators"
 
 	dataPartnershipsLinkTitle = "Data Partnerships"
 	dataPartnershipsLink = "https://datapartnership.org"
 
-	staffCapacityLinkTitle = "Staff Capacity Building"
+	digitalLiteracyLinkTitle = "Expand Your Digital Literacy"
 
 	aboutLinkTitle = "About" 
 	aboutPageLink = "/about"
@@ -18,11 +20,10 @@ assetDir = "static/assets"
 	workshopsSectionLabel = "Workshops & Training"
 	workshopsLink = "/workshops"
 
-	dataDirectoryLabel = "Data Resources Directory"	
-	dataDirectoryLink = "/data-resources-directory"
+	dataDirectoryLabel = "Find World Bank Data Resources"	
 
-	dataLeadsLabel = "Data Leads"	
-	dataLeadsLink = "/teams"
+	dataLeadsLabel = "Data Lab Leads"	
+	dataLeadsLink = "/data-leads"
 
 
 	universityPartnershipsLabel = "University Partnerships"	

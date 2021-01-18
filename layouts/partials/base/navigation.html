@@ -1,18 +1,16 @@
 <nav id="mainNav" class="navbar fixed" role="navigation" aria-label="main navigation">
 	<div class="nav-container">
 		<div class="mobile-layout">
-				<a class="navbar-item js-scroll-trigger" href="{{ .Site.BaseURL }}"> 
-					<img class="wb-logo" src="{{- .Site.BaseURL -}}/img/DataLab_Symbol.png" alt="{{- .Site.Title -}}">
-					<span class="wb-text">WB Data Lab</span> 
+				<a class="navbar-item" href="{{ .Site.BaseURL }}"> 
+					<span class="wb-top-text">Data Lab</span> 
+					<span class="wb-bottom-text">The World Bank</span>
 				</a>
 			<div class="navbar-end navbar-menu">
 				<div class="nav-links">
-					<a href="#">{{ .Site.Params.internalCollabLinkTitle }}</a> 
-					<a href="#">{{ .Site.Params.partnershipsLinkTitle }}</a> 
-					<a href="#">{{ .Site.Params.staffCapacityLinkTitle }}</a> 
-					<a href="{{ .Site.Params.aboutPageLink }}">{{ .Site.Params.aboutLinkTitle }}</a>
+					<a href="{{- .Site.Params.DataResourcesLink -}}">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
+					<a href="#">{{ .Site.Params.ExternalPartnershipsLinkTitle }}</a> 
+					<a href="#">{{ .Site.Params.DigitalLiteracyLinkTitle }}</a> 
 				</div>
-				<a href="" class="button join-button">Join</a>
 			</div>
 		</div>
 		<button class="burger-menu" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"

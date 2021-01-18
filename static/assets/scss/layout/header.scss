@@ -1,50 +1,42 @@
 .hero {
 	align-items: center;
-	background-color: white;
 	display: flex;
 	justify-content: center;
-
-	.hero-nav-links {
-		margin-top: 1.5rem;
-		margin-bottom: 2.5rem;
-
-		a {
-			color: $blue;
-			font-size: 1.75rem;
-		}
-	}
 
 	.container {
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+    justify-content: center;
+    
+    .data-lab-intro-text {
+      color: white;
+      width: 50%;
+    }
+
+    .call-to-action-link {
+      background-color: $dark-orange;
+      border-radius: 5px;
+      color: #fff;
+      padding: .5rem;
+    }
 	}
 }
 
-@media (max-width: 992px) {
-	.hero { 
-		.hero-nav-links {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-		}
-	}
-}
+// @media (max-width: 992px) {
+// 	.hero { 
+
+// 	}
+// }
 
 
-@media (max-width: 880px) {
-	.hero {
-		.with-fixed-navbar {
-			top: calc(6rem + 23px);
-		}
-	}
-}
+// @media (max-width: 880px) {
+// 	.hero {
 
-@media (max-width: 767px) {
-	.hero {
-		.with-fixed-navbar {
-			top: calc(6rem + 3px);
-		}
-	}
-}
+// 	}
+// }
+
+// @media (max-width: 767px) {
+// 	.hero {
+// 	}
+// }

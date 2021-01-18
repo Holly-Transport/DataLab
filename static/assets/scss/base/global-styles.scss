@@ -1,10 +1,9 @@
 body {
-	background-color:#f8f9fa;
 	box-sizing: border-box;
-	color:#212529;
+	color: $white;
 	display: flex;
 	flex-direction: column;
-	font-family:lato,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+	font-family: Open Sans, sans-serif;
 	font-size:1rem;
 	font-weight:400;
 	justify-content: space-around;
@@ -15,8 +14,10 @@ body {
 	text-align:left;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: Montserrat,sans-serif;
+	// font-family: Montserrat, sans-serif;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
@@ -35,14 +36,6 @@ ul {
 	padding: 0;
 }
 
-summary, li {
-	list-style: none;
-}
-
-summary::-webkit-details-marker {
-	list-style: none;
-}
-
 .button {
 	background-color: #fff;
 	border-color: #dbdbdb;
@@ -50,12 +43,13 @@ summary::-webkit-details-marker {
 	color: #363636;
 	cursor: pointer;
 	justify-content: center;
-	padding-bottom: calc(0.5em - 1px);
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: calc(0.5em - 1px);
+	padding: calc(0.5em - 1px) 1rem;
 	text-align: center;
 	white-space: nowrap;
+}
+
+.home {
+	background-color: $blue;
 }
 
 .container {
@@ -66,17 +60,26 @@ summary::-webkit-details-marker {
   margin-left: auto;
 }
 
-.with-fixed-navbar {
-	min-height: calc(50vh - 3.25rem);
-	top: calc(6rem - 8px);
-	position: relative;	
+// .with-fixed-navbar {
+// 	min-height: calc(100vh - 3.25rem);
+// 	top: 178px;
+// 	position: relative;	
+// }
+
+main {
+	flex: 1 0 auto;	
+	margin-top: 5rem;
+}
+
+.footer {
+	flex-shrink: 0;
 }
 
 .footer, .navbar {
-	background: $blue;
+	background: rgba($color: #fff, $alpha: .3);
 	color: $white;
 }
-
+  
 
 .img-fluid {
 	max-width: 100%;

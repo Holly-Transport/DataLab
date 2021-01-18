@@ -1,0 +1,85 @@
+{{- define "section-cards" -}}
+<section class="section-cards">
+  <div class="container">
+    <div class="card-headings">
+      <h2>Find WB Data Resources</h2>
+      <h2>Find External Collaborators</h2>
+      <h2>Expand Your Digital Literacy</h2>
+    </div>
+    <ul class="cards-container">
+      <li class="card">
+        <a href="{{- .Site.Params.BaseURL -}}{{- .Site.Params.DataLeadsLink -}}">
+        <div class="icon-container">
+          <img class="badges" src="/img/section-cards/data-lead.png" alt="">
+        </div>
+        <div class="text-container">
+          <h3>The Lab Leads Network</h3>
+          <p>
+            Got questions about data acquisition and analytics but don’t have a lot of time and don’t know where to start? Start HERE!
+          </p>
+        </div>
+      </a>
+      </li>
+      <li class="card">
+        <div class="icon-container">
+          <img class="badges" src="/img/section-cards/ddp.png" alt="">
+        </div>
+        <div class="text-container">
+          <h3>Dev’t Data Partnerships</h3>
+          <p>Want to try corporate data, like from Google or Facebook, in your project? Leverage the WB’s data partnership program, HERE!</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="workshops-and-clinics-container">
+          <img class="poster" src="img/section-cards/twitter-data-workshop.png" alt="">
+          <img class="poster" src="img/section-cards/data-lab-clinics.png" alt="">
+          <img class="poster" src="img/section-cards/facebook-data-poster.png" alt="">
+        </div>
+        <div class="text-container">
+          <h3>Workshops and Clinics</h3>
+          <p>
+            Stay current on data best practices for Bank operations and meet very cool colleagues and experts. Check out upcoming and past events
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="icon-container">
+          <img class="badges" src="img/section-cards/data-corps.png" alt="">
+        </div>
+        <div class="text-container">
+          <h3>Data Corps (planned)</h3>
+          <p>
+            Dreaming of a one-stop shop for all our data acquisition and analytical needs? Hoping to apply your techie skills to a range of projects? SOON!
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="icon-container">
+          <img class="badges" src="img/section-cards/data-fellows.png" alt="">
+        </div>
+        <div class="text-container">
+          <h3>University Data Fellows</h3>
+          <p>
+            Need a free data science student or team to support your basic data needs? Leverage our university partnership program..
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="icon-container">
+          <img class="badges" src="img/section-cards/data-science.png" alt="">
+          <img class="badges" src="img/section-cards/" alt="">
+          <img class="badges" src="img/section-cards/" alt="">
+          <img class="badges" src="img/section-cards/" alt="">
+        </div>
+        <div class="text-container">
+          <h3>Skill Badges (Planned)</h3>
+          <p>
+            Who does what? What do I need to learn? DECDG is demystifying data career streams starting with a new Skill Badge system. 
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{{- end -}}
