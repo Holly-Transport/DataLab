@@ -1,11 +1,9 @@
 .navbar {
   border-top: 1px solid $white;
   border-bottom: 1px solid $white;
-  margin-top: 4rem;
-
   color: $white;
+  margin-top: 4rem;
   padding: 1.5rem 0.5rem;
-  text-transform: uppercase;
   transition: padding-top 0.3s, padding-bottom 0.3s;
   width: 100vw;
 
@@ -24,7 +22,8 @@
     }
 
     .wb-top-text {
-      font-size: 1.75rem;
+      font-size: 2rem;
+	    font-weight: 700;
       transition: font-size 0.3s;
     }
 
@@ -36,6 +35,7 @@
     .wb-top-text,
     .wb-bottom-text {
       color: $white;
+      text-transform: uppercase;
     }
 
     .navbar-end {
@@ -52,8 +52,9 @@
         justify-content: center;
 
         a {
-          display: block;
           color: #fff;
+          display: block;
+	        font-weight: 700;
           margin: 0.25rem;
           max-width: 150px;
           padding: 0.25rem 1rem;
@@ -67,11 +68,6 @@
   }
 }
 
-// .fixed {
-//   position: fixed;
-//   top: 40px;
-//   z-index: 1030;
-// }
 
 @media (max-width: 767px) {
   .burger-menu {
@@ -168,7 +164,7 @@
         .navbar-end {
           .nav-links {
             a {
-              font-size: 1rem;
+              font-size: 1.25rem;
             }
           }
         }
