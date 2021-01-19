@@ -6,163 +6,29 @@
   padding: 0.65rem 0.75rem;
 }
 
-.workshops {
-  .workshops-list-page-link {
-    background-color: $blue;
-    color: #fff;
-    font-size: 1.3rem;
-    padding: 0.65rem 0.75rem;
-  }
-}
-
-// Styles for Workshops partial 
-.workshops {
-  .container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .date {
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-
-  .workshops-heading {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
-
-  .workshops-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1.5rem;
-
-    li {
-      display: none;
-    }
-
-    .card {
-      align-items: center;
-      background-color: #fff;
-      flex-direction: column;
-      margin: 1rem;
-      max-width: 500px;
-      padding: 1.5rem 1rem;
-
-      .hr-divider {
-        color: $teal;
-        width: 80%;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-
-        a {
-          margin-left: auto;
-        }
-      }
-    }
-
-    .upcoming-workshops,
-    .past-workshops {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      min-width: 50%;
-    }
-
-    @media (max-width: 768px) {
-      & {
-        flex-direction: column;
-      }
-    }
-  }
-}
-
 //Styles for the Workshops List Page
 .workshops-list-page {
-  .workshops-heading {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 80%;
-  }
-
-
-  .filters,
-  .workshops-container {
-    margin-bottom: 1.5rem;
-  }
-
-  .filters {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .filter-select {
-    background-color: white;
-    background-clip: padding-box;
-    border: 1px solid #979797;
-    color: #495057;
-    display: block;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 0.375rem 0.75rem;
-    width: 100%;
-  }
-
-  .filter-select:first-child {
-    margin-right: 2rem;
-  }
-
-  .workshops-list-page-container {
-    .card-grid {
-      display: flex;
+  .table-head {
+    tr {
+      background-color: $teal;
     }
 
-    .grid-card {
-      max-width: 33.33%;
-    }
+  }
 
-    .card {
+  .table-body {
+    tr {
+      background-color: $light-green;
+      color: $darker-gray;
       display: flex;
-      flex-direction: column;
-      height: 500px;
-      padding: .5rem;
-      width: 100%;
 
-        h4 { 
-          margin: 0;
-        }
-
-      .hr-divider {
-        color: $teal;
-        width: 80%;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-
-        a {
-          margin-left: auto;
-        }
+      td {
+        margin: .75rem;
       }
     }
+  }
+
+  .dataTable-bottom {
+    margin-top: 2rem;
   }
 }
 
