@@ -19,7 +19,7 @@
     tr {
       background-color: $light-green;
       color: $darker-gray;
-      display: flex;
+      // display: flex;
 
       td {
         margin: .75rem;
@@ -32,6 +32,19 @@
   }
 }
 
+.lab-reports-section {
+  background-color: $orange;
+
+  h2 {
+    padding-top: 3rem;
+    color: $blue;
+    font-size: 2rem; 
+  }
+
+  a {
+    margin-left: 5rem;
+  }
+}
 //Styles for Workshops Single Pages.
 .single-workshop-page {
   .container {

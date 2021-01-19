@@ -42,6 +42,29 @@
 	}
 }
 
+.table-head {
+    tr {
+      background-color: $teal;
+    }
+
+  }
+
+  .table-body {
+    tr {
+      background-color: $light-green;
+      color: $darker-gray;
+      // display: flex;
+
+      td {
+        margin: .75rem;
+      }
+    }
+  }
+
+  .dataTable-bottom {
+    margin-top: 2rem;
+  }
+
 @media (max-width: 993px) {
 	.data-leads {
 		.info-container {
