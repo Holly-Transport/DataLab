@@ -41,12 +41,25 @@
 
 	.icon-container {
 		display: flex;
-		justify-content: center;
+    justify-content: center;
+    min-height: 130px;
+    
 
 		.badges {
 			max-width: 100px;
 			width: 100%;
-		}
+    }
+    
+    .badges-top, .badges-bottom {
+      max-width: 70px;
+    }
+
+    .badges-top {
+      margin-bottom: auto;
+    }
+    .badges-bottom {
+      margin-top: auto;
+    }
 	}
 
 	.text-container {
@@ -54,9 +67,11 @@
 	}
 
 	.posters-container {
+    min-height: 130px;
+
 		.poster {
-			min-height: 100px;
-			max-width: 60px;
+			height: 130px;
+			max-width: 90px;
 			width: 100%;
 		}
 	}
@@ -105,17 +120,21 @@
   
       h3 {
         font-weight: 700;
+        font-size: 1.75rem;
         text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 0;
       }
   
       img {
-        margin: auto;
+        margin: 1.5rem auto 0;
       }
     }
   }
 
   // Workshops and Clinics Section styles
-
   .workshops-list-page {
     .table-head {
       tr {
@@ -148,9 +167,5 @@
       padding-top: 3rem;
       color: $blue;
       font-size: 2rem; 
-    }
-  
-    a {
-      margin-left: 5rem;
     }
   }
