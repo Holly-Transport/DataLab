@@ -1,4 +1,4 @@
-.hero {
+.header {
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -11,11 +11,13 @@
     
     .data-lab-intro-text {
       color: white;
+      max-width: 351px;
       width: 50%;
     }
 
     .call-to-action-link {
       background-color: $dark-orange;
+      font-weight: 700;
       border-radius: 5px;
       color: #fff;
       padding: .5rem;

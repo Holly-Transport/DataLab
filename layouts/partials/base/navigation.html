@@ -1,4 +1,4 @@
-<nav id="mainNav" class="navbar fixed" role="navigation" aria-label="main navigation">
+<nav id="mainNav" class="navbar" role="navigation" aria-label="main navigation">
 	<div class="nav-container">
 		<div class="mobile-layout">
 				<a class="navbar-item" href="{{ .Site.BaseURL }}"> 
@@ -7,7 +7,11 @@
 				</a>
 			<div class="navbar-end navbar-menu">
 				<div class="nav-links">
-					<a href="{{- .Site.Params.DataResourcesLink -}}">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
+				{{ if eq .Kind "home" }}
+					<a href="#directory">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
+				{{- else -}}
+					<a href="{{- .Site.BaseURL -}}#directory">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
+				{{- end -}}
 					<a href="#">{{ .Site.Params.ExternalPartnershipsLinkTitle }}</a> 
 					<a href="{{- .Site.Params.WorkshopsLink -}}">{{ .Site.Params.DigitalLiteracyLinkTitle }}</a> 
 				</div>

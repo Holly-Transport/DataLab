@@ -8,6 +8,12 @@
 		display: grid;
 		grid-gap: 3rem;
 		grid-template-columns: repeat(3, 1fr);
+		
+		h2 {
+			font-size: 2.5rem;
+			font-weight: 700;
+			text-align: center;
+		}
 	}
 
 	.cards-container {
@@ -36,8 +42,12 @@
 			max-width: 100px;
 			width: 100%;
 		}
-
 	}
+
+	.text-container {
+		max-width: 275px;	
+	}
+
 	.workshops-and-clinics-container {
 		.poster {
 			min-height: 100px;
