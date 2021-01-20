@@ -1,32 +1,42 @@
 {{ define "workshops" }}
 <section class="workshops">
   <div class="container">
-		<a class="workshops-list-page-link" href="{{- .Site.Params.WorkshopsLink -}}">{{- .Site.Params.WorkshopsSectionLabel -}}</a>
-		<div class="workshops-container">
-			{{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
-				{{- range $taxonomy -}}
-				<li class="card" aria-hidden="true">
-					<h3>{{- delimit .Params.Workshop_types ",  " }}: {{ .Title -}}</h3>
-					<h4>Scheduled: <small class="date">{{- .Params.scheduled_date -}}</small></h4>
-					<hr class="hr-divider">
-					<div class="content">
-						<p>{{- .Summary -}}</p>
-						<a class="workshop-links" href="{{ .Permalink }}">Learn More</a>
-					</div>
-				</li>
-				{{- end -}}
-			{{- end -}}
-			<div class="upcoming-workshops">
-				<h2>Upcoming Workshops</h2>
-				<ul class="upcoming-workshops-list">
-				</ul>
-			</div>
-			<div class="past-workshops">
-				<h2>Past Workshops</h2>
-				<ul class="past-workshops-list">
-				</ul>
-			</div>
+	<div class="workshops-heading">
+		<h2>{{- .Site.Params.WorkshopsSectionLabel -}}</h2>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptas aut delectus numquam iure 
+				itaque, dignissimos consequuntur perspiciatis at ipsa accusamus sapiente minima tempora commodi 
+				laudantium! Et aliquam vitae beatae?
+		</p>
+	</div>
+	<div class="workshops-list-page-container">
+		<div class="container">
+			<table id="workshops-and-clinics-table">
+			<thead class="table-head">
+				<tr>
+					<th>Date</th>
+					<th>Type</th>
+					<th>Description</th>
+					<th>Materials</th>
+				</tr>
+			</thead>
+			<tbody class="table-body">
+				<tr>
+					<td>Thurs, March, 24, 2021</td>
+					<td>Data Science</td>
+					<td>Amazon Web Services (AWS) training is part of a series of events organized by Development Data Partnership for IT staff and data scientists. The course covered new Amazon tools to make it easier and faster to organize and analyze very large, unstructured data. Training materials include self-paced, step-by-step hands-on lab activities. To access lab materials, please request permission from datalab@worldbank.org to access via
+						GitHub.</td>
+					<td>Aws Credentials</td>
+				</tr>
+			</tbody>
+			</table>
 		</div>
+		<div class="lab-reports-section">
+			<h2>Download Lab Reports</h2>
+			<a href="">
+				<img src="{{- .Site.BaseURL -}}/img/data-lab-reports.png" alt="">
+			</a>
+		</div>
+	</div>
   </div>
 </section>
 {{ end }}

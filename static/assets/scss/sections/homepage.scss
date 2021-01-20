@@ -1,0 +1,156 @@
+// Global styles
+.main {
+    h2 {
+        font-size: 2rem;
+        margin: 5rem 0 0;
+    }
+}
+
+// Section cards Section styles
+.section-cards {
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0; 
+
+		
+    .section-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        min-width: 303px;
+        text-align: center;
+    }
+
+	.cards-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 3rem;
+		padding: 0;
+
+		.card {
+			align-items: center;
+			background-color: $white;
+			color: $darker-gray;
+			display: flex;
+			flex-direction: column;	
+			list-style: none;
+			margin-bottom: 1rem;
+			padding: 1rem;
+		}
+	}
+
+	.icon-container {
+		display: flex;
+		justify-content: center;
+
+		.badges {
+			max-width: 100px;
+			width: 100%;
+		}
+	}
+
+	.text-container {
+		max-width: 275px;	
+	}
+
+	.posters-container {
+		.poster {
+			min-height: 100px;
+			max-width: 60px;
+			width: 100%;
+		}
+	}
+}
+
+
+
+@media (max-width: 992px) {
+	.section-cards {
+		.cards-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.section-cards {
+		.cards-container {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+// Data Resources Section styles
+.directory {
+    align-items: center;
+    background-color: $dark-orange;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  
+    h2 {
+      color: $blue;
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+  
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+  
+      img {
+        margin: auto;
+      }
+    }
+  }
+
+  // Workshops and Clinics Section styles
+
+  .workshops-list-page {
+    .table-head {
+      tr {
+        background-color: $teal;
+      }
+  
+    }
+  
+    .table-body {
+      tr {
+        background-color: $light-green;
+        color: $darker-gray;
+        // display: flex;
+  
+        td {
+          margin: .75rem;
+        }
+      }
+    }
+  
+    .dataTable-bottom {
+      margin-top: 2rem;
+    }
+  }
+  
+  .lab-reports-section {
+    background-color: $orange;
+  
+    h2 {
+      padding-top: 3rem;
+      color: $blue;
+      font-size: 2rem; 
+    }
+  
+    a {
+      margin-left: 5rem;
+    }
+  }

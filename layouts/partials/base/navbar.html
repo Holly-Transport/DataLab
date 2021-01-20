@@ -2,18 +2,14 @@
 	<div class="nav-container">
 		<div class="mobile-layout">
 				<a class="navbar-item" href="{{ .Site.BaseURL }}"> 
-					<span class="wb-top-text">Data Lab</span> 
-					<span class="wb-bottom-text">The World Bank</span>
+						<span class="wb-top-text">Data Lab</span> 
+						<span class="wb-bottom-text">The World Bank</span>
 				</a>
 			<div class="navbar-end navbar-menu">
 				<div class="nav-links">
-				{{ if eq .Kind "home" }}
-					<a href="#directory">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
-				{{- else -}}
-					<a href="{{- .Site.BaseURL -}}#directory">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
-				{{- end -}}
-					<a href="#">{{ .Site.Params.ExternalPartnershipsLinkTitle }}</a> 
-					<a href="{{- .Site.Params.WorkshopsLink -}}">{{ .Site.Params.DigitalLiteracyLinkTitle }}</a> 
+					<a href="{{- .Site.BaseURL -}}#data-resources">{{- .Site.Params.DataResourcesLinkTitle -}}</a> 
+					<a href="{{- .Site.BaseURL -}}#external-collaborators">{{ .Site.Params.ExternalPartnershipsLinkTitle }}</a> 
+					<a href="{{- .Site.BaseURL -}}#digital-literacy">{{ .Site.Params.DigitalLiteracyLinkTitle }}</a> 
 				</div>
 			</div>
 		</div>
