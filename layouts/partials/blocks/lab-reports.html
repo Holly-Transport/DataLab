@@ -2,7 +2,7 @@
 <section class="lab-reports-section">
 	<div class="container">
     <h2>Download Lab Reports</h2>
-     {{ with .Site.GetPage "section" "lab-reports"}}
+     {{ with .Site.GetPage "section" "lab-reports" }}
 
       {{- range .Pages -}}
       <h3>{{ .Page.Title }}</h3>

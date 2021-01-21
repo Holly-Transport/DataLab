@@ -6,6 +6,38 @@
     }
 }
 
+// Header styles
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	.container {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+    justify-content: center;
+    
+    .data-lab-intro-text {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      max-width: 428px;
+      width: 50%;
+    }
+
+    .call-to-action-link {
+      background-color: $dark-orange;
+      font-size: 1.4rem;
+      font-weight: 700;
+      border-radius: 5px;
+      color: #fff;
+      padding: .5rem;
+    }
+	}
+}
+
 // Section cards Section styles
 .section-cards {
 	display: flex;
@@ -63,7 +95,9 @@
 	}
 
 	.text-container {
-		max-width: 275px;	
+    font-size: 1.1rem;
+    margin-right: auto;
+    width: 97%;
 	}
 
 	.posters-container {
