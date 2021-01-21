@@ -34,6 +34,18 @@
 	}
 }
 
+.lab-leads-directory {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+iframe {
+	margin: 5rem 0;
+	max-width: 780px;
+	min-height: 500px;
+	width: 100%;
+}
 .about-data-leads {
 	display: flex;
 	justify-content: center;
@@ -45,28 +57,6 @@
 	}
 }
 
-.table-head {
-    tr {
-      background-color: $teal;
-    }
-
-  }
-
-  .table-body {
-    tr {
-      background-color: $light-green;
-      color: $darker-gray;
-      // display: flex;
-
-      td {
-        margin: .75rem;
-      }
-    }
-  }
-
-  .dataTable-bottom {
-    margin-top: 2rem;
-  }
 
 @media (max-width: 993px) {
 	.data-leads {

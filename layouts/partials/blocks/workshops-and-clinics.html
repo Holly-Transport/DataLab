@@ -19,20 +19,25 @@
           </tr>
         </thead>
         <tbody class="table-body">
+          {{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
+          {{- range $taxonomy -}}
           <tr>
-            <td>Thurs, March, 24, 2021</td>
-            <td>Data Science</td>
-            <td>Amazon Web Services (AWS) training is part of a series of events organized by Development Data
-              Partnership for IT staff and data scientists. The course covered new Amazon tools to make it easier and
-              faster to organize and analyze very large, unstructured data. Training materials include self-paced,
-              step-by-step hands-on lab activities. To access lab materials, please request permission from
-              datalab@worldbank.org to access via
-              GitHub.</td>
-            <td>Aws Credentials</td>
-          </tr>
+              <td class="date">{{- .Params.Scheduled_date -}}</td>
+              <td>{{- .Content -}}</td>
+              <td>{{ if .Params.Workshop_types }}{{- delimit .Params.Workshop_types ", " | replaceRE " " "-" | replaceRE "\\+" " " | lower -}}{{- end -}}</td>
+              <td>
+                {{ if .Params.Materials_paths }}
+                {{ .Params.Materials_paths -}}
+                <a href="{{- delimit .Params.Materials_paths ", "  -}}">
+                </a>
+                {{ end }}
+              </td>
+            </tr>
+            {{- end -}}
+          {{- end -}}
         </tbody>
       </table>
     </div>
   </div>
 </section>
-{{ end }}
+{{- end -}}

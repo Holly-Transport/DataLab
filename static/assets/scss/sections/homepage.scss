@@ -105,7 +105,7 @@
 
 		.poster {
 			height: 130px;
-			max-width: 90px;
+			max-width: 78px;
 			width: 100%;
 		}
 	}
@@ -142,7 +142,7 @@
   
     h2 {
       color: $blue;
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 0;
     }
   
@@ -154,12 +154,14 @@
   
       h3 {
         font-weight: 700;
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         text-transform: uppercase;
       }
 
       p {
+        font-size: 1.1rem;
         margin-top: 0;
+        width: 90%;
       }
   
       img {
@@ -185,6 +187,10 @@
   
         td {
           margin: .75rem;
+        }
+
+        .date {
+          min-width: 135px;
         }
       }
     }
