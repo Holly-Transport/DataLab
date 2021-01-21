@@ -5,7 +5,7 @@
      {{ with .Site.GetPage "section" "lab-reports"}}
 
       {{- range .Pages -}}
-      {{ .Page.Title }}
+      <h3>{{ .Page.Title }}</h3>
       <div class="lab-reports-container">
         <a href="{{- .Site.BaseURL -}}/{{- .Page.Params.File_path | safeHTML -}}">
           <img src="{{- .Site.BaseURL -}}/img/data-lab-reports.png" alt="">
@@ -13,11 +13,6 @@
       </div>
       {{- end -}}
     {{- end -}}
-    {{/*  <div class="lab-reports-container">
-      <a href="">
-        <img src="{{- .Site.BaseURL -}}/img/data-lab-reports.png" alt="">
-      </a>
-    </div>  */}}
 	</div>
 </section>
 {{- end -}}
