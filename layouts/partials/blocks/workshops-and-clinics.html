@@ -26,11 +26,7 @@
               <td>{{- .Content -}}</td>
               <td>{{ if .Params.Workshop_types }}{{- delimit .Params.Workshop_types ", " | replaceRE " " "-" | replaceRE "\\+" " " | lower -}}{{- end -}}</td>
               <td>
-                {{ if .Params.Materials_paths }}
-                {{ .Params.Materials_paths -}}
-                <a href="{{- delimit .Params.Materials_paths ", "  -}}">
-                </a>
-                {{ end }}
+
               </td>
             </tr>
             {{- end -}}
