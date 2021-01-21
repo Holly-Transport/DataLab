@@ -1,5 +1,4 @@
 const tableDates = document.querySelectorAll('.date')
-console.log(tableDates)
 
 const formatIntoDateType = function (stringDate) {
 	// Convert string date into Date type.

@@ -111,8 +111,6 @@
 	}
 }
 
-
-
 @media (max-width: 992px) {
 	.section-cards {
 		.cards-container {
@@ -171,33 +169,35 @@
   }
 
   // Workshops and Clinics Section styles
-  .workshops-list-page {
-    .table-head {
-      tr {
-        background-color: $teal;
-      }
-  
-    }
-  
-    .table-body {
-      tr {
-        background-color: $light-green;
-        color: $darker-gray;
-        // display: flex;
-  
-        td {
-          margin: .75rem;
-        }
+  .workshops-list-page-container {
 
-        .date {
-          min-width: 135px;
+    #workshops-and-clinics-table {
+      .table-head {
+        tr {
+          background-color: $teal;
+        }
+    
+      }
+    
+      .table-body {
+        tr {
+          background-color: $light-green;
+          color: $darker-gray;
+    
+          td, .date {
+            margin: .75rem;
+          }
+  
+          .date {
+            min-width: 135px;
+          }
         }
       }
     }
-  
-    .dataTable-bottom {
-      margin-top: 2rem;
-    }
+    
+      .dataTable-bottom {
+        margin-top: 2rem;
+      }
   }
   
   .lab-reports-section {

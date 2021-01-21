@@ -16,7 +16,7 @@
 {{- if eq .Kind "home" -}}
   <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript" defer ></script>
-  <script src="{{- .Site.BaseURL -}}js/functions/workshops-and-clinics-table.js" type="text/javascript" defer></script>
+  <script src="{{- .Site.BaseURL -}}/js/functions/workshops-and-clinics-table.js" type="text/javascript" defer></script>
 {{- end -}}
 
 {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
