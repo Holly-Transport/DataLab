@@ -7,7 +7,7 @@
       {{- range .Pages -}}
       <h3>{{ .Title }}</h3>
       <div class="lab-reports-container">
-        <a href="{{- .Site.BaseURL -}}/{{- .Page.Params.File_path | safeHTML -}}">
+        <a href="{{- .Site.BaseURL -}}/{{- .Params.File_path | safeHTML -}}">
           <img src="{{- .Site.BaseURL -}}/img/data-lab-reports.png" alt="">
         </a>
       </div>
