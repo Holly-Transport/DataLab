@@ -1,0 +1,20 @@
+.data-resources-directory-page {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    }
+
+    iframe {
+        margin: 5rem 0;
+        max-width: 780px;
+        min-height: 500px;
+        width: 100%;
+    }
+}

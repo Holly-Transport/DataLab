@@ -20,7 +20,9 @@ assetDir = "static/assets"
 	workshopsSectionLabel = "Workshops & Clinics"
 	workshopsLink = "/workshops-and-clinics"
 
-	dataDirectoryLabel = "Find World Bank Data Resources"	
+	dataDirectoryLabel = "Find World Bank Data Resources"
+		
+	dataDirectoryPageLabel = "WB Data Directory"
 
 	dataLeadsLabel = "Data Lab Leads"	
 	dataLeadsLink = "/data-leads"
