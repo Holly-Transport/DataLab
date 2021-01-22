@@ -27,9 +27,10 @@
               <td>{{- .Content -}}</td>
               <td>
                 {{ if .Params.Materials_paths }}
-
                   {{- range .Params.Materials_paths -}}
-                  <a href="">{{  . }}</a>
+                  <a href="{{- . -}}">
+                    Materials
+                  </a>
                   {{- end -}}
                 {{- end -}}
               </td>

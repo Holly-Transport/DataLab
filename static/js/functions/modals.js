@@ -1,73 +1,55 @@
-/**
- * Modals
- */
-const Modal = (function () {
-  const Constructor = function (selector) {
-    const publicAPIs = {}
-
-			const show = function() {
-				this.elem.classList.toggle('is-active')
-				this.on_show()
-      }
-
-      const close = function() {
-				this.elem.classList.toggle('is-active')
-				this.on_close()
-      }
-
-      const close_data = function() {
-          var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
-          var that = this
-          modalClose.forEach(function (e) {
-              e.addEventListener("click", function () {
-
-                  that.elem.classList.toggle('is-active')
-
-                  var event = new Event('modal:close')
-
-                  that.elem.dispatchEvent(event)
-              })
-          })
-      }
-
-    //   on_show() {
-    //       var event = new Event('modal:show')
-
-    //       this.elem.dispatchEvent(event)
-    //   }
-
-    //   on_close() {
-    //       var event = new Event('modal:close')
-
-    //       this.elem.dispatchEvent(event)
-    //   }
-
-    //   addEventListener(event, callback) {
-    //       this.elem.addEventListener(event, callback)
-    //   }
-    // }
-
-    var modalButton = document.querySelector(modalButton)
-
-    // btn.addEventListener("click", function () {
-    //   mdl.show()
-    // })
-
-    // mdl.addEventListener('modal:show', function () {
-    //   console.log("opened")
-    // })
-
-    // mdl.addEventListener("modal:close", function () {
-    //   console.log("closed")
-    // })
-    publicAPIs.init = function () {
-			const modal = document.querySelector(selector)
-
-		}
-
-    return publicAPIs
+class Modal {
+  constructor(modal, target) {
+    this.isOpen = false
+    this.modal = modal
+    this.target = target
+    this.closeModal = modal.querySelectorAll("[data-close]")
   }
-  publicAPIs.init()
 
-  return Constructor
-})()
+  open() {
+    this.modal.classList.add("show-modal")
+    const context = this;
+        setTimeout(function () {
+            context.animateIn();
+        }, 10);
+  }
+  close() {
+    this.animateOut();
+        const context = this;
+        setTimeout(function () {
+            context.modal.classList.remove('show-modal');
+        }, 250);
+  }
+
+  animateIn() {
+    this.modal.classList.add("animate-modal")
+  }
+  animateOut() {
+    this.modal.classList.remove("animate-modal")
+  }
+
+  init() {
+    const modal = this
+    this.target.addEventListener("click", function (e) {
+      if (modal.isOpen) {
+        modal.close()
+      } else {
+        modal.open()
+      }
+    })
+    this.closeModal.forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        modal.close()
+      })
+    })
+  }
+}
+
+const modal = new Modal(
+  // Grab the modal element
+  document.querySelector(".modal"),
+  // Grab the element that triggers the modal
+  document.querySelector('[data-toggle="modal"]')
+)
+// Add the event listeners
+modal.init()

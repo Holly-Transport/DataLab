@@ -4,7 +4,24 @@
 	  <h2>{{- .Site.Params.DataDirectoryLabel -}}</h2>
 	  <p>Solutions for governments that combine the best of World Bank economics, data science, geospatial, data engineering, IT, domain expertise, and policy resources are difficult to realize, because the necessary combined resources are scattered throughout the organization, as illustrated in this operations-focused data services map.</p>
     {{/* TODO: Add a modal with amplified Map Image */}}  
-   	 <img src="{{- .Site.BaseURL -}}/img/map.jpg" />
+	<div class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>{{- .Site.Params.DataDirectoryLabel -}}</h2>
+					<button type="button" data-close aria-label="Close">
+						X
+					</button>
+				</div>
+				<div class="modal-body">
+					<img id="openModal" src="{{- .Site.BaseURL -}}/img/map.jpg" />
+				  
+				  <button type="button" class="btn" data-close>Close</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<img data-toggle="modal" src="{{- .Site.BaseURL -}}/img/map.jpg" />
 	  <h3>GET HELP FINDING THE DATA RESOURCES YOU NEED</h3>
 	  <p>
 		Feel overwhelmed? Don’t navigate Bank resources alone! Managers and directors throughout the World Bank have nominated Data Lab Leads to help YOU find the colleagues and internal resources you need to get your project off the ground. <a href="#"><strong>Find your Lab Lead HERE.</strong></a>
