@@ -3,7 +3,7 @@ const tableDates = document.querySelectorAll('.date')
 const formatIntoDateType = function (stringDate) {
 	// Convert string date into Date type.
 	if (typeof stringDate === 'string') {
-		return new Date(stringDate).toUTCString()
+		return new Date(stringDate).toISOString().split('T')[0] // Formats date into YYYY-MM-DD format.
 	} else {
 		throw new Error("The argument provided is not a string. Please check your arguments type.")
 	}
