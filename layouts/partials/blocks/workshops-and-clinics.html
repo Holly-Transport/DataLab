@@ -19,13 +19,13 @@
           </tr>
         </thead>
         <tbody class="table-body">
-          {{- range $key, $taxonomy := .Site.Taxonomies.workshop_types -}}
-          {{- range $taxonomy -}}
+          {{ with .Site.GetPage "section" "workshops-and-clinics" }}
+          {{- range .Pages -}}
           <tr>
               <td class="date">{{- .Params.Scheduled_date -}}</td>
               <td>{{ if .Params.Workshop_types }}{{- delimit .Params.Workshop_types ", " | humanize -}}{{- end -}}</td>
               <td>{{- .Content -}}</td>
-              <td>
+              <td class="material-links">
                 {{ if .Params.Materials_paths }}
                   {{- range .Params.Materials_paths -}}
                   {{ . | markdownify }}
@@ -33,7 +33,7 @@
                 {{- end -}}
               </td>
             </tr>
-            {{- end -}}
+          {{- end -}}
           {{- end -}}
         </tbody>
       </table>

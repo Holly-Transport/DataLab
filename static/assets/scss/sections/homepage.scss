@@ -298,9 +298,24 @@
           text-align: center;
         }
 
+        .material-links {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          min-width: 30px;
+
+          a {
+            margin: .5rem;
+          }
+        }
+
         &:nth-child(odd) {
           background-color: $white;
           color: #000;
+
+          a {
+            color: $teal
+          }
         }
       }
     }

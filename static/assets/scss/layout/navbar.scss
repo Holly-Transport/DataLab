@@ -2,7 +2,7 @@
   border-top: 1px solid $white;
   border-bottom: 1px solid $white;
   color: $white;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: .5rem;
   transition: padding-top 0.3s, padding-bottom 0.3s;
   width: 100vw;
@@ -179,15 +179,6 @@
   .navbar {
     .nav-container {
       max-width: 90vw;
-
-      .mobile-layout {
-        .navbar-end {
-          .nav-links {
-            a {
-            }
-          }
-        }
-      }
     }
   }
 }

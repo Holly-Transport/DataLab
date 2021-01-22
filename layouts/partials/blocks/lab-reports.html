@@ -3,11 +3,9 @@
 	<div class="container">
     <h2>Download Lab Reports</h2>
      {{ with .Site.GetPage "section" "lab-reports" }}
-
       {{- range .Pages -}}
-      <h3>{{ .Title }}</h3>
       <div class="lab-reports-container">
-        <a href="{{- .Site.BaseURL -}}/{{- .Params.File_path | safeHTML -}}">
+        <a href="{{- .Params.File_path | safeHTML -}}">
           <img src="{{- .Site.BaseURL -}}{{- .Params.Image_path | safeHTML -}}" alt="">
         </a>
       </div>
