@@ -10,18 +10,16 @@
 				<div class="modal-header">
 					<h2>{{- .Site.Params.DataDirectoryLabel -}}</h2>
 					<button type="button" data-close aria-label="Close">
-						X
+						<span>X</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<img id="openModal" src="{{- .Site.BaseURL -}}/img/map.jpg" />
-				  
-				  <button type="button" class="btn" data-close>Close</button>
+					<img class="modal-image" src="{{- .Site.BaseURL -}}/img/map.jpg" alt="World Bank Data Resources Directory" />
 				</div>
 			</div>
 		</div>
 	</div>	
-	<img data-toggle="modal" src="{{- .Site.BaseURL -}}/img/map.jpg" />
+	<img data-toggle="modal" src="{{- .Site.BaseURL -}}/img/map.jpg" alt="World Bank Data Resources Directory"/>
 	  <h3>GET HELP FINDING THE DATA RESOURCES YOU NEED</h3>
 	  <p>
 		Feel overwhelmed? Don’t navigate Bank resources alone! Managers and directors throughout the World Bank have nominated Data Lab Leads to help YOU find the colleagues and internal resources you need to get your project off the ground. <a href="#"><strong>Find your Lab Lead HERE.</strong></a>
