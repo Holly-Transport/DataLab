@@ -6,7 +6,7 @@
       {{- range .Pages -}}
       <div class="lab-reports-container">
         <a href="{{- .Params.File_path | safeHTML -}}">
-          <img src="{{- .Site.BaseURL -}}{{- .Params.Image_path | safeHTML -}}" alt="">
+          <img src="{{- .Site.BaseURL -}}/{{- .Params.Image_path | safeHTML -}}" alt="">
         </a>
       </div>
       {{- end -}}
