@@ -28,9 +28,7 @@
               <td>
                 {{ if .Params.Materials_paths }}
                   {{- range .Params.Materials_paths -}}
-                  <a href="{{- . -}}">
-                    Materials
-                  </a>
+                  {{ . | markdownify }}
                   {{- end -}}
                 {{- end -}}
               </td>
