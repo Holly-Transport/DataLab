@@ -2,7 +2,7 @@
 <section class="workshops">
   <div class="container">
     <div class="workshops-heading">
-      <h2>{{- .Site.Params.WorkshopsSectionLabel -}}</h2>
+      <h2 id="workshops-and-clinics">{{- .Site.Params.WorkshopsSectionLabel -}}</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam voluptas aut delectus numquam iure
         itaque, dignissimos consequuntur perspiciatis at ipsa accusamus sapiente minima tempora commodi
         laudantium! Et aliquam vitae beatae?
@@ -13,6 +13,7 @@
         <thead class="table-head">
           <tr>
             <th>Date</th>
+            <th>Title</th>
             <th>Type</th>
             <th>Description</th>
             <th>Materials</th>
@@ -22,17 +23,48 @@
           {{ with .Site.GetPage "section" "workshops-and-clinics" }}
           {{- range .Pages -}}
           <tr>
-              <td class="date">{{- .Params.Scheduled_date -}}</td>
-              <td>{{ if .Params.Workshop_types }}{{- delimit .Params.Workshop_types ", " | humanize -}}{{- end -}}</td>
-              <td>{{- .Content -}}</td>
-              <td class="material-links">
-                {{ if .Params.Materials_paths }}
-                  {{- range .Params.Materials_paths -}}
-                  {{ . | markdownify }}
-                  {{- end -}}
-                {{- end -}}
-              </td>
-            </tr>
+            <td class="date">{{- .Params.Scheduled_date -}}</td>
+            <td>{{- .Title -}}</td>
+            <td>{{ if .Params.Workshop_types }}{{- delimit .Params.Workshop_types ", " | humanize -}}{{- end -}}</td>
+            <td class="summary">{{- .Content -}}</td>
+            <td class="material-links">
+              {{ if .Params.Slides_path }}
+
+              <a href="{{- .Params.Slides_path -}} " title="Slides">
+                {{ partial "fontawesome.html" "file-powerpoint-solid" }}
+              </a>
+              {{- end -}}
+
+              {{ if .Params.Image_path }}
+              <a href="{{- .Params.Image_path -}} " title="Photos">
+                {{ partial "fontawesome.html" "image-solid" }}
+              </a>
+
+              {{- end -}}
+
+              {{ if .Params.Video_path }}
+              <a href="{{- .Params.Video_path -}} " title="Video">
+                {{ partial "fontawesome.html" "video-solid" }}
+              </a>
+
+              {{- end -}}
+
+              {{ if .Params.Extra_link_1 }}
+              <a href="{{- .Params.Extra_link_1 -}} " title="First Extra Link">
+                {{ partial "fontawesome.html" "link-solid" }}
+              </a>
+
+              {{- end -}}
+
+              {{ if .Params.Extra_link_2 }}
+              <a href="{{- .Params.Extra_link_2 -}} " title="Second Extra Link">
+
+                {{ partial "fontawesome.html" "link-solid" }}
+              </a>
+
+              {{- end -}}
+            </td>
+          </tr>
           {{- end -}}
           {{- end -}}
         </tbody>

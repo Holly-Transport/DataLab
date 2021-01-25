@@ -2,15 +2,18 @@
 <section class="lab-reports-section">
 	<div class="container">
     <h2>Download Lab Reports</h2>
-     {{ with .Site.GetPage "section" "lab-reports" }}
-      {{- range .Pages -}}
-      <div class="lab-reports-container">
-        <a href="{{- .Params.File_path | safeHTML -}}">
-          <img src="{{- .Site.BaseURL -}}/{{- .Params.Image_path | safeHTML -}}" alt="">
-        </a>
-      </div>
-      {{- end -}}
-    {{- end -}}
+    <ul class="lab-reports-container">
+       {{ with .Site.GetPage "section" "lab-reports" }}
+        {{- range .Pages -}}
+        <li class="card">
+          <a href="{{- .Params.File_path | safeHTML -}}">
+            <img src="{{- .Site.BaseURL -}}/{{- .Params.Image_path | safeHTML -}}" alt="Lab Report">
+          </a>
+          <p>{{- .Summary -}}</p>
+        </li>
+          {{- end -}}
+        {{- end -}}
+        </ul>
 	</div>
 </section>
 {{- end -}}

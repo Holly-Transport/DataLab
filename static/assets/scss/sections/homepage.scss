@@ -20,7 +20,7 @@
 
     .data-lab-intro-text {
       color: $white;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 300;
       margin-bottom: 1.5rem;
       width: 70%;
@@ -53,6 +53,10 @@
   justify-content: center;
   margin: 3rem 0;
 
+  a:visited {
+    color: #000;
+  }
+
   .section-heading {
     font-size: 2.5rem;
     font-weight: 700;
@@ -62,11 +66,20 @@
   }
 
   .cards-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
 
+    .flex-row {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        margin: 0 .65rem;
+      }
+    }
   
     .card {
       align-items: center;
@@ -75,10 +88,13 @@
       display: flex;
       flex-direction: column;
       list-style: none;
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
+      max-height: 400px;
       min-height: 350px;
+      min-width: 400px;
       padding: 1rem;
     }
+
   }
 
   .icon-container {
@@ -102,7 +118,14 @@
     .badges-bottom {
       margin-top: auto;
     }
+
+    .wider-logo {
+      max-width: 114px;
+    }
+
   }
+
+
 
   .text-container {
     font-size: 1.1rem;
@@ -124,8 +147,11 @@
 @media (max-width: 992px) {
   .section-cards {
     .cards-container {
-      grid-template-columns: repeat(2, 1fr);
-      grid-row-gap: 0;
+      flex-direction: row;
+
+      .flex-row {
+       flex-direction: column;        
+      }
 
       li {
         display: flex;
@@ -292,6 +318,11 @@
       }
     }
   }
+
+  // Temporarily hide second H3 tag and p tag
+  h3:last-of-type , p:last-of-type {
+    display: none
+  }
 }
 
 // Workshops and Clinics Section styles
@@ -308,14 +339,19 @@
         background-color: $light-green;
         color: $darker-gray;
 
-        td,
-        .date {
+        td {
           margin: 0.75rem;
         }
 
         .date {
           min-width: 135px;
           text-align: center;
+        }
+
+        .summary {
+          p {
+            margin: 0;
+          }
         }
 
         .material-links {
@@ -325,6 +361,7 @@
           min-width: 30px;
 
           a {
+            color: $white;
             margin: 0.5rem;
           }
         }
@@ -361,5 +398,32 @@
     padding-top: 3rem;
     color: $blue;
     font-size: 2rem;
+  }
+
+  .lab-reports-container {
+    padding-bottom: 1rem;
+  }
+
+  .card {
+    align-items: center;
+    background-color: $light-green;
+    color: $darker-gray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+
+    p {
+      margin: auto; 
+      padding: .5rem;
+      width: 90%;
+    }
+  }
+
+  a {
+    img {
+      max-width: 200px;
+    }
   }
 }

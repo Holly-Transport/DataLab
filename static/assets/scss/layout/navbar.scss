@@ -4,6 +4,7 @@
   color: $white;
   margin-top: 2rem;
   padding: .5rem;
+  text-align: center;
   transition: padding-top 0.3s, padding-bottom 0.3s;
   width: 100vw;
 
@@ -17,6 +18,7 @@
       display: flex;
       cursor: pointer;
       flex-direction: column;
+      line-height: 2rem;
     }
 
     .wb-top-text {
@@ -144,7 +146,6 @@
               margin: 0.25rem;
               min-width: 196px;
               padding: 0.25rem 1rem;
-              text-align: left;
             }
           }
         }
