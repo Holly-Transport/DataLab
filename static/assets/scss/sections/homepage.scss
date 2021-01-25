@@ -47,6 +47,15 @@
   }
 }
 
+// Most Recent Section styles
+
+.most-recent-workshop-section {
+  .container {
+    background-color: $gray;
+    color: $white;
+    display: flex;
+  }
+}
 // Section cards Section styles
 .section-cards {
   display: flex;
@@ -76,8 +85,9 @@
       display: flex;
       justify-content: space-around;
 
+      
       li {
-        margin: 0 .65rem;
+        margin: auto .65rem 0;
       }
     }
   
