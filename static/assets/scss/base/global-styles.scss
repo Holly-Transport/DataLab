@@ -1,13 +1,14 @@
-html, body {
+html,
+body {
   width: 100vw;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: $blue;
+  background: 0 14px/200px url('/img/hexagon-overlay.png') repeat-y $blue;
   box-sizing: border-box;
   color: $white;
   display: flex;
@@ -24,57 +25,55 @@ body {
   overflow-x: hidden;
 }
 
-.hexagon-overlay {
-  // background: local url('/img/hexagon-overlay.png') left/100% repeat-y;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 20vh;
-  z-index: 1000;
-
-
-
-  img {
-    height: auto;
-    position: relative;
+@media (min-width: 768px) {
+  .hexagon-overlay {
+    // background: local url('/img/hexagon-overlay.png') left/100% repeat-y;
+    height: 100vh;
+    left: 0;
+    position: fixed;
     top: 0;
-    width: 28vh;
+    width: 20vh;
+    z-index: 1000;
 
-    &:nth-child(2) {
-      top: -20%;
-      left: -38%;
-    }
-
-    &:nth-child(3) {
-      top: -67%;
-      left: -106%;
-      transform: rotate(302deg)
-    }
-
-    @media (max-width: 992px) {
-      & {
-        top: 0;
-        width: 24vh;
-      }
+    img {
+      height: auto;
+      position: relative;
+      top: 0;
+      width: 28vh;
 
       &:nth-child(2) {
         top: -20%;
         left: -38%;
       }
-  
+
       &:nth-child(3) {
         top: -67%;
         left: -106%;
-        transform: rotate(302deg)
+        transform: rotate(302deg);
+      }
+
+      @media (max-width: 992px) {
+        & {
+          top: 0;
+          width: 24vh;
+        }
+
+        &:nth-child(2) {
+          top: -20%;
+          left: -38%;
+        }
+
+        &:nth-child(3) {
+          top: -67%;
+          left: -106%;
+          transform: rotate(302deg);
+        }
       }
     }
   }
-
-
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .hexagon-overlay {
     display: none;
     top: unset;
@@ -115,9 +114,8 @@ li {
 .inline-svg {
   display: inline-block;
   height: 1.15rem;
-  width: 1.15rem;
   top: 0.15rem;
-  position: relative;
+  width: 1.15rem;
 }
 
 .container {
@@ -127,7 +125,6 @@ li {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 main {
   flex: 1 0 auto;
@@ -146,7 +143,6 @@ main {
   background: rgba($color: #fff, $alpha: 0.6);
   color: $white;
 }
-
 
 @media (min-width: 576px) {
   .container {
@@ -177,5 +173,3 @@ main {
     max-width: 1269px;
   }
 }
-
-

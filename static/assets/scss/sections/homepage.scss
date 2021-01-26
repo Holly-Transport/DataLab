@@ -50,19 +50,100 @@
 // Most Recent Section styles
 
 .most-recent-workshop-section {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .container {
+    align-items: center;
     background-color: $gray;
     color: $white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    a {
+      align-items: center;
+      color: $white;
+      display: flex;
+      min-width: 450px;
+
+    }
+
+    span {
+      margin: 0 0.5rem;
+    }
+
+    h2,
+    h3 {
+      margin: 0.5rem 0;
+    }
+
+    h2 {
+      color: $blue;
+      font-size: 2rem;
+    }
+
+    a {
+      span {
+        color: $white;
+        border-bottom: 1px solid $white;
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        vertical-align: middle;
+      }
+    }
+
+    h3 {
+      span {
+        font-weight: 300;
+      }
+    }
+
+    .scheduled-date {
+      .inline-svg {
+        margin: 0.5rem;
+        min-height: 30px;
+        width: 1.5em;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      .container {
+        max-width: 500px;
+      }
+    }
+  }
+
+  @media (min-width: 1044px) {
+    & {
+      .container {
+        align-items: center;
+        flex-direction: row;
+        max-width: 980px;
+        justify-content: space-around;
+
+        .scheduled-date {
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
   }
 }
+
 // Section cards Section styles
 .section-cards {
   display: flex;
   justify-content: center;
   margin: 3rem 0;
 
-  a:visited {
+  a:visited,
+  a {
     color: #000;
   }
 
@@ -85,12 +166,16 @@
       display: flex;
       justify-content: space-around;
 
-      
       li {
-        margin: auto .65rem 0;
+        margin: auto 0.65rem 0;
       }
     }
-  
+
+    h2 {
+      max-width: 120px;
+      margin: 0 auto;
+    }
+
     .card {
       align-items: center;
       background-color: $white;
@@ -98,13 +183,12 @@
       display: flex;
       flex-direction: column;
       list-style: none;
-      // margin-bottom: 1rem;
       max-height: 400px;
       min-height: 350px;
+      max-width: 400px;
       min-width: 400px;
       padding: 1rem;
     }
-
   }
 
   .icon-container {
@@ -132,10 +216,7 @@
     .wider-logo {
       max-width: 114px;
     }
-
   }
-
-
 
   .text-container {
     font-size: 1.1rem;
@@ -152,35 +233,42 @@
       width: 100%;
     }
   }
-}
 
-@media (max-width: 992px) {
-  .section-cards {
-    .cards-container {
-      flex-direction: row;
+  @media (max-width: 1400px) {
+    & {
+      .cards-container {
+        flex-direction: row;
 
-      .flex-row {
-       flex-direction: column;        
-      }
+        .flex-row {
+          flex-direction: column;
+        }
 
-      li {
-        display: flex;
-        flex-direction: column;
+        li {
+          display: flex;
+          flex-direction: column;
 
-
-        .card {
-          margin-top: auto;
-          margin-bottom: 0;
+          .card {
+            margin-top: auto;
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
-}
 
-@media (max-width: 768px) {
-  .section-cards {
-    .cards-container {
-      grid-template-columns: repeat(1, 1fr);
+  @media (max-width: 1024px) {
+    & {
+      .cards-container {
+        flex-direction: column;
+
+        .flex-row {
+          flex-direction: column;
+        }
+
+        h2 {
+          margin-top: 5rem 0 0;
+        }
+      }
     }
   }
 }
@@ -330,8 +418,9 @@
   }
 
   // Temporarily hide second H3 tag and p tag
-  h3:last-of-type , p:last-of-type {
-    display: none
+  h3:last-of-type,
+  p:last-of-type {
+    display: none;
   }
 }
 
@@ -425,8 +514,8 @@
     width: 100%;
 
     p {
-      margin: auto; 
-      padding: .5rem;
+      margin: auto;
+      padding: 0.5rem;
       width: 90%;
     }
   }
