@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			throw new Error("The argument provided is not a string. Please check your arguments type.")
 		}
 	}
-	console.log(mostRecent)
 	mostRecent.textContent = formatIntoDateType(mostRecent.textContent)
 	
 	tableDates.forEach(date => {
@@ -24,11 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		columns: [
 			{ select: [1, 3, 4, 5], searchable: false }
 		]
-	})
-	
-	console.log(dataTable)
-	
-	dataTable.on('datatable.search', function(query, matched) {
-		console.log(query, matched)
 	})
 })
