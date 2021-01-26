@@ -1,5 +1,5 @@
 ---
-title: "Covid 19 Clinic Health Gp Priorities and Big Data"
+title: "Covid 19 Clinic Health GP Priorities and Big Data"
 date: 2021-01-26T08:28:53-04:00
 scheduled_date: 2021-01-25T19:30:50-04:00
 workshop_types: ["Data Science Partnerships"]
@@ -9,3 +9,4 @@ slides_path: "https://worldbankgroup-my.sharepoint.com/:p:/g/personal/hkrambeck_
 draft: true
 ---
 
+The Lab organized a Data Clinic with our Health GP colleagues and Lab memebrs to learn about: (1) WB Health GP priorities for addressing COVID-19 and planned analytical work; (2) Data resources available to Bank staff through the Development Data Partnership (Facebook, Google Health Trends, and MapBox); and (3) Preliminary big data analytics being undertaken by Bank colleagues on different aspects of COVID-19 response.
