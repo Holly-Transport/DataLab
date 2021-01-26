@@ -69,7 +69,6 @@
       color: $white;
       display: flex;
       min-width: 450px;
-
     }
 
     span {
@@ -157,13 +156,14 @@
 
   .cards-container {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     padding: 0;
 
-    .flex-row {
+    .flex-column {
       align-items: center;
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
 
       li {
@@ -209,6 +209,7 @@
     .badges-top {
       margin-bottom: auto;
     }
+
     .badges-bottom {
       margin-top: auto;
     }
@@ -238,8 +239,9 @@
     & {
       .cards-container {
         flex-direction: row;
+        flex-wrap: wrap;
 
-        .flex-row {
+        .flex-column {
           flex-direction: column;
         }
 
@@ -259,9 +261,9 @@
   @media (max-width: 1024px) {
     & {
       .cards-container {
-        flex-direction: column;
 
-        .flex-row {
+
+        .flex-column {
           flex-direction: column;
         }
 
@@ -440,11 +442,11 @@
 
         td {
           margin: 0.75rem;
+          padding-left: 0.5rem;
         }
 
         .date {
           min-width: 135px;
-          text-align: center;
         }
 
         .summary {
@@ -480,14 +482,41 @@
   .dataTable-bottom {
     margin-top: 1.2rem;
   }
-}
-.dataTable-table > tbody > tr > td,
-.dataTable-table > tbody > tr > th,
-.dataTable-table > tfoot > tr > td,
-.dataTable-table > tfoot > tr > th,
-.dataTable-table > thead > tr > td,
-.dataTable-table > thead > tr > th {
-  vertical-align: middle;
+
+  .dataTable-pagination {
+    color: $white;
+    background-color: $blue;
+
+    a:hover {
+      color: $white;
+      background-color: $gray;
+    }
+  }
+
+  .pager {
+    a {
+      color: $white;
+
+      &:hover {
+        color: $darker-gray;
+      }
+    }
+  }
+
+  .dataTable-pagination .active a:focus,
+  .dataTable-pagination .active a:hover {
+    color: $white;
+    background-color: $gray;
+  }
+
+  .dataTable-table > tbody > tr > td,
+  .dataTable-table > tbody > tr > th,
+  .dataTable-table > tfoot > tr > td,
+  .dataTable-table > tfoot > tr > th,
+  .dataTable-table > thead > tr > td,
+  .dataTable-table > thead > tr > th {
+    vertical-align: middle;
+  }
 }
 
 .lab-reports-section {
@@ -505,7 +534,7 @@
 
   .card {
     align-items: center;
-    background-color: $light-green;
+    background-color: $white;
     color: $darker-gray;
     display: flex;
     flex-direction: column;

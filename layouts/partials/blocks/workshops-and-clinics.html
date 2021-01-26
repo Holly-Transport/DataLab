@@ -24,7 +24,7 @@
           {{- range sort .Pages ".Params.Scheduled_date" "desc" -}}
           <tr>
             <td class="date">{{ if .Params.Scheduled_date }}{{- .Params.Scheduled_date -}}{{- end -}}</td>
-            <td>{{- .Title -}}</td>
+            <td class="title"><strong>{{- .Title -}}</strong></td>
             <td>{{ if .Params.Workshop_types }}{{- delimit .Params.Workshop_types ", " | humanize -}}{{- end -}}</td>
             <td class="summary">{{- .Content -}}</td>
             <td class="material-links">
