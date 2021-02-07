@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			throw new Error("The argument provided is not a string. Please check your arguments type.")
 		}
 	}
-	mostRecent.textContent = formatIntoDateType(mostRecent.textContent)
+	if(mostRecent) {
+		mostRecent.textContent = formatIntoDateType(mostRecent.textContent)
+	}
 	
 	tableDates.forEach(date => {
 		date.textContent = formatIntoDateType(date.textContent)
