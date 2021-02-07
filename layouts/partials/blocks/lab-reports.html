@@ -1,19 +1,22 @@
 {{- define "lab-reports" -}}
 <section class="lab-reports-section">
-	<div class="container">
-    <h2>Download Lab Reports</h2>
-    <ul class="lab-reports-container">
-       {{ with .Site.GetPage "section" "lab-reports" }}
+  <div class="container">
+    <img class="download-icon" src="{{- .Site.BaseURL -}}/img/lab-reports/data-lab-download-icon.png"
+      alt="Download Icon">
+    <div class="lab-reports-description">
+      <h2>Download Lab Reports</h2>
+      <ul class="lab-reports-container">
+        {{ with .Site.GetPage "section" "lab-reports" }}
         {{- range .Pages -}}
         <li class="card">
           <a href="{{- .Params.File_path | safeHTML -}}">
-            <img src="{{- .Site.BaseURL -}}/{{- .Params.Image_path | safeHTML -}}" alt="Lab Report">
           </a>
           <p>{{- .Summary -}}</p>
         </li>
-          {{- end -}}
         {{- end -}}
-        </ul>
-	</div>
+        {{- end -}}
+      </ul>
+    </div>
+  </div>
 </section>
 {{- end -}}

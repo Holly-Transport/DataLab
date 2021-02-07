@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: 0 14px/200px url('/img/hexagon-overlay.png') repeat-y $blue;
+  background: $blue;
   box-sizing: border-box;
   color: $white;
   display: flex;
@@ -23,61 +23,6 @@ body {
   padding: 0;
   text-align: left;
   overflow-x: hidden;
-}
-
-@media (min-width: 768px) {
-  .hexagon-overlay {
-    // background: local url('/img/hexagon-overlay.png') left/100% repeat-y;
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 20vh;
-    z-index: 1000;
-
-    img {
-      height: auto;
-      position: relative;
-      top: 0;
-      width: 28vh;
-
-      &:nth-child(2) {
-        top: -20%;
-        left: -38%;
-      }
-
-      &:nth-child(3) {
-        top: -67%;
-        left: -106%;
-        transform: rotate(302deg);
-      }
-
-      @media (max-width: 992px) {
-        & {
-          top: 0;
-          width: 24vh;
-        }
-
-        &:nth-child(2) {
-          top: -20%;
-          left: -38%;
-        }
-
-        &:nth-child(3) {
-          top: -67%;
-          left: -106%;
-          transform: rotate(302deg);
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .hexagon-overlay {
-    display: none;
-    top: unset;
-  }
 }
 
 a {
@@ -130,18 +75,14 @@ main {
   flex: 1 0 auto;
 }
 
-.main {
-  margin-top: 5rem;
-}
-
 .footer {
   flex-shrink: 0;
 }
 
 .footer,
 .navbar {
-  background: rgba($color: #fff, $alpha: 0.6);
-  color: $white;
+  background-color: $white;
+  color: $blue;
 }
 
 @media (min-width: 576px) {

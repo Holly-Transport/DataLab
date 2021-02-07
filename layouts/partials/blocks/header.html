@@ -1,10 +1,15 @@
 {{ define "header" }}
 <header class="header" role="banner">
 	<div class="container">
-		<p class="data-lab-intro-text">
-			<strong>The WB Data Lab is a community of practice for colleagues</strong> seeking to modernize project data practices through learning, networking, and shared resources.
-			Lab members are eager to learn, build new skills, and support each other.</p>
-		<a class="call-to-action-link" href="mailto:datalab@worldbank.org">Ask us anything!</a>
+		<div class="header-text">
+			<p class="data-lab-intro-text">
+				<span>The WB Data Lab is a community of practice for colleagues</span><br/> seeking to modernize project
+				data practices through learning, networking, and shared resources.
+				Lab members are eager to learn, build new skills, and support each other.
+			</p>
+			<a class="call-to-action-link" href="mailto:datalab@worldbank.org">Ask us anything!</a>
+    </div>
+    <img class="header-image" src="{{- .Site.BaseURL -}}/img/header/data-lab-icon-heading.png" alt="">
 	</div>
 </header>
 

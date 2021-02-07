@@ -1,5 +1,5 @@
 .workshops-page-breadcrumbs {
-	background-color: $teal;
+	background-color: $grayish-blue;
 	display: flex;
 	width: 100%;
 
@@ -27,7 +27,7 @@
 
 		&:last-child:before {
 			padding-right: .5rem;
-			color: $gray;
+			color: $blue;
 			content: "/";
 		}
 	}

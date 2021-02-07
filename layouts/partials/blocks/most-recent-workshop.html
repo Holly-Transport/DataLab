@@ -3,13 +3,13 @@
   <div class="container">
     {{ with .Site.GetPage "section" "workshops-and-clinics" }}
     {{- range sort .Pages ".Params.Scheduled_date" "desc" | first 1 -}}
-    <a href="#workshops-and-clinics-table">
+    <a href="{{- .Site.BaseURL -}}#workshops-and-clinics-table">
       <h2>Lab's Latest: </h2>
       <span>{{ .Title -}}</span>
     </a>
     <div class="scheduled-date">
-      {{ partial "fontawesome.html" "calendar-regular" }}
       <h3 class="most-recent">{{- .Params.Scheduled_date -}}</h3>
+      <img class="calendar-icon" src="{{- .Site.BaseURL -}}/img/most-recent/data-lab-calender-icon.png" alt="">
     </div>
     {{- end -}}
     {{- end -}}
