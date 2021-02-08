@@ -1,14 +1,44 @@
 .footer {
+  align-items: center;
   color: $gray;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-around;
   margin-top: auto;
   margin-bottom: 2rem;
-  top: 6rem;
+  padding: 2rem;
 
-    align-items: center;
-    display: flex;
-    font-size: 1.5rem;
-    justify-content: space-around;
-    padding: 2rem;
+  .wb-logo {
+    max-width: 260px;
+  }
+
+  .wb-footer-image {
+    max-width: 380px;
+  }
+
+  @media (max-width: 992px) {
+    & {
+      flex-direction: column;
+
+      small {
+        margin: 2.5rem auto;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    & {
+      .wb-logo {
+        max-width: 200px;
+        // margin-bottom: 1rem;
+      }
+
+
+    
+      .wb-footer-image {
+        // margin-top: 1rem;
+        max-width: 320px;
+      }
+    }
+  }
 }
-
-
