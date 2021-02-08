@@ -18,10 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		date.textContent = formatIntoDateType(date.textContent)
 	})
 	
-	
-	const dataTable = new simpleDatatables.DataTable("#workshops-and-clinics-table", {
-		searchable: true,
-		fixedHeight: true,
-		perPage: 5
-	})
+	if (document.getElementById('workshops-and-clinics-table')) {
+		const dataTable = new simpleDatatables.DataTable("#workshops-and-clinics-table", {
+			searchable: true,
+			fixedHeight: true,
+			perPage: 5
+		})
+	}
 })
