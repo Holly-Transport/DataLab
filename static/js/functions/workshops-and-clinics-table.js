@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const dataTable = new simpleDatatables.DataTable("#workshops-and-clinics-table", {
 		searchable: true,
 		fixedHeight: true,
-		columns: [
-			{ select: [1, 3, 4, 5], searchable: false }
-		]
+		perPage: 5
 	})
 })
