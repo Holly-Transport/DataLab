@@ -21,7 +21,7 @@
         </thead>
         <tbody class="table-body">
           {{ with .Site.GetPage "section" "workshops-and-clinics" }}
-          {{- range sort .Pages ".Params.Scheduled_date" "desc" -}}
+          {{ range sort .Pages ".Params.Scheduled_date" "desc" }}
           <tr>
             <td class="date">{{ if .Params.Scheduled_date }}{{- .Params.Scheduled_date -}}{{- end -}}</td>
             <td class="title"><strong>{{- .Title -}}</strong></td>
