@@ -17,16 +17,18 @@ assetDir = "static/assets"
 	aboutLinkTitle = "About" 
 	aboutPageLink = "/about"
 	
-	workshopsSectionLabel = "Workshops & Clinics"
+	workshopsSectionLabel = "Workshops And Clinics"
 	workshopsLink = "/workshops-and-clinics"
 
 	dataDirectoryLabel = "Find World Bank Data Resources"
 		
 	dataDirectoryPageLabel = "WB Data Directory"
 
-	dataLeadsLabel = "Data Lab Leads"	
+	dataLeadsLabel = "Data Lab Leads Network"	
 	dataLeadsLink = "/data-leads"
 
+	dataCorpsLabel = "Data Corps (Planned)"
+	dataCorpsLink = "/data-corps"
 
 	universityDataFellowsLabel = "University Data Fellows"	
 	universityDataFellowsLink = "/university-data-fellows"

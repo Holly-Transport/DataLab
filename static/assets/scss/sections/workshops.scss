@@ -1,22 +1,46 @@
-// Used in Workshop's Partial and Workshop's List-Page Partial
-.workshop-links {
-  background-color: $orange;
-  border-radius: 99px;
-  color: #fff;
-  padding: 0.65rem 0.75rem;
+//Styles for the Workshops List Page
+.workshops-list-page {
+  background-color: $light-gray;
 }
 
-//Styles for the Workshops List Page
+.workshops-hero {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+}
 
-//Styles for Workshops Single Pages.
-.single-workshop-page {
-  .container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.hero-text {
+  display: flex;
+  flex-direction: column;
 
-    .workshop-content {
-      width: 70%;
+  h1,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    color: $brighter-orange;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    min-width: 415px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $dark-gray;
+    margin-bottom: 1.5rem;
+    min-width: 616px;
+    width: 71%;
+
+    &:last-of-type {
+      padding-bottom: 11rem;
     }
   }
+}
+
+.clinics-badge {
+  max-width: 400px;
+  width: 100%;
 }

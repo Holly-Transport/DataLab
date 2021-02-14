@@ -373,6 +373,12 @@
 }
 
 .workshops-list-page-container {
+
+  .dataTable-dropdown {
+    color: $dark-gray; 
+    font-weight: 700;
+  }
+
   #workshops-and-clinics-table {
     .table-head {
       tr {
@@ -410,7 +416,6 @@
 
           a {
             color: $grayish-blue;
-
             margin: 0.5rem;
           }
         }
@@ -426,6 +431,9 @@
     margin-top: 1.2rem;
   }
 
+  .dataTable-info {
+    color: $dark-gray;
+  }
   .dataTable-pagination {
     color: $white;
 
@@ -437,7 +445,7 @@
 
   .pager {
     a {
-      color: $white;
+      color: $dark-gray;
 
       &:hover {
         color: $dark-gray;

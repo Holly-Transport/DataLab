@@ -1,0 +1,110 @@
+.data-corps {
+    background-color: $light-gray;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .data-corps-hero {
+      align-items: center;
+      display: flex;
+      margin-bottom: 2rem;
+    }
+  
+    .info-container {
+      width: 100%;
+  
+      p {
+        color: $dark-gray;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+        width: 80%;
+      }
+
+      .data-corps-description {
+        margin-bottom: 5rem;
+        max-width: 590px;
+      }
+
+    }
+  
+    .data-corps-badge {
+      max-width: 400px;
+      width: 100%;
+    }
+  
+    h1, h2 {
+      margin: 0;
+    }
+  
+    h1 {
+      color: $purple;
+      font-size: 3rem;
+      margin-top: 2.5rem;
+      text-transform: uppercase;
+    }
+  }
+  
+  .lab-leads-directory {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    color: $blue;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+  }
+  
+  iframe {
+    margin: 1rem 0 3.5rem;
+    min-height: 500px;
+    width: 100%;
+  }
+  
+  .about-data-corps {
+    background-color: $purple;
+    padding: 4rem 10rem;
+    width: 100%;
+  
+     p {
+       font-size: 1.5rem;
+       margin: .5rem;
+       max-width: 760px;
+       width: 60%;
+     }
+  }
+  
+  .about-corps-heading {
+    color: $white;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 993px) {
+    .data-corps {
+      .info-container {
+        .data-corps-badge {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .data-corps {
+      .info-container {
+        flex-direction: column;
+  
+        .data-corps-description {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+  

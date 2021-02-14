@@ -1,12 +1,46 @@
 <section class="data-resources-directory-page">
   <div class="container">
-    <h1>{{- .Site.Params.DataDirectoryPageLabel -}}</h1>
+    <div class="directory-text">
+      <div class="directory-heading">
+        <h1>{{- .Site.Params.DataDirectoryLabel -}}</h1>
+        <p>Solutions for governments that combine the best of World Bank economics, data science, geospatial, data
+          engineering, IT, domain expertise, and policy resources are difficult to realize, because the necessary
+          combined resources are scattered throughout the organization, as illustrated in this operations-focused data
+          services map.
+        </p>
+      </div>
+    </div>
     <div class="data-directory-hero">
-    <p>Solutions for governments that combine the best of World Bank economics, data science, geospatial, data engineering, IT, domain expertise, and policy resources are difficult to realize, because the necessary combined resources are scattered throughout the organization, as illustrated in this operations-focused data services map.</p>
       <a href="{{- .Site.BaseURL -}}ppt/data-resources-directory.pptx">
-        <img src="{{- .Site.BaseURL -}}/img/data-directory/data-directory.png" alt="World Bank Data Resources" />
+        <img class="data-resources-hero-image" src="{{- .Site.BaseURL -}}/img/data-directory/data-directory.png"
+          alt="World Bank Data Resources" />
       </a>
     </div>
-    <iframe frameborder="0" scrolling="no" src="https://worldbankgroup-my.sharepoint.com/personal/mpecherskiy_worldbank_org/_layouts/15/Doc.aspx?sourcedoc={1902aa15-d278-4a4f-af16-130c841dcb3e}&action=embedview&AllowTyping=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+  </div>
+  <div class="data-resources-directory">
+    <img class="heading" src="{{- .Site.BaseURL -}}/img/data-directory/existing-data-heading.png" alt="">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/existing-data.png" alt="I'm looking for existing data map">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/dotted--gray-line.png" alt="">
+    <img class="heading" src="{{- .Site.BaseURL -}}/img/data-directory/collect-data-heading.png" alt="">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/collect-new-data.png" alt="I need to collect new data map">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/dotted--gray-line.png" alt="">
+    <img class="heading" src="{{- .Site.BaseURL -}}/img/data-directory/manage-data-heading.png" alt="">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/manage-data.png" alt="">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/dotted--gray-line.png" alt="">
+    <img class="heading" src="{{- .Site.BaseURL -}}/img/data-directory/insights-heading.png" alt="">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/insights-from-data.png" alt="">
+    <img src="{{- .Site.BaseURL -}}/img/data-directory/dotted--gray-line.png" alt="">
+  </div>
+  <div class="data-leads-call-to-action">
+    <h2>Get help Finding the Data Resources You Need</h2>
+    <p>
+      Feel overwhelmed? Don’t navigate Bank resources alone! Managers and directors throughout the World Bank have
+      nominated Data Lab Leads to help YOU find the colleagues and internal resources you need to get your project off
+      the ground.
+      <br />
+      <a href="{{- .Site.BaseURL -}}{{- .Site.Params.DataLeadsLink -}}">
+        <strong>Find your Lab Lead HERE.</strong>
+      </a>
+    </p>
   </div>
 </section>
