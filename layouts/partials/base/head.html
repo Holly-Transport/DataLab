@@ -14,13 +14,13 @@
 
 <script type="module" src="/js/functions/mobileMenu.js" defer></script>
 
-{{- if eq .Kind "home" -}}
+{{ if eq .Kind "home" }}
   <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript" defer ></script>
   <script src="{{- .Site.BaseURL -}}/js/functions/workshops-and-clinics-table.js" type="text/javascript" defer></script>
 {{- end -}}
 
-{{- if eq .Page.Section "workshops-and-clinics" -}}
+{{ if eq .Page.Section "workshops-and-clinics" }}
   <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
   <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript" defer ></script>
   <script src="{{- .Site.BaseURL -}}/js/functions/workshops-and-clinics-table.js" type="text/javascript" defer></script>
