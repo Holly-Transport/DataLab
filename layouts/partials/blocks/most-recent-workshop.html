@@ -2,7 +2,7 @@
 <section class="most-recent-workshop-section">
   <div class="container">
     {{ with .Site.GetPage "section" "workshops-and-clinics" }}
-    {{- range sort .Pages ".Params.Scheduled_date" "desc" | first 1 -}}
+    {{ range sort .Pages ".Params.Scheduled_date" "desc" | first 1 }}
     <a href="{{- .Site.BaseURL -}}#workshops-and-clinics-table">
       <h2>Lab's Latest: </h2>
       <strong><span>{{- .Title -}}</span></strong>  
