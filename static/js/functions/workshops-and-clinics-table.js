@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       )
     }
   }
+
   if (mostRecent) {
     mostRecent.textContent = formatIntoDateType(mostRecent.textContent)
   }
@@ -22,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const workshopsAndClinicsTable = document.querySelector(
     "#workshops-and-clinics-table"
   )
+  
+  console.log(workshopsAndClinicsTable)
   if (workshopsAndClinicsTable != null) {
     const dataTable = new simpleDatatables.DataTable(
       "#workshops-and-clinics-table",
@@ -31,5 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 5,
       }
     )
+    console.log(dataTable())
   }
 })
