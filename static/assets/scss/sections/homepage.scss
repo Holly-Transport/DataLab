@@ -100,14 +100,17 @@
     }
 
     h2 {
-      font-weight: 600;
+      color: $white;
       font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
     a {
       span {
         color: $white;
         font-size: 1.4rem;
+        text-transform: uppercase;
         vertical-align: middle;
       }
     }
@@ -127,7 +130,6 @@
   @media (max-width: 1034px) {
     & {
       .container {
-
         .scheduled-date {
           display: flex;
           justify-content: space-around;
@@ -320,6 +322,10 @@
 
     .directory-heading {
       margin-bottom: 3rem;
+
+      h2 {
+        color: $white;
+      }
     }
   }
 
@@ -330,7 +336,7 @@
     width: 100%;
   }
 
-  @media(max-width: 992px) {
+  @media (max-width: 992px) {
     & {
       .container {
         flex-direction: column;
@@ -359,6 +365,7 @@
   .workshops-heading {
     h2 {
       font-size: 2.5rem;
+      font-weight: 700;
       color: $brighter-orange;
       text-transform: uppercase;
     }
@@ -373,9 +380,8 @@
 }
 
 .workshops-list-page-container {
-
   .dataTable-dropdown {
-    color: $dark-gray; 
+    color: $dark-gray;
     font-weight: 700;
   }
 

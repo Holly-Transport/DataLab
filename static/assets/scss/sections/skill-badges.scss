@@ -89,4 +89,64 @@
       width: 80%;
     }
   }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    & {
+      .hero-text {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          min-width: 316px;
+        }
+      }
+
+      .skill-badges-section {
+        .skill-badges-info {
+          font-size: 1.2rem;
+        }
+      }
+
+      .skill-badges-content {
+        flex-wrap: wrap;
+      }
+
+      .badge-content {
+        align-items: center;
+        img {
+          margin-bottom: 1rem;
+          max-width: 100px;
+        }
+
+        h2 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width:993px) {
+    & {
+      .skill-badges-section {
+        .skill-badges-info {
+          font-size: 1.4rem;
+        }
+      }
+      .skill-badges-content {
+        flex-wrap: wrap;
+      }
+
+      .badge-content {
+        max-height: unset;
+        margin: 1rem;
+        padding: 1rem;
+
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+  }
 }
