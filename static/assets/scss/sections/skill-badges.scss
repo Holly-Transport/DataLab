@@ -66,9 +66,10 @@
   .badge-content {
     display: flex;
     flex-direction: column;
+    margin: 1rem;
+    max-height: 436px;
     max-width: 255px;
     min-width: 255px;
-    max-height: 436px;
 
     img {
       max-width: 190px;
@@ -89,7 +90,7 @@
     }
   }
 
-  @media (min-width: 769px) {
+  @media (max-width: 992px) {
     & {
       .hero-text {
         h1 {
@@ -127,11 +128,23 @@
     }
   }
 
-  @media (min-width:993px) {
+  @media (max-width: 1200px) {
     & {
+      .skill-badges-hero {
+        width: 100%;
+
+        .hero-text {
+          p {
+            width: 50%;
+          }
+        }
+
+        img {
+          max-width: 300px;
+        }
+      }
+
       .skill-badges-section {
-
-
         .skill-badges-info {
           font-size: 1.4rem;
         }
@@ -152,10 +165,12 @@
     }
   }
 
-  @media (min-width: 1362px) {
+  @media (max-width: 1476px) {
     & {
-      .skill-badges-content {
-        flex-wrap: nowrap;
+      .badge-content {
+        img {
+          max-width: 150px;
+        }
       }
     }
   }
