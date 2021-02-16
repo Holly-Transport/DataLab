@@ -2,7 +2,7 @@
 	<main>
 	{{/*  Workshops Page Layout  */}}
 	{{ if eq .Page.Section "workshops-and-clinics" }}
-		{{- partial "list-partials/workshops-list-page.html" . }}
+		{{- partial "list-partials/workshops-list-page.html" . -}}
 	{{- end -}}
 
 	{{ if eq .Page.Section "university-data-fellows" }}
@@ -22,7 +22,7 @@
 	{{- end -}}
 
 	{{ if eq .Page.Section "skill-badges" }}
-		{{- partial "list-partials/skill-badges-list-page.html" . }}
+		{{- partial "list-partials/skill-badges-list-page.html" . -}}
 	{{- end -}}
 	
 	</main>
