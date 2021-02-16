@@ -104,11 +104,15 @@
         <li>
           <div class="card">
             <div class="icon-container">
-              <img class="badges" src="{{- .Site.Params.BaseURL -}}img/section-cards/data-lab-skills-icon.png"
-                alt="Skill Badges">
+              <a href="{{- .Site.Params.BaseURL -}}{{- .Site.Params.SkillBadgesLink -}}">
+                <img class="badges" src="{{- .Site.Params.BaseURL -}}img/section-cards/data-lab-skills-icon.png"
+                  alt="Skill Badges">
+              </a>
             </div>
             <div class="text-container">
+              <a href="{{- .Site.Params.BaseURL -}}{{- .Site.Params.SkillBadgesLink -}}">
               <h3>Skill Badges (Planned)</h3>
+              </a>
               <p>
                 Who does what? What do I need to learn? DECDG is demystifying data career streams starting with a new
                 Skill

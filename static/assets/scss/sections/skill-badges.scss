@@ -1,0 +1,92 @@
+.skill-badges-list-page {
+  & > .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skill-badges-hero {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
+
+    h1,
+    p {
+      color: $white;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .skill-badges-badge {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .skill-badges-section {
+    background-color: $light-gray;
+    padding-top: 2rem;
+
+    h2,
+    p {
+      color: $black;
+    }
+
+    .skill-badges-info {
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+
+  .skill-badges-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.5rem;
+    padding-bottom: 12rem;
+
+    .container {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .badge-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 255px;
+    min-width: 255px;
+    max-height: 436px;
+
+    img {
+      max-width: 190px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0;
+      width: 80%;
+    }
+  }
+}

@@ -33,6 +33,8 @@ assetDir = "static/assets"
 	universityDataFellowsLabel = "University Data Fellows"	
 	universityDataFellowsLink = "/university-data-fellows"
 
+	skillBadgesLabel = "Skill badges (Planned)"
+	skillBadgesLink	= "/skill-badges"
 [module]
 	[hugoVersion]
 	extended = true

@@ -20,6 +20,10 @@
 	{{ if eq .Page.Section "data-leads" }}
 		{{- partial "list-partials/data-leads-list-page.html" . -}}
 	{{- end -}}
+
+	{{ if eq .Page.Section "skill-badges" }}
+	{{- partial "list-partials/skill-badges-list-page.html" . }}
+{{- end -}}
 	
 	</main>
 {{- end -}} 
