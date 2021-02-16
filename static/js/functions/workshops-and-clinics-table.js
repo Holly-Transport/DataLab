@@ -19,12 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
   tableDates.forEach((date) => {
     date.textContent = formatIntoDateType(date.textContent)
   })
-
-  const dataTable = new simpleDatatables.DataTable(
-    "#workshops-and-clinics-table", {
-      searchable: true,
-      fixedHeight: true,
-      perPage: 5,
-    }
+  const workshopsAndClinicsTable = document.querySelector(
+    "#workshops-and-clinics-table"
   )
+  if (workshopsAndClinicsTable != null) {
+    const dataTable = new simpleDatatables.DataTable(
+      "#workshops-and-clinics-table",
+      {
+        searchable: true,
+        fixedHeight: true,
+        perPage: 5,
+      }
+    )
+  }
 })
