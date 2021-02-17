@@ -84,19 +84,20 @@
     padding: 1rem;
 
     a {
-      align-items: center;
+      align-items: baseline;
       color: $white;
       display: flex;
       min-width: 450px;
     }
 
-    span {
-      margin: 0 0.5rem;
+    h3:first-of-type {
+      margin-left: 1rem;
+      font-weight: 700;
     }
 
     h2,
     h3 {
-      margin: 0.5rem 0;
+      margin: 0;
     }
 
     h2 {
