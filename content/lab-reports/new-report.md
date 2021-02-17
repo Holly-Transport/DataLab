@@ -2,10 +2,10 @@
 title: "New Report"
 date: 2021-01-20T17:15:21-04:00
 image_path: "img/data-lab-reports.png"
-file_path: "https://worldbankgroup-my.sharepoint.com/:f:/g/personal/mpecherskiy_worldbank_org/EvAXJS0BBYxGvTW4b_0Y71EBoC4q0rO7_eynil5xCq_0Ag?email=edgar.negron.rabell%40gmail.com&e=5%3aZVK0lS&at=9"
+file_path: "https://worldbankgroup-my.sharepoint.com/personal/mpecherskiy_worldbank_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmpecherskiy%5Fworldbank%5Forg%2FDocuments%2FWBLabBackend%2FReports%2F2020%2D11%20WB%20Data%20Lab%20Concept%20Note%2Epdf&parent=%2Fpersonal%2Fmpecherskiy%5Fworldbank%5Forg%2FDocuments%2FWBLabBackend%2FReports"
 draft: true
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure illum exercitationem nihil officia consequuntur sapiente neque, expedita quia nemo aliquam officiis accusantium ab! Nisi harum beatae nihil aspernatur commodi?
+## From Sustainable Development Data Lab to a World Bank Data Lab
 
 
