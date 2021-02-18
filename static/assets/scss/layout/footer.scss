@@ -22,28 +22,36 @@
     }
   }
 
-  @media (max-width: 992px) {
-    & {
-      flex-direction: column;
-
-      small {
-        margin: 2.5rem auto;
-      }
-    }
-  }
+ 
 
   @media (max-width: 1200px) {
     & {
       .wb-logo {
         max-width: 200px;
-        // margin-bottom: 1rem;
       }
-
-
     
       .wb-footer-image {
         // margin-top: 1rem;
         max-width: 320px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    & {
+      flex-direction: column;
+
+      small {
+        font-size: .9rem;
+        margin: 2.5rem auto;
+      }
+
+      .wb-logo {
+        max-width: 150px;
+      }
+    
+      .wb-footer-image {
+        max-width: 200px;
       }
     }
   }
