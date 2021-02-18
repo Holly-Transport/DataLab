@@ -266,7 +266,7 @@
 // Data Resources Section styles
 .directory {
   background-color: $brighter-orange;
-  padding: 5rem 0 11rem;
+  padding: 5rem 0;
 
   .container {
     align-items: center;
@@ -318,7 +318,7 @@
     }
 
     .directory-text {
-      max-height: 700px;
+      min-height: 700px;
     }
 
     .directory-heading {
@@ -520,6 +520,8 @@
   }
 
   a {
+    color: $white;
+
     img {
       max-width: 200px;
     }

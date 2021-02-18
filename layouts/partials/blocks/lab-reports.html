@@ -9,9 +9,9 @@
         {{ with .Site.GetPage "section" "lab-reports" }}
         {{- range .Pages -}}
         <li class="card">
-          <a href="{{- .Params.File_path | safeHTML -}}">
+          <a href="{{- .Params.File_path -}}">
+            <h3>{{- .Summary -}}</h3>
           </a>
-          <p>{{- .Summary -}}</p>
         </li>
         {{- end -}}
         {{- end -}}
