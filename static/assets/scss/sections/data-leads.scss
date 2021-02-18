@@ -75,6 +75,10 @@ iframe {
      margin-left: 0;
      max-width: 760px;
      width: 60%;
+
+     & > a {
+       color: $blue;
+     }
    }
 }
 
@@ -85,12 +89,24 @@ iframe {
   text-transform: uppercase;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   .data-leads {
-    .info-container {
+    .data-leads-hero {
+      .data-leads-description {
+        font-size: 1.2rem;
+      }
+
       .data-leads-badge {
         max-width: 300px;
       }
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .data-leads {
+    .data-leads-hero {
+      flex-direction: column-reverse;
     }
   }
 }

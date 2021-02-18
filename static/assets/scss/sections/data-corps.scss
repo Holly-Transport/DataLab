@@ -66,16 +66,28 @@
     width: 100%;
   } 
 
-  
-  @media (max-width: 993px) {
+  @media (max-width: 1200px) {
     .data-corps {
-      .info-container {
+      .data-corps-hero {
+        .data-corps-description {
+          font-size: 1.2rem;
+        }
+  
         .data-corps-badge {
           max-width: 300px;
         }
       }
     }
   }
+  
+  @media (max-width: 993px) {
+    .data-corps {
+      .data-corps-hero {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
   
   @media (max-width: 768px) {
     .data-corps {
