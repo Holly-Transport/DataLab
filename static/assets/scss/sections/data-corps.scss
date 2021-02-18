@@ -69,7 +69,16 @@
   @media (max-width: 1200px) {
     .data-corps {
       .data-corps-hero {
+        padding-top: 2.5rem;
+        
+        .info-container {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+
         .data-corps-description {
+
           font-size: 1.2rem;
         }
   

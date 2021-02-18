@@ -28,7 +28,6 @@
       margin-bottom: 5rem;
       max-width: 590px;
     }
-
   }
 
   .data-fellows-badge {
@@ -36,7 +35,8 @@
     width: 100%;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     margin: 0;
   }
 
@@ -66,14 +66,32 @@ iframe {
   width: 100%;
 }
 
-
-
 @media (max-width: 1200px) {
   .data-fellows {
-    .info-container {
+    .data-fellows-hero {
+      padding-top: 2.5rem;
+
+      .info-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .data-fellows-description {
+        font-size: 1.2rem;
+      }
+
       .data-fellows-badge {
         max-width: 300px;
       }
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .data-fellows {
+    .data-fellows-hero {
+      flex-direction: column-reverse;
     }
   }
 }
