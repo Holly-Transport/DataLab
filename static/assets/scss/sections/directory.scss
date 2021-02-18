@@ -101,6 +101,17 @@
     }
   }
 
+  @media (max-width: 1525px) {
+    & {
+      .data-directory-hero {
+        flex-direction: column;
+
+        .data-resources-hero-image {
+          min-width: 600px;
+        }
+      }
+    }
+  }
   @media (max-width: 992px) {
     & {
       .data-directory-hero {
