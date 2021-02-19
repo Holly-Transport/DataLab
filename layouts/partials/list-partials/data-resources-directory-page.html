@@ -11,16 +11,19 @@
       </div>
     </div>
     <div class="data-directory-hero">
-        <img class="data-resources-hero-image" src="{{- .Site.BaseURL -}}/img/data-directory/data-directory.png"
-          alt="World Bank Data Resources" />
-        <a href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#existing-data" title="I'm Looking For Existing Data"
-          style="position: absolute; left: 75.82%; top: 42.57%; width: 19.78%; height: 12.36%; z-index: 2;"></a>
-        <a href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#manage-data" title="I Need To Manage Data"
-          style="position: absolute; left: 3.4%; top: 42.45%; width: 21.58%; height: 8.49%; z-index: 2;"></a>
-        <a href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#collect-data" title="I Need To Collect New Data"
-          style="position: absolute; left: 63.74%; top: 16.6%; width: 15.68%; height: 12.36%; z-index: 2;"></a>
-        <a href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#inisghts-data" title="I Need Insights From Data"
-          style="position: absolute; left: 18.98%; top: 69.54%; width: 17.98%; height: 12.48%; z-index: 2;"></a>
+        <!-- <img class="data-resources-hero-image" src="{{- .Site.BaseURL -}}/img/data-directory/data-directory.png"
+          alt="World Bank Data Resources" /> -->
+        <a class="data-map one" href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#collect-data" title="I Need To Collect New Data">
+        </a>
+        <a class="data-map two" href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#existing-data" title="I'm Looking For Existing Data">
+
+        </a>
+        <a class="data-map three" href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#manage-data" title="I Need To Manage Data">
+
+        </a>
+        <a class="data-map four" href="{{- .Site.BaseURL -}}{{- .Site.Params.DataResourcesLink -}}#insights-data" title="I Need Insights From Data">
+
+        </a>
     </div>
   </div>
   <div class="data-resources-directory">

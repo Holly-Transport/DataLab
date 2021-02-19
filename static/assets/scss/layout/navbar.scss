@@ -43,6 +43,10 @@
           margin: 0.25rem;
           max-width: 150px;
           padding: 0.25rem 1rem;
+
+          &:hover {
+            color: $brighter-orange;
+          }
         }
       }
 

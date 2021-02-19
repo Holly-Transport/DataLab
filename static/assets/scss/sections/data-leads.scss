@@ -78,6 +78,10 @@ iframe {
 
      & > a {
        color: $blue;
+
+       &:hover {
+         color: $white;
+       }
      }
    }
 }

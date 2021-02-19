@@ -4,15 +4,15 @@
   .container {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
     padding-bottom: 4rem;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     line-height: 1.2em;
     text-transform: uppercase;
-
   }
 
   h1 {
@@ -29,12 +29,52 @@
   .data-directory-hero {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    padding: 3rem 0;
 
-    .data-resources-hero-image {
-      cursor: pointer;
-      margin: 1.5rem auto 0;
-      min-width: 900px;
+    .data-map {
+      min-height: 100px;
+      width: 200px;
+    }
+
+    .one {
+      background: center/100% url("/img/data-directory/data-map-1.gif") $brighter-orange
+        no-repeat;
+
+        &:hover {
+          background: center/100% url("/img/data-directory/hover1.gif") 
+          no-repeat;
+        }
+    }
+
+    .two {
+      background: center/100% url("/img/data-directory/data-map-2.gif") $brighter-orange
+        no-repeat;
+
+        &:hover {
+          background: center/100% url("/img/data-directory/hover2.gif") 
+          no-repeat;
+        }
+    }
+
+    .three {
+      background: center/100% url("/img/data-directory/data-map-3.gif") $brighter-orange
+        no-repeat;
+
+        &:hover {
+          background: center/100% url("/img/data-directory/hover3.gif") 
+          no-repeat;
+        }
+    }
+
+    .four {
+      background: center/100% url("/img/data-directory/data-map-4.gif") $brighter-orange
+        no-repeat;
+
+        &:hover {
+          background: center/100% url("/img/data-directory/hover4.gif") 
+          no-repeat;
+        }
     }
   }
 
@@ -51,6 +91,7 @@
 
   .directory-text {
     max-height: 700px;
+    max-width: 636px;
   }
 
   .directory-heading {
@@ -101,21 +142,28 @@
     }
   }
 
-  @media (max-width: 1525px) {
+  @media (max-width: 992px) {
     & {
-      .data-directory-hero {
+      .container {
         flex-direction: column;
+      }
 
-        .data-resources-hero-image {
-          min-width: 600px;
+      .data-directory-hero {
+        .data-map {
+          min-height: 150px;
+          width: 300px;
         }
       }
     }
   }
-  @media (max-width: 992px) {
+
+  @media (min-width: 1300px) {
     & {
       .data-directory-hero {
-        flex-direction: column;
+        .data-map {
+          min-height: 150px;
+          width: 300px;
+        }
       }
     }
   }
