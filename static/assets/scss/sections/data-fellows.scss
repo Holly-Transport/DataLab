@@ -9,11 +9,17 @@
   .data-fellows-hero {
     align-items: center;
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
   .info-container {
     width: 100%;
+
+    .sub-header {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
 
     p {
       color: $dark-gray;
@@ -22,11 +28,6 @@
       margin: 0;
       margin-bottom: 1.5rem;
       width: 80%;
-    }
-
-    .data-fellows-description {
-      margin-bottom: 5rem;
-      max-width: 590px;
     }
   }
 
