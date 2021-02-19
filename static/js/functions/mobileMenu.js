@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 	
-	
+	const footerDate = document.querySelector('.footer-date')
+
+  const date = new Date()
+  const currentYear = date.getFullYear().toString()
+  footerDate.textContent = currentYear
+  
 	let MobileMenu = mobileMenu()
 })
