@@ -4,7 +4,7 @@
     {{ with .Site.GetPage "section" "workshops-and-clinics" }}
     {{ range sort .Pages ".Params.Scheduled_date" "desc" | first 1 }}
     <a href="{{- .Site.BaseURL -}}#workshops-and-clinics-table">
-      <h2>Lab's Latest: </h2>
+      <h2>Upcoming Event: </h2>
      <h3>{{- .Title -}}</h3>
     </a>
     <div class="scheduled-date">
