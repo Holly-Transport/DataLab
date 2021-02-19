@@ -99,8 +99,19 @@
   }
 
   .data-resources-directory {
+    display: flex;
+    flex-direction: column;
     background-color: $white;
     width: 100%;
+
+    .learn-more-link {
+      background-color: $brighter-orange;
+      color: $white;
+      margin: 1rem auto;
+      max-width: 240px;
+      padding: 1rem;
+      text-align: center;
+    }
   }
 
   .heading {
