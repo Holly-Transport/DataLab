@@ -1,7 +1,7 @@
 .data-leads {
   background-color: $light-gray;
 
-  .container {
+  & > .container {
     display: flex;
     flex-direction: column;
   }
@@ -66,15 +66,24 @@ iframe {
 
 .about-data-leads {
   background-color: $teal;
-  padding: 4rem 10rem;
+
+  padding: 4rem 0;
   width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-container {
+    min-width: 733px;
+  }
 
    p {
      font-size: 1.4rem;
      margin: .5rem;
      margin-left: 0;
      max-width: 760px;
-     width: 60%;
 
      & > a {
        color: $blue;
@@ -84,6 +93,12 @@ iframe {
        }
      }
    }
+
+   img {
+    margin: auto;
+    max-width: 633px;
+    width: 100%;
+   }
 }
 
 .about-leads-heading {
@@ -92,7 +107,18 @@ iframe {
   font-weight: 400;
   text-transform: uppercase;
 }
+@media (max-width: 1530px) {
+  .about-data-leads {
+    .container {
+      align-items: center;
+      flex-direction: column;
 
+      img {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
 @media (max-width: 1200px) {
   .data-leads {
     .data-leads-hero {
