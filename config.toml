@@ -12,7 +12,7 @@ assetDir = "static/assets"
 	dataPartnershipsLinkTitle = "Data Partnerships"
 	dataPartnershipsLink = "https://datapartnership.org"
 
-	digitalLiteracyLinkTitle = "Event and Workshop Materials"
+	digitalLiteracyLinkTitle = "Event & Workshop Materials"
 
 	workshopsSectionLabel = "Workshops And Clinics"
 	workshopsLink = "/workshops-and-clinics"
