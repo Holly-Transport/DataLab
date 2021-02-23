@@ -2,7 +2,7 @@
 title: "Measuring Equitable Access to Health Facilities with Data Partnerships and Open-Source Tools"
 date: 2021-01-26T08:00:22-04:00
 scheduled_date: 2021-01-25T19:30:50-04:00
-workshop_types: ["Clinics"]
+workshop_types: ["Workshops"]
 slides_path: "https://worldbankgroup-my.sharepoint.com/:p:/g/personal/hkrambeck_worldbank_org/EdJWeGdrxC1Bmg1gEza2JUcBZBZg82pE-kYJY5Ev7wI9EA?e=Q2VfOJ"
 video_path: "https://worldbankgroup-my.sharepoint.com/:v:/g/personal/hkrambeck_worldbank_org/EXmAQA2Q-qxDs6nGv4WlDtMB7CGTVFQN06gkLlVsIVVqHg?e=SiXKmK"
 
