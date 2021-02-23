@@ -1,7 +1,7 @@
 ---
 title: "Facebook Data for Good Workshop"
 date: 2020-12-17T14:44:09-04:00
-draft: true
+
 workshop_types: ["Clinics", "Data Science Workshop"]
 scheduled_date: 2021-04-15T19:03:56-04:00
 Video_path: "https://worldbankgroup-my.sharepoint.com/:v:/r/personal/hkrambeck_worldbank_org/Documents/00%20-%20Labs/%200%20SD%20Data%20Lab%20-%20Shared/Videos/2019_10_30%20GGSCE%20Facebook%20Data%20Workshop.mp4?csf=1&amp;e=HLPBNX"

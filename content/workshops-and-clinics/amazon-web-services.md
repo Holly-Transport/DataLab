@@ -1,7 +1,6 @@
 ---
 title: "Amazon Web Services Training"
 date: 2020-12-15T13:03:56-04:00
-draft: true
 workshop_types: ["Data Science Workshop"]
 scheduled_date: 2020-03-15T13:03:56-04:00
 Extra_link_1: "https://github.com/worldbank/Data-Collaboratives/tree/labs"
