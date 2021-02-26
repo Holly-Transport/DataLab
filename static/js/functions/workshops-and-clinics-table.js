@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       searchable: true,
       fixedHeight: true,
-      perPage: 5,
+      perPage: 25,
     }
   )
   const removeTableHeightFromContainer = function (table) {
