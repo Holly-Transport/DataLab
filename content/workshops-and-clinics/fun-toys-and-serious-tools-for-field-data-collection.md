@@ -1,7 +1,7 @@
 ---
 title: "Fun Toys and Serious Tools for Field Data Collection"
-date: 2021-02-19T18:52:13-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2020-02-24T18:52:13-04:00
+scheduled_date: 2020-02-24T18:52:13-04:00
 workshop_types: ["Tech Talks"]
 video_path: "https://worldbankgroup-my.sharepoint.com/:v:/g/personal/hkrambeck_worldbank_org/EdDs6y12CwJJuYUm9yKsSicB7YjLbmJz65gWWDDDMwPe_w?e=6Aif"
 slides_path: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/EcnG87Mx3QJAkj_ooQxUMfcBYRgRTO_9CVKR_IqVgkIh6A?e=FKRPW3"

@@ -1,7 +1,7 @@
 ---
 title: "Locust Crisis 2020"
-date: 2021-01-26T08:04:46-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2020-03-02T08:04:46-04:00
+scheduled_date: 2020-03-02T08:04:46-04:00
 workshop_types: ["Clinics"]
 extra_link_1: "https://worldbankgroup-my.sharepoint.com/:f:/g/personal/hkrambeck_worldbank_org/EmYhTw-XzNhLqtwXToGZc9sBhDWjOam_bELkV_XekI886g?e=vvWY9D"
 

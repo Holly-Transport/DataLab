@@ -1,7 +1,7 @@
 ---
 title: "Data Science Talk: Learn How to Use Crowdsourced Smartphone GPS Data on your Project"
-date: 2021-01-26T07:57:33-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2020-06-30T07:57:33-04:00
+scheduled_date: 2020-06-30T19:30:50-04:00
 workshop_types: ["Workshops"]
 slides_path: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/Ef2SAAYxHotLq2zA_u3v6HMBpE7CE1MX0SRCuchL-Mzl4A?e=fNhyGz"
 video_path: "https://worldbankgroup-my.sharepoint.com/:v:/g/personal/hkrambeck_worldbank_org/ESDrq20eD8VIhl4FmqiUIBABjntNXXoIDw5SnCCAXP4KpQ?e=G27Th2"

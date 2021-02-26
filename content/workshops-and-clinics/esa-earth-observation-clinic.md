@@ -1,7 +1,7 @@
 ---
 title: "Esa Earth Observation Clinic "
 date: 2021-01-25T19:30:50-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+scheduled_date: 2020-02-18T19:30:50-04:00
 workshop_types: ["Workshops"]
 slides_path: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/Ea3mINpXD9tDpLJrTp7VZLYBtf8sq2Wh7eC0ys3uqONbog?e=BL1pDR"
 video_path: "https://worldbankgroup-my.sharepoint.com/:v:/g/personal/hkrambeck_worldbank_org/EZAZY4NaJcxCkojV8EFM-mYBA9uaKi8qSgOSCbmZPPI5Vg?e=tzePmc"

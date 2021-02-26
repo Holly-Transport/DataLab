@@ -1,7 +1,7 @@
 ---
 title: "COVID 19 Clinic: Air Quality"
-date: 2021-01-26T08:38:45-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2020-04-26T08:38:45-04:00
+scheduled_date: 2020-04-25T19:30:50-04:00
 workshop_types: ["Clinics"]
 extra_link_1: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/EftDjZaTsX5CgUCm9-WOzZEB4GZzSkTwB-_Kgpka0k6b2Q?e=2Y0t5Z"
 video_path: "https://worldbankgroup-my.sharepoint.com/:v:/g/personal/hkrambeck_worldbank_org/EScqr5f_539Hv7NMeK4j3lkBOh0dvzhkepGSMhgwvEBMig?e=dEiCms"

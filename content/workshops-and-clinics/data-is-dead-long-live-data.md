@@ -1,7 +1,7 @@
 ---
 title: "Data Is Dead. Long Live Data."
-date: 2021-02-19T16:49:58-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2019-09-19T16:49:58-04:00
+scheduled_date: 2019-09-19T16:49:58-04:00
 workshop_types: ["Tech Talks"]
 video_path: "https://olc.worldbank.org/content/data-dead-long-live-data"
 slides_path: "https://worldbankgroup-my.sharepoint.com/:p:/g/personal/hkrambeck_worldbank_org/EUcQn2UDLUtNj6D-nblFUyAB-kK96uS85hJr2835OQZrrw?e=huIR04"

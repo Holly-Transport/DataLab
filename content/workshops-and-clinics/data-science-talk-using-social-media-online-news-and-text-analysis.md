@@ -1,8 +1,8 @@
 ---
 title: "Data Science Talk: Using Social Media Online News and Text Analysis for Monitoring COVID-19 Impacts"
-date: 2021-01-25T19:38:43-04:00
+date: 2020-06-25T19:38:43-04:00
 workshop_types: ["Workshops"]
-scheduled_date: 2021-01-25T19:30:50-04:00
+scheduled_date: 2020-06-25T19:30:50-04:00
 slides_path: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/EULoJZWyAQZHogLThy705hIBnJKtQWm4riEvX2jdbZNTvQ?e=3R2zo7"
 video_path: "https://worldbankgroup-my.sharepoint.com/:v:/g/personal/hkrambeck_worldbank_org/EZnbisBV1yJEi7y1XuA1pckBGOK7JGp8oh8NlqK2ppkYlQ?e=IdueJc"
 

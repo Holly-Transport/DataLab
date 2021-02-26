@@ -1,6 +1,6 @@
 ---
 title: "US Digital Service Field Trip"
-date: 2020-12-16T07:18:57-04:00
+date: 2019-09-25T07:18:57-04:00
 
 workshop_types: ["Workshops"]
 scheduled_date: 2021-12-15T16:03:56-04:00

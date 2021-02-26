@@ -1,6 +1,6 @@
 ---
 title: "GIS and COVID-19: How Mapping Supports Response and Recovery"
-date: 2021-02-19T18:50:15-04:00
+date: 2021-01-25T18:50:15-04:00
 scheduled_date: 2021-01-25T19:30:50-04:00
 workshop_types: ["Workshops"]
 slides_path: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/ET14Ez2d5NdMgqBydY6RTYoB7zyR0CUjg9gZeFe4QbNeFg?e=AL4Ght"

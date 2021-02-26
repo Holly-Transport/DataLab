@@ -1,7 +1,7 @@
 ---
 title: "Covid 19 Clinic Health GP Priorities and Big Data"
-date: 2021-01-26T08:28:53-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2020-03-26T08:28:53-04:00
+scheduled_date: 2020-03-25T19:30:50-04:00
 workshop_types: ["Clinics"]
 extra_link_1: "https://worldbankgroup-my.sharepoint.com/:w:/g/personal/hkrambeck_worldbank_org/EeMM_S9-G2tMppcA4eM7c5cBrY9F0C8zBoM9efc9k-UO5Q?e=J1HsFK"
 video_path: "https://olc.worldbank.org/content/covid-19-data-clinic"

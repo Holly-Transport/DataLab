@@ -1,7 +1,7 @@
 ---
 title: "Your Brain Is Not Enough. Use Modern Data"
-date: 2021-02-19T18:50:15-04:00
-scheduled_date: 2021-01-25T19:30:50-04:00
+date: 2020-02-12T18:50:15-04:00
+scheduled_date: 2020-02-12T18:50:15-04:00
 workshop_types: ["Tech Talks"]
 video_path: "https://olc.worldbank.org/content/sd-tech-talk-your-brain-not-enough-use-modern-data"
 slides_path: "https://worldbankgroup-my.sharepoint.com/:b:/g/personal/hkrambeck_worldbank_org/ETUpCoBcql5OpjuTbqAikRMB-f9VEK-lYZWbuxmAjBnrhA?e=GLiOOx"
