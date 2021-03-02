@@ -5,15 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: data
-  label: data
-  create: all
+  path: content/lab-reports
+  label: Lab Reports
+  create: documents
   match: "**/*"
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
 - type: directory
   path: content/workshops
   label: Workshops
@@ -22,16 +17,6 @@ sections:
 - type: directory
   path: content/university-partnerships
   label: University partnerships
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/teams
-  label: Teams
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/data-resources-directory
-  label: Data resources directory
   create: all
   match: "**/*"
 upload_dir: static/uploads
