@@ -4,10 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: content/lab-reports
-  label: Lab Reports
-  create: documents
+- type: document
+  path: layouts/partials/blocks/section-cards.html
+  label: Section Cards
   match: "**/*"
 - type: directory
   path: content/workshops
@@ -15,9 +14,9 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/university-partnerships
-  label: University partnerships
-  create: all
+  path: content/lab-reports
+  label: Lab Reports
+  create: documents
   match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
