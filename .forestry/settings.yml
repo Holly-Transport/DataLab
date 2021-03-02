@@ -4,12 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: layouts/partials/blocks/section-cards.html
-  label: Section Cards
-  match: "**/*"
 - type: directory
-  path: content/workshops
+  path: content/workshops-and-clinics
   label: Workshops
   create: all
   match: "**/*"
