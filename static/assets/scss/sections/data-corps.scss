@@ -66,6 +66,74 @@
     width: 100%;
   } 
 
+  .skill-badges-badge {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .skill-badges-section {
+    background-color: $light-gray;
+    padding-top: 2rem;
+
+    h2,
+    p {
+      color: $black;
+    }
+
+    .skill-badges-info {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+
+  .skill-badges-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.5rem;
+    padding-bottom: 12rem;
+
+    .container {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .badge-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    max-height: 436px;
+    max-width: 255px;
+    min-width: 255px;
+
+    img {
+      max-width: 190px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0;
+      width: 80%;
+    }
+  }
+
+
+
+
+
+
   @media (max-width: 1200px) {
     .data-corps {
       .data-corps-hero {
@@ -86,8 +154,29 @@
           max-width: 300px;
         }
       }
+      .skill-badges-section {
+        .skill-badges-info {
+          font-size: 1.4rem;
+        }
+      }
+
+      .skill-badges-content {
+        flex-wrap: wrap;
+      }
+
+      .badge-content {
+        max-height: unset;
+        padding: 1rem 0;
+
+        img {
+          max-width: 150px;
+        }
+      }
+
     }
   }
+
+
   
   @media (max-width: 993px) {
     .data-corps {
